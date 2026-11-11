@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codex GIF Video"
+  short_description: "把动作描述或口播转成无字幕、无配乐的原生 GIF 与静音 MP4 素材"
+  default_prompt: "使用 $codex-gif-video 根据这段口播选择风格，沿用人物主参考，生成无字幕、无配乐、无配音的动态素材；按用户选择保存为一个长 GIF 或静音 MP4。"
+policy:
+  allow_implicit_invocation: true

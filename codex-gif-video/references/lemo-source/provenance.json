@@ -1,0 +1,1077 @@
+{
+  "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+  "entries": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ba3cce5467fd31494d7e117662de08f477e372a",
+      "size": 1064,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/5ba3cce5467fd31494d7e117662de08f477e372a"
+    },
+    {
+      "path": "styles/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83be969a5e02f8e5980fff26312dc7a67a0a150e",
+      "size": 8407,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/83be969a5e02f8e5980fff26312dc7a67a0a150e"
+    },
+    {
+      "path": "styles/archive-lighttable/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3f5afde708f94af9347ff05d10f4f9860557492",
+      "size": 13338,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/d3f5afde708f94af9347ff05d10f4f9860557492"
+    },
+    {
+      "path": "styles/archive-lighttable/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6c14fcdfa16ef0e9610c6271a3045765f6db453",
+      "size": 516,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f6c14fcdfa16ef0e9610c6271a3045765f6db453"
+    },
+    {
+      "path": "styles/art-deco/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cd68b219282eab2d3fdb60e18f465787a54c388",
+      "size": 12196,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/3cd68b219282eab2d3fdb60e18f465787a54c388"
+    },
+    {
+      "path": "styles/art-deco/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5affabbdd48b86f01e5710d67320d7fe98b8b4a",
+      "size": 497,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/c5affabbdd48b86f01e5710d67320d7fe98b8b4a"
+    },
+    {
+      "path": "styles/ascii-crt/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "396825b8d4f770c1c20f19db30b76790d849e0aa",
+      "size": 12202,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/396825b8d4f770c1c20f19db30b76790d849e0aa"
+    },
+    {
+      "path": "styles/ascii-crt/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eec62276df1cacfc5ac3e8639d3378bf223dd414",
+      "size": 518,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/eec62276df1cacfc5ac3e8639d3378bf223dd414"
+    },
+    {
+      "path": "styles/backrooms/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2aab364447994ab9159e773cfb2d09bebfc786f",
+      "size": 12620,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/a2aab364447994ab9159e773cfb2d09bebfc786f"
+    },
+    {
+      "path": "styles/backrooms/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38173778c51986f2103bd589f715aed98bc2539a",
+      "size": 535,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/38173778c51986f2103bd589f715aed98bc2539a"
+    },
+    {
+      "path": "styles/blueprint/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08c33019ee14b8ecff9254c29b32a0a4c15ec1fe",
+      "size": 12323,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/08c33019ee14b8ecff9254c29b32a0a4c15ec1fe"
+    },
+    {
+      "path": "styles/blueprint/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "937c25354cd08c9c3bf6c8453a51dc5420edb8b2",
+      "size": 550,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/937c25354cd08c9c3bf6c8453a51dc5420edb8b2"
+    },
+    {
+      "path": "styles/brick-toy/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a93656c9c254fe36ff8ed94dfde04d79ccf9e7dd",
+      "size": 12556,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/a93656c9c254fe36ff8ed94dfde04d79ccf9e7dd"
+    },
+    {
+      "path": "styles/brick-toy/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "406ef14a9af2ac68a3e2b695a41a32f98952e0f0",
+      "size": 447,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/406ef14a9af2ac68a3e2b695a41a32f98952e0f0"
+    },
+    {
+      "path": "styles/briefing-board/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "912cae2d8cd1db96f9434e2ceb2e73f07b61dfad",
+      "size": 13328,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/912cae2d8cd1db96f9434e2ceb2e73f07b61dfad"
+    },
+    {
+      "path": "styles/briefing-board/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a8e45b2bc8bf6339d33bb31da523a820a6cce4b",
+      "size": 539,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/6a8e45b2bc8bf6339d33bb31da523a820a6cce4b"
+    },
+    {
+      "path": "styles/caption-news/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3ba32436e073af9a990739c489f72af0a520c12",
+      "size": 17248,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/a3ba32436e073af9a990739c489f72af0a520c12"
+    },
+    {
+      "path": "styles/caption-news/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e58ea0c851986e26f555d2d97808893255a6e67",
+      "size": 517,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/0e58ea0c851986e26f555d2d97808893255a6e67"
+    },
+    {
+      "path": "styles/cel-anime-80s/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bde19c4d29f1d15dcb6ee1f4b5abcfbfbfa0d35f",
+      "size": 12647,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/bde19c4d29f1d15dcb6ee1f4b5abcfbfbfa0d35f"
+    },
+    {
+      "path": "styles/cel-anime-80s/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8c42401aab88c6b1a111293c8d0bd050fb07bf3",
+      "size": 512,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/b8c42401aab88c6b1a111293c8d0bd050fb07bf3"
+    },
+    {
+      "path": "styles/chalkboard/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a51235be905fe905a91ee751ee7c97dfb09e90d",
+      "size": 18516,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/8a51235be905fe905a91ee751ee7c97dfb09e90d"
+    },
+    {
+      "path": "styles/chalkboard/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ea7a5d11ee50967f0994f3b48226e0a88614af7",
+      "size": 507,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/3ea7a5d11ee50967f0994f3b48226e0a88614af7"
+    },
+    {
+      "path": "styles/circuit-board/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb932d35d50f650845801aaa61f98a6818d9d55b",
+      "size": 22762,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/eb932d35d50f650845801aaa61f98a6818d9d55b"
+    },
+    {
+      "path": "styles/circuit-board/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc8eeeaeb0e3447de76c20e4ff360b454602109a",
+      "size": 486,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/fc8eeeaeb0e3447de76c20e4ff360b454602109a"
+    },
+    {
+      "path": "styles/city-symphony/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b809ca3097843bdff3abb5e8b4c4ce2b24402426",
+      "size": 18474,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/b809ca3097843bdff3abb5e8b4c4ce2b24402426"
+    },
+    {
+      "path": "styles/city-symphony/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae360efadbc5143aa7f8439a9e3863b39c4b5e48",
+      "size": 515,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/ae360efadbc5143aa7f8439a9e3863b39c4b5e48"
+    },
+    {
+      "path": "styles/countdown/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c9d4386120211931895ebdd61eabc1d0fbc805b",
+      "size": 17032,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/3c9d4386120211931895ebdd61eabc1d0fbc805b"
+    },
+    {
+      "path": "styles/countdown/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccfef7cb73cf7e073885aa9329fc642716de4760",
+      "size": 551,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/ccfef7cb73cf7e073885aa9329fc642716de4760"
+    },
+    {
+      "path": "styles/crayon-book/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d17e37cdedc5b62a03537066631987cc558e931b",
+      "size": 11339,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/d17e37cdedc5b62a03537066631987cc558e931b"
+    },
+    {
+      "path": "styles/crayon-book/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09b2a0277a868c0abbb6c2b8f4ccf2eb76b68235",
+      "size": 488,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/09b2a0277a868c0abbb6c2b8f4ccf2eb76b68235"
+    },
+    {
+      "path": "styles/dark-keynote/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2c94fd284715fe1b1da718b7f2404a12171a434",
+      "size": 12164,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/a2c94fd284715fe1b1da718b7f2404a12171a434"
+    },
+    {
+      "path": "styles/dark-keynote/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4772e12da68c0c3b31f46300f83912b12bc2fa32",
+      "size": 504,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/4772e12da68c0c3b31f46300f83912b12bc2fa32"
+    },
+    {
+      "path": "styles/data-physical/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b9aaf1537738cb841e08fbf3b4806effc5e81b9",
+      "size": 13475,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/6b9aaf1537738cb841e08fbf3b4806effc5e81b9"
+    },
+    {
+      "path": "styles/data-physical/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e49faa7de7c91e3cc8b25687b6a15e1005988cf9",
+      "size": 536,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/e49faa7de7c91e3cc8b25687b6a15e1005988cf9"
+    },
+    {
+      "path": "styles/dataviz/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d3c361cd488f053388be6d98120a9dcfa8033a1",
+      "size": 11415,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/1d3c361cd488f053388be6d98120a9dcfa8033a1"
+    },
+    {
+      "path": "styles/dataviz/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28ed820c6825a99ff9853e26b2e0aaf3a70be440",
+      "size": 461,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/28ed820c6825a99ff9853e26b2e0aaf3a70be440"
+    },
+    {
+      "path": "styles/desktop-flythrough/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eff8195659042f164054d87c975b738eea6aeaed",
+      "size": 22470,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/eff8195659042f164054d87c975b738eea6aeaed"
+    },
+    {
+      "path": "styles/desktop-flythrough/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "409e2e86fd2821b13806cda46c00c050bef6ccc0",
+      "size": 504,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/409e2e86fd2821b13806cda46c00c050bef6ccc0"
+    },
+    {
+      "path": "styles/engraving/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9529171436dfb98516756181b83aaf1afe29f1b",
+      "size": 12338,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/b9529171436dfb98516756181b83aaf1afe29f1b"
+    },
+    {
+      "path": "styles/engraving/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5931165292181d0562b8260998cfbb2470dd45a",
+      "size": 593,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f5931165292181d0562b8260998cfbb2470dd45a"
+    },
+    {
+      "path": "styles/game-show/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4a01447c26870379b6fd914894889444b642f6",
+      "size": 12485,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/7a4a01447c26870379b6fd914894889444b642f6"
+    },
+    {
+      "path": "styles/game-show/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f17e20724c95eb4ca860fa7679f93e16713b1dd9",
+      "size": 514,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f17e20724c95eb4ca860fa7679f93e16713b1dd9"
+    },
+    {
+      "path": "styles/glass-product/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01628dbe058a8e63ffb66122d487e1964825fc42",
+      "size": 12199,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/01628dbe058a8e63ffb66122d487e1964825fc42"
+    },
+    {
+      "path": "styles/glass-product/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "562c9922b0a3112340acca8e016b8f23ed9836eb",
+      "size": 472,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/562c9922b0a3112340acca8e016b8f23ed9836eb"
+    },
+    {
+      "path": "styles/halftone-dossier/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66da3ae8e6a20684d86c7556651d2afde0ff27d8",
+      "size": 12415,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/66da3ae8e6a20684d86c7556651d2afde0ff27d8"
+    },
+    {
+      "path": "styles/halftone-dossier/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe3b6a4e8261bfaff1530519a4fdd94e8332d886",
+      "size": 499,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/fe3b6a4e8261bfaff1530519a4fdd94e8332d886"
+    },
+    {
+      "path": "styles/hd-2d/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc6531146dcc28e1c5c9878cf7755c15efc31e08",
+      "size": 12356,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/dc6531146dcc28e1c5c9878cf7755c15efc31e08"
+    },
+    {
+      "path": "styles/hd-2d/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19a300485727342d14b6c8c36eee705e5b5bc253",
+      "size": 453,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/19a300485727342d14b6c8c36eee705e5b5bc253"
+    },
+    {
+      "path": "styles/hologram-hud/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4d505d0eb74474603b326fadc68416f90b31cde",
+      "size": 11833,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/d4d505d0eb74474603b326fadc68416f90b31cde"
+    },
+    {
+      "path": "styles/hologram-hud/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28b1637dec5cae4b6d6b288958d71f215edc92ab",
+      "size": 521,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/28b1637dec5cae4b6d6b288958d71f215edc92ab"
+    },
+    {
+      "path": "styles/impasto/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87eb6d8ed9936c26ccd9740f88145be8a0c98d45",
+      "size": 12013,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/87eb6d8ed9936c26ccd9740f88145be8a0c98d45"
+    },
+    {
+      "path": "styles/impasto/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f0333de0035684ace40f05b25b5728da09762e1",
+      "size": 509,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/7f0333de0035684ace40f05b25b5728da09762e1"
+    },
+    {
+      "path": "styles/ink-wash/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b17e52b77c94ba4a8e99aa7193d7481e800460fd",
+      "size": 11277,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/b17e52b77c94ba4a8e99aa7193d7481e800460fd"
+    },
+    {
+      "path": "styles/ink-wash/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10d4196adfe11f7016aa1e5304c6625dd4938fd6",
+      "size": 449,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/10d4196adfe11f7016aa1e5304c6625dd4938fd6"
+    },
+    {
+      "path": "styles/iso-infographic/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3abfcfb60d912ef32b7de9fe4d047acc60eb8ce6",
+      "size": 11989,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/3abfcfb60d912ef32b7de9fe4d047acc60eb8ce6"
+    },
+    {
+      "path": "styles/iso-infographic/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204120ad3469d2b9b2e4e0c7dabcbc28ada3adde",
+      "size": 478,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/204120ad3469d2b9b2e4e0c7dabcbc28ada3adde"
+    },
+    {
+      "path": "styles/isometric-picture-book/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aaa003947fc1aa2d03c919c47295f777db31b00",
+      "size": 20859,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/8aaa003947fc1aa2d03c919c47295f777db31b00"
+    },
+    {
+      "path": "styles/isometric-picture-book/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f357ecf5356d380fa101f925d3bc4f8951036feb",
+      "size": 526,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f357ecf5356d380fa101f925d3bc4f8951036feb"
+    },
+    {
+      "path": "styles/kino-montage/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4baf1f5e32b78feba4da5c22100d56c478d22510",
+      "size": 20124,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/4baf1f5e32b78feba4da5c22100d56c478d22510"
+    },
+    {
+      "path": "styles/kino-montage/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bae152889cecca7b1a2965d7d6b8040184a338a",
+      "size": 547,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/9bae152889cecca7b1a2965d7d6b8040184a338a"
+    },
+    {
+      "path": "styles/lidar-survey/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0fcfbd6474e6eac9228d36000f886c28859de40",
+      "size": 13154,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/c0fcfbd6474e6eac9228d36000f886c28859de40"
+    },
+    {
+      "path": "styles/lidar-survey/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "636b6c2438cd6d5fb933ead4824c9647936cf291",
+      "size": 498,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/636b6c2438cd6d5fb933ead4824c9647936cf291"
+    },
+    {
+      "path": "styles/living-screencast/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d54ca48cc3f8a1d9bd739419997f01853f4186f0",
+      "size": 11503,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/d54ca48cc3f8a1d9bd739419997f01853f4186f0"
+    },
+    {
+      "path": "styles/living-screencast/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e5f8ff57959e24fff6c62407ac3ac84355e2231",
+      "size": 531,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/2e5f8ff57959e24fff6c62407ac3ac84355e2231"
+    },
+    {
+      "path": "styles/lowpoly-island/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fff411fe84ff3d59f8ddb967fc01d669a1c2f0e6",
+      "size": 12310,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/fff411fe84ff3d59f8ddb967fc01d669a1c2f0e6"
+    },
+    {
+      "path": "styles/lowpoly-island/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "090f069c33b6970c49d844936abc81d0ac5acefd",
+      "size": 530,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/090f069c33b6970c49d844936abc81d0ac5acefd"
+    },
+    {
+      "path": "styles/memphis-diorama/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f4fa529e8341b0eae48c2e7ec6d09743fbb06db",
+      "size": 19589,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/6f4fa529e8341b0eae48c2e7ec6d09743fbb06db"
+    },
+    {
+      "path": "styles/memphis-diorama/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c897a1272e4ae03a28c018f086d7d6778f48cf0",
+      "size": 561,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/5c897a1272e4ae03a28c018f086d7d6778f48cf0"
+    },
+    {
+      "path": "styles/microgame/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4a3a403da7b070aaaadcf88d38164b3e4cc05b7",
+      "size": 12563,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/a4a3a403da7b070aaaadcf88d38164b3e4cc05b7"
+    },
+    {
+      "path": "styles/microgame/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38cdd30a6d630dbee1ca23717c8f21666617424f",
+      "size": 489,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/38cdd30a6d630dbee1ca23717c8f21666617424f"
+    },
+    {
+      "path": "styles/microscope/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3a4d081774167aa754fa47d8c2055e483519335",
+      "size": 13153,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f3a4d081774167aa754fa47d8c2055e483519335"
+    },
+    {
+      "path": "styles/microscope/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c7b4a0f61dfcd72afd9258cfeb54a0f6e8ff52a",
+      "size": 532,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/1c7b4a0f61dfcd72afd9258cfeb54a0f6e8ff52a"
+    },
+    {
+      "path": "styles/midcentury-toon/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22ca95355affd767f0e9c49b0dae5aa0110136c7",
+      "size": 12620,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/22ca95355affd767f0e9c49b0dae5aa0110136c7"
+    },
+    {
+      "path": "styles/midcentury-toon/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "890fd78450dc2cbd4c4570677e85b73bf7e5d5ff",
+      "size": 459,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/890fd78450dc2cbd4c4570677e85b73bf7e5d5ff"
+    },
+    {
+      "path": "styles/news-package/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "541cfef02104f45f3c68b613ee00c4f6eeccdc2b",
+      "size": 20620,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/541cfef02104f45f3c68b613ee00c4f6eeccdc2b"
+    },
+    {
+      "path": "styles/news-package/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75d34c319f957a22272a245f4a7667f509ec635f",
+      "size": 546,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/75d34c319f957a22272a245f4a7667f509ec635f"
+    },
+    {
+      "path": "styles/newsreel/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "018f310f3b916d601b2f87004184f407bbbfa629",
+      "size": 17809,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/018f310f3b916d601b2f87004184f407bbbfa629"
+    },
+    {
+      "path": "styles/newsreel/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f65d2935bf9d9d24ca97ea851a3b851f0af97a91",
+      "size": 532,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f65d2935bf9d9d24ca97ea851a3b851f0af97a91"
+    },
+    {
+      "path": "styles/one-line/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5731a7f84b07772860db04c3359aefde9642d67",
+      "size": 11372,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/e5731a7f84b07772860db04c3359aefde9642d67"
+    },
+    {
+      "path": "styles/one-line/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db25ff77adbf11427fbbffd85df7ee87212dac64",
+      "size": 475,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/db25ff77adbf11427fbbffd85df7ee87212dac64"
+    },
+    {
+      "path": "styles/paper-lantern/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7c5d727c362041c962a43300a6c1ef0d6ac7abd",
+      "size": 14162,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/b7c5d727c362041c962a43300a6c1ef0d6ac7abd"
+    },
+    {
+      "path": "styles/paper-lantern/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85c24b6fe5f35aedecd42f0da3f42760eae292d5",
+      "size": 636,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/85c24b6fe5f35aedecd42f0da3f42760eae292d5"
+    },
+    {
+      "path": "styles/paper-popup/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf00194c3d7e57f646ef0abc4d4a12e7094eeddd",
+      "size": 12095,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/cf00194c3d7e57f646ef0abc4d4a12e7094eeddd"
+    },
+    {
+      "path": "styles/paper-popup/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fea532a139285c1246359103f68edad63ca7bf03",
+      "size": 526,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/fea532a139285c1246359103f68edad63ca7bf03"
+    },
+    {
+      "path": "styles/papercut-red/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f870e33d104bf435331feff95d1a23bed890675",
+      "size": 12450,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/7f870e33d104bf435331feff95d1a23bed890675"
+    },
+    {
+      "path": "styles/papercut-red/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da5be1ef15c39f89bcc65fef67722bb39b89588",
+      "size": 531,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/9da5be1ef15c39f89bcc65fef67722bb39b89588"
+    },
+    {
+      "path": "styles/pictogram-motion/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "def2fcff4c5c085c6c0b3b6f99326cbf2058aca2",
+      "size": 13325,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/def2fcff4c5c085c6c0b3b6f99326cbf2058aca2"
+    },
+    {
+      "path": "styles/pictogram-motion/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f964c69f0f888895c05f430fcca8e59c4d5274d0",
+      "size": 819,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f964c69f0f888895c05f430fcca8e59c4d5274d0"
+    },
+    {
+      "path": "styles/pixel-rpg/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "373eec9ff3188ad86a8ed5fd48840fedc6e14788",
+      "size": 11284,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/373eec9ff3188ad86a8ed5fd48840fedc6e14788"
+    },
+    {
+      "path": "styles/pixel-rpg/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "057925c27b639e0194d222d6e84a156a88ed27bb",
+      "size": 462,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/057925c27b639e0194d222d6e84a156a88ed27bb"
+    },
+    {
+      "path": "styles/printed-long-take/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10f499913d3a587c59d2211916d343b4061fed7a",
+      "size": 21023,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/10f499913d3a587c59d2211916d343b4061fed7a"
+    },
+    {
+      "path": "styles/printed-long-take/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c59f27b1a52fcabb80f47d173a25f23838956c77",
+      "size": 505,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/c59f27b1a52fcabb80f47d173a25f23838956c77"
+    },
+    {
+      "path": "styles/risograph/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b2f4e2c53ff87ae5cddd4e16f6ab4b8a765c4b3",
+      "size": 12030,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/4b2f4e2c53ff87ae5cddd4e16f6ab4b8a765c4b3"
+    },
+    {
+      "path": "styles/risograph/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42bc33efe8257d5146c0308da9bbd5be4cbd2ce8",
+      "size": 574,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/42bc33efe8257d5146c0308da9bbd5be4cbd2ce8"
+    },
+    {
+      "path": "styles/rubber-hose/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e4212fdbdbef1ac35dd27e6589b4ff9b4076a4d",
+      "size": 12791,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/7e4212fdbdbef1ac35dd27e6589b4ff9b4076a4d"
+    },
+    {
+      "path": "styles/rubber-hose/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac8e09611844af1d8b5778c8f963a12be5566795",
+      "size": 460,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/ac8e09611844af1d8b5778c8f963a12be5566795"
+    },
+    {
+      "path": "styles/satellite-briefing/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4072dd69bcf68fcc539519e3d048cb1175e20101",
+      "size": 13232,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/4072dd69bcf68fcc539519e3d048cb1175e20101"
+    },
+    {
+      "path": "styles/satellite-briefing/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e68fdfb42ac47aa04e8af4dc021878cf3cdbe44",
+      "size": 523,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/0e68fdfb42ac47aa04e8af4dc021878cf3cdbe44"
+    },
+    {
+      "path": "styles/scifi-toon/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b2a410d0c6fc2587ae6c62603e128daf6042c1",
+      "size": 12755,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/39b2a410d0c6fc2587ae6c62603e128daf6042c1"
+    },
+    {
+      "path": "styles/scifi-toon/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce5287262b7907590ab1e405ae4ade7bef89d725",
+      "size": 502,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/ce5287262b7907590ab1e405ae4ade7bef89d725"
+    },
+    {
+      "path": "styles/shadow-puppet/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75b626f05d270175d077b64c7cf3592368c03888",
+      "size": 12787,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/75b626f05d270175d077b64c7cf3592368c03888"
+    },
+    {
+      "path": "styles/shadow-puppet/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec0e0708fef006975e6bf8176d6ef0e3ddf1d57e",
+      "size": 475,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/ec0e0708fef006975e6bf8176d6ef0e3ddf1d57e"
+    },
+    {
+      "path": "styles/silent-film/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "144cf0ed868aad8e9e5435ba9c6a6b3da5a5821a",
+      "size": 11585,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/144cf0ed868aad8e9e5435ba9c6a6b3da5a5821a"
+    },
+    {
+      "path": "styles/silent-film/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f5349fd0348103772241918aac78b43312e753d",
+      "size": 499,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/7f5349fd0348103772241918aac78b43312e753d"
+    },
+    {
+      "path": "styles/silkscreen-poster/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5de0c331c4368fdb4e755a6ddf3bb2ed7b33f3b4",
+      "size": 13426,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/5de0c331c4368fdb4e755a6ddf3bb2ed7b33f3b4"
+    },
+    {
+      "path": "styles/silkscreen-poster/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db2897cab6dd813a62f50dfc8b3d76d54910447e",
+      "size": 633,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/db2897cab6dd813a62f50dfc8b3d76d54910447e"
+    },
+    {
+      "path": "styles/spy-titles/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cef2fc775f5474da05598eeb6ffcf9194ec1fe6",
+      "size": 11411,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/3cef2fc775f5474da05598eeb6ffcf9194ec1fe6"
+    },
+    {
+      "path": "styles/spy-titles/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "210236fe0c776a6b6945911d681ea69c48629d74",
+      "size": 536,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/210236fe0c776a6b6945911d681ea69c48629d74"
+    },
+    {
+      "path": "styles/stained-glass/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0527b0b117e62bee1c9201665c6bb42569ee12e",
+      "size": 11945,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/b0527b0b117e62bee1c9201665c6bb42569ee12e"
+    },
+    {
+      "path": "styles/stained-glass/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81a16dd4c7f281fa4c5f2dae93a8d7f92f0bc208",
+      "size": 517,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/81a16dd4c7f281fa4c5f2dae93a8d7f92f0bc208"
+    },
+    {
+      "path": "styles/swiss-motion/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93020f3881000381785f1cda8b551c7838b25a56",
+      "size": 10696,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/93020f3881000381785f1cda8b551c7838b25a56"
+    },
+    {
+      "path": "styles/swiss-motion/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecab2b1fe57598daa632275b6138e94506fdad9d",
+      "size": 528,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/ecab2b1fe57598daa632275b6138e94506fdad9d"
+    },
+    {
+      "path": "styles/teardown/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d145b6bc44c388df2d62437bc14ffc5d16e0036",
+      "size": 13572,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/3d145b6bc44c388df2d62437bc14ffc5d16e0036"
+    },
+    {
+      "path": "styles/teardown/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da505e387a810b1d1673ca8fdf78a37860625eb9",
+      "size": 532,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/da505e387a810b1d1673ca8fdf78a37860625eb9"
+    },
+    {
+      "path": "styles/telestrator/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e68778a66484135cd991eb6522deb07bad3c8994",
+      "size": 16954,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/e68778a66484135cd991eb6522deb07bad3c8994"
+    },
+    {
+      "path": "styles/telestrator/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77a0a030da72f47197e5b95b11af68405584e68e",
+      "size": 523,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/77a0a030da72f47197e5b95b11af68405584e68e"
+    },
+    {
+      "path": "styles/tilt-shift/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b65726e68f73b051385a4fd4f9071f2c090076bd",
+      "size": 12077,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/b65726e68f73b051385a4fd4f9071f2c090076bd"
+    },
+    {
+      "path": "styles/tilt-shift/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b3dc99e870621639e0181b68629498b138ee174",
+      "size": 447,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/8b3dc99e870621639e0181b68629498b138ee174"
+    },
+    {
+      "path": "styles/transit-map/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efd6d07099090253d1f1e6a0406abb4a50ce53a8",
+      "size": 30614,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/efd6d07099090253d1f1e6a0406abb4a50ce53a8"
+    },
+    {
+      "path": "styles/transit-map/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1bcbd1e41b3a1076085a7eff057098f380f9682",
+      "size": 477,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/c1bcbd1e41b3a1076085a7eff057098f380f9682"
+    },
+    {
+      "path": "styles/ukiyoe/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4af11e9ad82873774ecf867b7aa4463544d5852",
+      "size": 12441,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/d4af11e9ad82873774ecf867b7aa4463544d5852"
+    },
+    {
+      "path": "styles/ukiyoe/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2a474d196ab26fb2260582d6a6a5233388e2f7e",
+      "size": 564,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/f2a474d196ab26fb2260582d6a6a5233388e2f7e"
+    },
+    {
+      "path": "styles/urban-sketch/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "033bc2e22493e5a93dcd3434c062452010f6fb42",
+      "size": 11766,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/033bc2e22493e5a93dcd3434c062452010f6fb42"
+    },
+    {
+      "path": "styles/urban-sketch/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c925b9925367dc2035b3b0d8d0875f060162e982",
+      "size": 517,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/c925b9925367dc2035b3b0d8d0875f060162e982"
+    },
+    {
+      "path": "styles/visual-investigation/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5addf529a6345c3bad299bedd5826d2361b26d2b",
+      "size": 18977,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/5addf529a6345c3bad299bedd5826d2361b26d2b"
+    },
+    {
+      "path": "styles/visual-investigation/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe414f315dc15201c21b748ec35b7594951d260",
+      "size": 562,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/afe414f315dc15201c21b748ec35b7594951d260"
+    },
+    {
+      "path": "styles/watercolor/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26068ee10232bde36f40f2b49c1b9ea96ee010fb",
+      "size": 11099,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/26068ee10232bde36f40f2b49c1b9ea96ee010fb"
+    },
+    {
+      "path": "styles/watercolor/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c68618fa3fb388a7b334c8963f88649e07cbf467",
+      "size": 506,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/c68618fa3fb388a7b334c8963f88649e07cbf467"
+    },
+    {
+      "path": "styles/white-model/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dcb279f1bcd1562f9448cf8d7fb4516cad244fd",
+      "size": 13581,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/9dcb279f1bcd1562f9448cf8d7fb4516cad244fd"
+    },
+    {
+      "path": "styles/white-model/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02217d4c04a2b953e04882ad8c0ac595bc21580e",
+      "size": 526,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/02217d4c04a2b953e04882ad8c0ac595bc21580e"
+    },
+    {
+      "path": "styles/whiteboard/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf164bab6fb2e9f967a9f2a8b6e56d8dd928d79",
+      "size": 11676,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/faf164bab6fb2e9f967a9f2a8b6e56d8dd928d79"
+    },
+    {
+      "path": "styles/whiteboard/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73362ba30daa18dff0ce1dd68e5c8a4f2ff6d4e6",
+      "size": 527,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/73362ba30daa18dff0ce1dd68e5c8a4f2ff6d4e6"
+    },
+    {
+      "path": "styles/woodcut/STYLE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea4f2acb7b5bdf54ae79c39336f241bbb94c4052",
+      "size": 12194,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/ea4f2acb7b5bdf54ae79c39336f241bbb94c4052"
+    },
+    {
+      "path": "styles/woodcut/style.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3550da49ce5f1b51023ab8d9006e8702b2297084",
+      "size": 483,
+      "url": "https://api.github.com/repos/lemomo-ai/lemo-opuscar/git/blobs/3550da49ce5f1b51023ab8d9006e8702b2297084"
+    }
+  ]
+}

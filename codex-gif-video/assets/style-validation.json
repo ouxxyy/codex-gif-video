@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "styles": {
+    "midcentury-toon": {
+      "state": "cross_style_color_lock_failed",
+      "adaptation_sha256": "90c1ac35dc5aef61ad0a1fca01f3d47b1602cc80f8a3dd4c28cdebc1c0f4084b",
+      "scope": "static all-frame identity check; no complete playback claim",
+      "evidence": [
+        "assets/samples/identity-results.json",
+        "assets/samples/midcentury-wave-v2.gif"
+      ],
+      "known_limits": [
+        "仅一位虚构角色的小样，未验证全部任务。",
+        "模型响应身份未回传，连续播放未验收。",
+        "从纸艺换到该风格时服装保色未通过，不能自动批准人物迁移。"
+      ]
+    },
+    "paper-popup": {
+      "state": "identity_frames_pass_limited_sample",
+      "adaptation_sha256": "29ff2f384ccdbe9a6e24b2b99f57bce2c0ece3cd87a3eda1b17ad9629e1a71b0",
+      "scope": "static all-frame identity check; no complete playback claim",
+      "evidence": [
+        "assets/samples/identity-results.json",
+        "assets/samples/paper-wave.gif",
+        "assets/samples/paper-point.gif"
+      ],
+      "known_limits": [
+        "仅一位虚构角色的小样，未验证全部任务。",
+        "模型响应身份未回传，连续播放未验收。"
+      ]
+    }
+  }
+}

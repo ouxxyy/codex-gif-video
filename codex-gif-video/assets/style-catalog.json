@@ -1,0 +1,3365 @@
+{
+  "schema_version": 1,
+  "catalog_version": "1.0.0",
+  "lemo_commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+  "lemo_style_count": 66,
+  "native_baseline_count": 3,
+  "style_count": 69,
+  "styles": [
+    {
+      "id": "archive-lighttable",
+      "name_zh": "档案灯台",
+      "name_en": "Archive Light Table",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "档案灯台",
+        "Archive Light Table",
+        "archive lighttable"
+      ],
+      "keywords": [
+        "档案",
+        "历史文献",
+        "馆藏",
+        "老照片",
+        "档案故事",
+        "archive",
+        "museum"
+      ],
+      "use_cases": [
+        "Brand history",
+        "Archive stories",
+        "Museums"
+      ],
+      "appearance": "冷白背光灯台上的真实档案纸张、底片和放大镜，现代克制的目录感，单一橙色强调。",
+      "motion": "放大镜落下、局部显影或标记渐亮；原始证据内容保持固定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/archive-lighttable/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/archive-lighttable/STYLE.md",
+        "local_path": "references/lemo-source/styles/archive-lighttable/STYLE.md",
+        "sha256": "2f18ac9a42822b7a9941866c42b0642e5417dea5431d61f141f6e11b29c1ec14"
+      },
+      "source_essence": "Real archive objects (glass negatives, slides, letters, telegrams, clippings, drawings) lie on a cool, backlit light table. A loupe comes down on one of them, and inside the glass the object comes alive: a negative turns positive, a line of type lights up, a number lifts off the page, a photograph opens into depth. Precise catalogue numbers, dates and readings are pinned to the objects. Clean, modern and quiet, with no vintage filter."
+    },
+    {
+      "id": "art-deco",
+      "name_zh": "装饰艺术",
+      "name_en": "Art Deco",
+      "family_zh": "图形与排版",
+      "family_en": "Graphic & Type",
+      "aliases": [
+        "装饰艺术",
+        "Art Deco",
+        "art deco"
+      ],
+      "keywords": [
+        "装饰艺术",
+        "奢华",
+        "酒店",
+        "典礼",
+        "邀请函",
+        "art deco",
+        "luxury",
+        "gala"
+      ],
+      "use_cases": [
+        "Luxury & hospitality",
+        "Galas",
+        "Invitations"
+      ],
+      "appearance": "黑色漆面、金色雕刻线、象牙白和轴对称几何，仅主体保留一种宝石色。",
+      "motion": "几何从中轴对称展开，灯点依次点亮，动作有机械停稳。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/art-deco/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/art-deco/STYLE.md",
+        "local_path": "references/lemo-source/styles/art-deco/STYLE.md",
+        "sha256": "d73b30c0fa6d153487549d32d8c6c599733cf5e7576badec862a12da6d284761"
+      },
+      "source_essence": "Black lacquer, engraved gold line and airbrushed geometry: a 1930s poster that moves. Every composition has a centre axis, transitions open or close along it, and light arrives as bulbs switching on one by one."
+    },
+    {
+      "id": "ascii-crt",
+      "name_zh": "ASCII / CRT 终端",
+      "name_en": "ASCII / CRT Terminal",
+      "family_zh": "图形与排版",
+      "family_en": "Graphic & Type",
+      "aliases": [
+        "ASCII / CRT 终端",
+        "ASCII / CRT Terminal",
+        "ascii crt"
+      ],
+      "keywords": [
+        "终端",
+        "命令行",
+        "代码界面",
+        "开发工具",
+        "ascii",
+        "crt",
+        "terminal"
+      ],
+      "use_cases": [
+        "Developer tools",
+        "Sci-fi",
+        "Tech brands"
+      ],
+      "appearance": "单色磷光 CRT 终端，等宽字符网格、暗底与微弱扫描线；不承诺准确可读程序文本。",
+      "motion": "图形按字符格逐步显现或滚动，局部磷光余辉平稳消退。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Visual/layout grammar only; exact text and subtitles belong to downstream tools."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/ascii-crt/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/ascii-crt/STYLE.md",
+        "local_path": "references/lemo-source/styles/ascii-crt/STYLE.md",
+        "sha256": "cbe0b8957c785a165f85ccb3b8eba61c30c0462b32983db6a16c76046a2bb333"
+      },
+      "source_essence": "Everything on screen is a real character on a monospace grid, lit by the phosphor of an old monochrome CRT."
+    },
+    {
+      "id": "backrooms",
+      "name_zh": "后室 / 新怪谈",
+      "name_en": "Liminal Found Footage",
+      "family_zh": "电影与时代",
+      "family_en": "Cinema & Eras",
+      "aliases": [
+        "后室 / 新怪谈",
+        "Liminal Found Footage",
+        "backrooms"
+      ],
+      "keywords": [
+        "后室",
+        "怪谈",
+        "恐怖",
+        "悬疑",
+        "空走廊",
+        "liminal",
+        "horror"
+      ],
+      "use_cases": [
+        "Horror",
+        "Mystery & ARG",
+        "Game teasers"
+      ],
+      "appearance": "荧光灯照明的空旷重复室内，病态芥末黄或机构绿，旧摄像机质感。",
+      "motion": "轻微前移与呼吸式手持，远处门缓慢移动；不以剧烈闪烁制造动作。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/backrooms/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/backrooms/STYLE.md",
+        "local_path": "references/lemo-source/styles/backrooms/STYLE.md",
+        "sha256": "2a3697a1ce37d0fbae3281220ae6154eeb9789233f1fae472d55ac169ba26fb4"
+      },
+      "source_essence": "Camcorder tapes recovered from empty, endless, fluorescent-lit spaces. Rules instead of monsters."
+    },
+    {
+      "id": "blueprint",
+      "name_zh": "蓝图 / 工程制图",
+      "name_en": "Blueprint",
+      "family_zh": "图形与排版",
+      "family_en": "Graphic & Type",
+      "aliases": [
+        "蓝图 / 工程制图",
+        "Blueprint",
+        "blueprint"
+      ],
+      "keywords": [
+        "工程原理",
+        "机械结构",
+        "蓝图",
+        "工程制图",
+        "硬件原理",
+        "blueprint",
+        "engineering"
+      ],
+      "use_cases": [
+        "Engineering",
+        "Hardware launches",
+        "Tech explainers"
+      ],
+      "appearance": "普鲁士蓝底与白色工程线，中心线、轮廓、剖面层次清晰；图示为说明而非未经验证的工程图。",
+      "motion": "先中心线再外轮廓与局部剖面，零件沿装配轴分离后归位。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/blueprint/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/blueprint/STYLE.md",
+        "local_path": "references/lemo-source/styles/blueprint/STYLE.md",
+        "sha256": "de01fc7fcb38b17b58eb017c9cdbcb36b9242b029435a33587614c93088e1717"
+      },
+      "source_essence": "Engineering drawings that come alive on a sheet of cyanotype paper: white technical line work on Prussian blue, drawn in drafting order, with annotations that move."
+    },
+    {
+      "id": "brick-toy",
+      "name_zh": "积木玩具",
+      "name_en": "Brick Toy",
+      "family_zh": "材质与 3D",
+      "family_en": "Materials & 3D",
+      "aliases": [
+        "积木玩具",
+        "Brick Toy",
+        "brick toy"
+      ],
+      "keywords": [
+        "积木",
+        "拼装",
+        "玩具",
+        "搭建",
+        "brick",
+        "toy"
+      ],
+      "use_cases": [
+        "Toys & kids",
+        "Product builds",
+        "Space"
+      ],
+      "appearance": "带圆形凸点的塑料积木小世界，饱和主色、真实桌面和微距接触阴影。",
+      "motion": "硬质零件沿弧线靠近并扣合，人物只绕关节转动、不弯曲塑料。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/brick-toy/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/brick-toy/STYLE.md",
+        "local_path": "references/lemo-source/styles/brick-toy/STYLE.md",
+        "sha256": "29b23e846951856b722a698a03c9458cfc17b4fc71d044f45d773acf2a742768"
+      },
+      "source_essence": "Stop-motion toy-brick films shot like macro photography on a real desk: a world built from interlocking plastic bricks with round studs, animated a pose at a time."
+    },
+    {
+      "id": "briefing-board",
+      "name_zh": "工程简报板",
+      "name_en": "Engineering Briefing Board",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "工程简报板",
+        "Engineering Briefing Board",
+        "briefing board"
+      ],
+      "keywords": [
+        "工程简报",
+        "方案比较",
+        "决策板",
+        "工程方案",
+        "briefing",
+        "option comparison"
+      ],
+      "use_cases": [
+        "Engineering",
+        "Option comparisons",
+        "Briefings"
+      ],
+      "appearance": "真实搪瓷白板、擦除痕迹、照片卡片、磁铁和石墨蓝红标记，红色仅用于决策重点。",
+      "motion": "照片带重量落板，磁铁固定，关系线逐条连通，已放好的证据不漂移。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/briefing-board/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/briefing-board/STYLE.md",
+        "local_path": "references/lemo-source/styles/briefing-board/STYLE.md",
+        "sha256": "44669da808da4ed37e2a4a0f6e5d2b23008775a3c4870add04641d714e9f323d"
+      },
+      "source_essence": "One real whiteboard wall, filmed: window light on enamel, ghosts of erased marker, frame and tray. Cut-out photographs of real things land on it with weight; tags, magnets, a ruler and stamps are pinned to it; marker ink draws itself in three colours with fixed meanings. The camera rides the lines from fact to fact and only at the end pulls back to show the whole briefing."
+    },
+    {
+      "id": "caption-news",
+      "name_zh": "字幕新闻",
+      "name_en": "Caption News",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "字幕新闻",
+        "Caption News",
+        "caption news"
+      ],
+      "keywords": [
+        "字幕新闻",
+        "新闻摘要",
+        "报道解读",
+        "news captions",
+        "social news"
+      ],
+      "use_cases": [
+        "Social news",
+        "Report explainers",
+        "Data shorts"
+      ],
+      "appearance": "深色账本卡片、象牙白与黄色重点块，新闻素材窗口；本插件只产视觉底板，不烧录字幕。",
+      "motion": "单个重点块或资料窗口有力进入后停稳；不生成新闻事实或随机文字。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence.",
+        "Visual/layout grammar only; exact text and subtitles belong to downstream tools."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/caption-news/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/caption-news/STYLE.md",
+        "local_path": "references/lemo-source/styles/caption-news/STYLE.md",
+        "sha256": "71d67fb2f47eac1489bc96d302f9b206700cb0533c332e3650b498e3e2014603"
+      },
+      "source_essence": "Social-video news that reads with the sound off. Real footage, photos and the source document are the ground; huge captions are the lead actor, slammed in a chunk at a time with one keyword on a yellow block. Hard cuts on a music grid, numbers that roll, a source tag that slides in whenever a figure appears, and the original document highlighted on screen before its number is believed. 16:9, built for a feed."
+    },
+    {
+      "id": "cel-anime-80s",
+      "name_zh": "80 年代赛璐璐动画",
+      "name_en": "80s Cel Anime",
+      "family_zh": "卡通与动画",
+      "family_en": "Cartoon & Anime",
+      "aliases": [
+        "80 年代赛璐璐动画",
+        "80s Cel Anime",
+        "cel anime 80s"
+      ],
+      "keywords": [
+        "赛璐璐",
+        "80年代动画",
+        "日系动画",
+        "怀旧动漫",
+        "cel anime",
+        "ova"
+      ],
+      "use_cases": [
+        "Music videos",
+        "Game trailers",
+        "Nostalgia"
+      ],
+      "appearance": "两阶平涂赛璐璐人物、喷绘背景、克制背光霓虹与轻微老录像质感。",
+      "motion": "用少量清晰关键姿势、眨眼和衣发跟随表达动作，背景和脸部线稿保持稳定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/cel-anime-80s/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/cel-anime-80s/STYLE.md",
+        "local_path": "references/lemo-source/styles/cel-anime-80s/STYLE.md",
+        "sha256": "1e16f5c6f90ebf09556ec94d37434400d309c978e00ee89e9d38dec476664eaf"
+      },
+      "source_essence": "Hand-painted cel animation from the golden age of Japanese OVAs, re-created in code: flat two-tone cels over airbrushed backgrounds, backlit neon, limited-animation timing, played back as a late-80s videotape on a CRT television."
+    },
+    {
+      "id": "chalkboard",
+      "name_zh": "黑板粉笔",
+      "name_en": "Chalkboard",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "黑板粉笔",
+        "Chalkboard",
+        "chalkboard"
+      ],
+      "keywords": [
+        "黑板",
+        "粉笔",
+        "课堂",
+        "辟谣",
+        "概念纠正",
+        "chalkboard",
+        "myth"
+      ],
+      "use_cases": [
+        "Word origins",
+        "Myth-busting",
+        "Lessons"
+      ],
+      "appearance": "深绿石板、白粉笔结构和一种强调色，保留擦除后的粉尘痕迹。",
+      "motion": "图示按笔顺渐出、一次擦去错误关系、在原位补上正确关系；文字交给下游。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Visual/layout grammar only; exact text and subtitles belong to downstream tools."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/chalkboard/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/chalkboard/STYLE.md",
+        "local_path": "references/lemo-source/styles/chalkboard/STYLE.md",
+        "sha256": "7f89f1a4694805e6bc767050007a6b44f2b7ab2474b0e3244032d3a0269b3e1c"
+      },
+      "source_essence": "A real classroom blackboard on which chalk writes itself, stroke by stroke in true stroke order, with no hand, no chalk stick and no eraser in sight. One idea is taught the way a teacher does it: write what people think, wipe it with one pass, write what is true in the same place."
+    },
+    {
+      "id": "circuit-board",
+      "name_zh": "电路板",
+      "name_en": "Circuit Board",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "电路板",
+        "Circuit Board",
+        "circuit board"
+      ],
+      "keywords": [
+        "电路",
+        "电流",
+        "信号流",
+        "芯片",
+        "供电",
+        "电网",
+        "circuit",
+        "signal"
+      ],
+      "use_cases": [
+        "Energy",
+        "Supply chains",
+        "Devices"
+      ],
+      "appearance": "俯视绿色阻焊板、铜线、金色焊盘，琥珀色或青色光代表一种明确的流。",
+      "motion": "光沿铜线前进、经过节点短暂点亮，分流和方向与所讲机制一致。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/circuit-board/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/circuit-board/STYLE.md",
+        "local_path": "references/lemo-source/styles/circuit-board/STYLE.md",
+        "sha256": "3f5244726e732a8407355bebdec309942410104af32c956372ff4f1477a0cd9b"
+      },
+      "source_essence": "The subject is drawn as a printed circuit board seen from straight above: the world is copper under green solder mask, routes are traces, places are pads, words are white silkscreen, and what flows (power, water, signals, goods) is light running along the copper. The camera rides that light and jumps between the scale of a map and the scale of a single component."
+    },
+    {
+      "id": "city-symphony",
+      "name_zh": "延时交响",
+      "name_en": "Time-lapse Symphony",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "延时交响",
+        "Time-lapse Symphony",
+        "city symphony"
+      ],
+      "keywords": [
+        "城市延时",
+        "车流",
+        "人潮",
+        "城市节奏",
+        "time lapse",
+        "city symphony"
+      ],
+      "use_cases": [
+        "City films",
+        "Music montages",
+        "Openers"
+      ],
+      "appearance": "城市建筑与交通的连续景观，日光或夜景光流，单一暖色重点。",
+      "motion": "在一个固定机位中让云、车流或人流形成可读节奏；不是合成真实延时证据。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/city-symphony/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/city-symphony/STYLE.md",
+        "local_path": "references/lemo-source/styles/city-symphony/STYLE.md",
+        "sha256": "8b78d2b08cadb045ac1649cade1e5274fba935b1177c64c176e7567c6e8b31e1"
+      },
+      "source_essence": "A city film cut like a piece of minimalist music: time-lapse turns traffic, crowds and clouds into rivers of light, the cuts get denser with the score's subdivisions, one thing is slowed almost to a stop, and the film ends on a hard cut to black on a downbeat. No narrator. The music carries it."
+    },
+    {
+      "id": "countdown",
+      "name_zh": "实时倒计时分屏",
+      "name_en": "Live Countdown Split-screen",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "实时倒计时分屏",
+        "Live Countdown Split-screen",
+        "countdown"
+      ],
+      "keywords": [
+        "倒计时",
+        "发射时刻",
+        "同步分屏",
+        "countdown",
+        "launch moment"
+      ],
+      "use_cases": [
+        "Launches",
+        "Countdowns",
+        "Live events"
+      ],
+      "appearance": "暗色同步窗口和橙色时间标记的布局语法，不生成准确计时器或直播画面。",
+      "motion": "面板逐步汇聚、在一个明确事件发生时合为单一画面。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence.",
+        "Visual/layout grammar only; exact text and subtitles belong to downstream tools."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/countdown/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/countdown/STYLE.md",
+        "local_path": "references/lemo-source/styles/countdown/STYLE.md",
+        "sha256": "867cca6e0c9bb0d6fb914cc4e9a2e295623ecd345fda9bd00bc362ff233f220f"
+      },
+      "source_essence": "An edit style, not a look. Real footage of one event with a known zero (a launch, a verdict, a final whistle, polls closing), shown in real time: screen time equals event time, a clock ticks every second, and the screen splits into more and more cells as the moment nears, every cell showing the same second. At zero the cells merge into one picture and the clock flips."
+    },
+    {
+      "id": "crayon-book",
+      "name_zh": "蜡笔儿童绘本",
+      "name_en": "Crayon Picture Book",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "蜡笔儿童绘本",
+        "Crayon Picture Book",
+        "crayon book"
+      ],
+      "keywords": [
+        "蜡笔",
+        "儿童绘本",
+        "睡前故事",
+        "儿童学习",
+        "crayon",
+        "kids learning"
+      ],
+      "use_cases": [
+        "Picture books",
+        "Bedtime stories",
+        "Kids' learning"
+      ],
+      "appearance": "有纸齿的蜡笔线和饱和蜡色，深靛或棕色轮廓，纸白充分留出。",
+      "motion": "线与色按绘画顺序出现，角色做清楚的大动作，底纸纹理固定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/crayon-book/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/crayon-book/STYLE.md",
+        "local_path": "references/lemo-source/styles/crayon-book/STYLE.md",
+        "sha256": "ba558478fe519fa6777fe28fa7d1980117297c7beb6fe2e366ef6f00688aa175"
+      },
+      "source_essence": "A picture-book page drawn live in wax crayon on toothy paper, with a watercolour wash that reveals what the crayon was hiding."
+    },
+    {
+      "id": "dark-keynote",
+      "name_zh": "暗色科技发布",
+      "name_en": "Dark Tech Keynote",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "暗色科技发布",
+        "Dark Tech Keynote",
+        "dark keynote"
+      ],
+      "keywords": [
+        "科技发布",
+        "SaaS",
+        "软件发布",
+        "产品发布会",
+        "keynote",
+        "saas"
+      ],
+      "use_cases": [
+        "Product launches",
+        "SaaS",
+        "Keynotes"
+      ],
+      "appearance": "近黑冷灰舞台、细网格、软光和一个品牌强调色，界面模块精确排列。",
+      "motion": "模块快速滑入并短暂收势，光扫揭示产品结构，禁止无目的漂浮。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/dark-keynote/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/dark-keynote/STYLE.md",
+        "local_path": "references/lemo-source/styles/dark-keynote/STYLE.md",
+        "sha256": "b0791b5e95f56bf46c621e6064d426ebbee810c7515fb87e951b73668a2a0d24"
+      },
+      "source_essence": "A software launch film where the interface itself is the star: near-black gradient, hairline grid, soft light, one brand accent, and UI that moves with snap-grid precision. Light reveals, one giant number, and a sound design that is as ordered as the pixels."
+    },
+    {
+      "id": "data-physical",
+      "name_zh": "数据实物化",
+      "name_en": "Data Physicalization",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "数据实物化",
+        "Data Physicalization",
+        "data physical"
+      ],
+      "keywords": [
+        "数据实物化",
+        "统计积木",
+        "年度报告",
+        "投资数据",
+        "data physicalization"
+      ],
+      "use_cases": [
+        "Annual reports",
+        "Investor decks",
+        "Energy data"
+      ],
+      "appearance": "中性摄影棚中按真实数据比例构成的块、板或圆片，材质区分系列。",
+      "motion": "单位按所给数量落下堆叠并稳定，不能用随意数量冒充数据。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/data-physical/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/data-physical/STYLE.md",
+        "local_path": "references/lemo-source/styles/data-physical/STYLE.md",
+        "sha256": "2d2e6685b0dcf8a1e2ba2ff904ab02d51aede1f5dbb246fd2f6e81c8d146f208"
+      },
+      "source_essence": "Real statistics built as real objects: every unit is a countable piece of material (a plate, a block, a coin, a bar) stacked to exact scale on a crafted base, shot like a product in a studio — soft key, long shadows, shallow depth of field, physically based materials. The camera reads a number at the edge of one plate, follows the data as it grows, and pulls back until the chart is an installation."
+    },
+    {
+      "id": "dataviz",
+      "name_zh": "数据叙事",
+      "name_en": "Data Storytelling",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "数据叙事",
+        "Data Storytelling",
+        "dataviz"
+      ],
+      "keywords": [
+        "数据图表",
+        "统计趋势",
+        "数据新闻",
+        "报表分析",
+        "dataviz",
+        "chart"
+      ],
+      "use_cases": [
+        "Data journalism",
+        "Reports",
+        "Climate & science"
+      ],
+      "appearance": "奶油色纸面上的红蓝铅笔数据标记，清晰刻度关系与克制的颜色编码。",
+      "motion": "依据所给数据逐个出现标记，重点处停留；不捏造数字、比例或趋势。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/dataviz/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/dataviz/STYLE.md",
+        "local_path": "references/lemo-source/styles/dataviz/STYLE.md",
+        "sha256": "e94013d5a7c548c8844598a671ff0b49bc78770696cbca0d8d00846336f3c67f"
+      },
+      "source_essence": "A chart that tells a story: real data, drawn mark by mark on cream paper by a red–blue pencil, with handwritten notes pinned to the numbers. The chart itself is the camera, the rhythm and the plot."
+    },
+    {
+      "id": "desktop-flythrough",
+      "name_zh": "桌面穿梭",
+      "name_en": "Desktop Flythrough",
+      "family_zh": "材质与 3D",
+      "family_en": "Materials & 3D",
+      "aliases": [
+        "桌面穿梭",
+        "Desktop Flythrough",
+        "desktop flythrough"
+      ],
+      "keywords": [
+        "应用流程",
+        "工具协作",
+        "办公流程",
+        "桌面工作流",
+        "workflow",
+        "app explainer"
+      ],
+      "use_cases": [
+        "App explainers",
+        "Workflows",
+        "Products"
+      ],
+      "appearance": "阳光书桌上的应用纸卡和小型像素玩具角色，纸张与木材尺度对比明显。",
+      "motion": "一个任务被角色从一张卡交到下一张卡，短距离连续跟随，不复现长镜头引擎。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/desktop-flythrough/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/desktop-flythrough/STYLE.md",
+        "local_path": "references/lemo-source/styles/desktop-flythrough/STYLE.md",
+        "sha256": "d8c9113e10d7b3a5f65bbee86643305a5dc29739d0338091e1d0974ecf6d5eb7"
+      },
+      "source_essence": "App screens and tools lie on a sunlit desk as printed paper cards; small pixel characters, popped up into voxel toys, carry the work from card to card, while one unbroken camera flies after them, whips between stops and finally pulls back over the whole desk."
+    },
+    {
+      "id": "engraving",
+      "name_zh": "铜版画",
+      "name_en": "Copperplate Engraving",
+      "family_zh": "印刷与版画",
+      "family_en": "Print & Printmaking",
+      "aliases": [
+        "铜版画",
+        "Copperplate Engraving",
+        "engraving"
+      ],
+      "keywords": [
+        "铜版画",
+        "科学插图",
+        "博物馆",
+        "品牌传承",
+        "engraving",
+        "intaglio"
+      ],
+      "use_cases": [
+        "Museum labels",
+        "Science explainers",
+        "Brand heritage"
+      ],
+      "appearance": "暖纸与深墨构成的铜版线刻，轮廓、排线和交叉排线塑造体积，少量透明矿物色。",
+      "motion": "轮廓到排线逐层刻出，局部细节被放大；已完成线条不爬动。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/engraving/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/engraving/STYLE.md",
+        "local_path": "references/lemo-source/styles/engraving/STYLE.md",
+        "sha256": "0c6816b8b47163d158ae0ea668feecf53dcbef9d1310e27b9e797d9b9e7aac0d"
+      },
+      "source_essence": "An intaglio plate that engraves itself: a burin cuts swelling lines into copper, a proof is pulled, and the figure builds up — outline, hatching, cross-hatching — until engraved lettering, magnified details and a hand-laid wash make a finished plate."
+    },
+    {
+      "id": "game-show",
+      "name_zh": "综艺节奏扁平",
+      "name_en": "Game Show Flat",
+      "family_zh": "游戏",
+      "family_en": "Games",
+      "aliases": [
+        "综艺节奏扁平",
+        "Game Show Flat",
+        "game show"
+      ],
+      "keywords": [
+        "综艺",
+        "节奏游戏",
+        "年终回顾",
+        "科技时间线",
+        "game show",
+        "variety"
+      ],
+      "use_cases": [
+        "Tech timelines",
+        "Year in review",
+        "Variety shows"
+      ],
+      "appearance": "糖果色平涂、粗墨轮廓、放射背景和玩具感吉祥物，单场景一种主色。",
+      "motion": "一个清晰挑战动作配合期待、命中和收势；不生成口号文字或音效。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/game-show/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/game-show/STYLE.md",
+        "local_path": "references/lemo-source/styles/game-show/STYLE.md",
+        "sha256": "cadee8f0ff8cfc206b49d852e5a0b15d7da432ad497fa8b19ac568ce386ff8e3"
+      },
+      "source_essence": "A rhythm-game variety show in flat vector: toy-like mascots with thick ink outlines on candy-coloured stripes and sunbursts, every hit landing on a fixed tempo grid, call-and-response patterns, and a judgement word when each round is won."
+    },
+    {
+      "id": "glass-product",
+      "name_zh": "玻璃质感产品",
+      "name_en": "Glass Product Render",
+      "family_zh": "材质与 3D",
+      "family_en": "Materials & 3D",
+      "aliases": [
+        "玻璃质感产品",
+        "Glass Product Render",
+        "glass product"
+      ],
+      "keywords": [
+        "玻璃",
+        "透明产品",
+        "消费电子",
+        "美妆产品",
+        "glass",
+        "beauty"
+      ],
+      "use_cases": [
+        "Product launches",
+        "Consumer tech",
+        "Beauty"
+      ],
+      "appearance": "黑场摄影棚、透明或磨砂玻璃、条形反光和克制焦散，仅光具有强调色。",
+      "motion": "缓慢转动或单轴展开，光沿边缘扫过，零件稳定闭合。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/glass-product/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/glass-product/STYLE.md",
+        "local_path": "references/lemo-source/styles/glass-product/STYLE.md",
+        "sha256": "630fa80cde0930154ba64f15bce5c8ee0c8dcf48d921253f8c7e3194712c8fb5"
+      },
+      "source_essence": "Launch-film product rendering in transparent and frosted glass: a dark-field studio, strip-light sweeps, dispersion, caustics, light travelling inside the object, slow exploded views that snap shut on a downbeat."
+    },
+    {
+      "id": "halftone-dossier",
+      "name_zh": "复古半调案卷",
+      "name_en": "Halftone Dossier",
+      "family_zh": "印刷与版画",
+      "family_en": "Print & Printmaking",
+      "aliases": [
+        "复古半调案卷",
+        "Halftone Dossier",
+        "halftone dossier"
+      ],
+      "keywords": [
+        "半调",
+        "案卷",
+        "宠物趣事",
+        "幽默调查",
+        "dossier",
+        "halftone"
+      ],
+      "use_cases": [
+        "Humour",
+        "Pet content",
+        "Social shorts"
+      ],
+      "appearance": "奶油档案纸、少量专色半调点、粗轮廓人物和橡皮印章的视觉语法。",
+      "motion": "资料卡落下、图形印章盖下，角色做一个夸张但结构稳定的反应。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/halftone-dossier/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/halftone-dossier/STYLE.md",
+        "local_path": "references/lemo-source/styles/halftone-dossier/STYLE.md",
+        "sha256": "71b4b8f089836d95f6bd8fc3719ae184cbf2be4a04ecd935c6d55d89a5bb558d"
+      },
+      "source_essence": "A retro print case file: cream archive paper, overprinted halftone dots in a few flat inks, huge heavy headlines with misregistered shadows, rubber stamps that slam, and thick-outlined characters. The film is a file that is read out one exhibit at a time."
+    },
+    {
+      "id": "hd-2d",
+      "name_zh": "HD-2D",
+      "name_en": "HD-2D",
+      "family_zh": "游戏",
+      "family_en": "Games",
+      "aliases": [
+        "HD-2D",
+        "HD-2D",
+        "hd 2d"
+      ],
+      "keywords": [
+        "HD-2D",
+        "像素立体",
+        "奇幻冒险",
+        "立体像素",
+        "hd-2d",
+        "fantasy"
+      ],
+      "use_cases": [
+        "Game trailers",
+        "Fantasy",
+        "Story films"
+      ],
+      "appearance": "手工像素角色站在有雾、实灯和真实阴影的微缩立体场景中。",
+      "motion": "角色用清楚的像素姿势行动，灯光与轻雾连贯，保持像素边缘和主体比例。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/hd-2d/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/hd-2d/STYLE.md",
+        "local_path": "references/lemo-source/styles/hd-2d/STYLE.md",
+        "sha256": "bdc5ef4f60d8ba9ff6e5151391a6a62d8da4685d393c242699fd5c6188f0551a"
+      },
+      "source_essence": "Hand-made pixel sprites standing like paper cut-outs inside a lit, fogged, fully 3D diorama, shot from a high three-quarter angle through a tilt-shift lens: a toy world where every lamp throws a real shadow."
+    },
+    {
+      "id": "hologram-hud",
+      "name_zh": "科幻全息界面",
+      "name_en": "Sci-fi Hologram HUD",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "科幻全息界面",
+        "Sci-fi Hologram HUD",
+        "hologram hud"
+      ],
+      "keywords": [
+        "全息",
+        "扫描",
+        "参数演示",
+        "产品扫描",
+        "hologram",
+        "hud"
+      ],
+      "use_cases": [
+        "Spec walkthroughs",
+        "Launch videos",
+        "Trade shows"
+      ],
+      "appearance": "暗场中的冷色发光线框、局部目标框和一个暖色锁定强调。",
+      "motion": "扫描线通过物体，目标框锁定局部，零件小范围打开再闭合；不编造参数。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/hologram-hud/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/hologram-hud/STYLE.md",
+        "local_path": "references/lemo-source/styles/hologram-hud/STYLE.md",
+        "sha256": "81e2c6b0ede2cc211a8dd676417a1ce5efda278514f273c5249165e38ff34573"
+      },
+      "source_essence": "An object is scanned into a glowing wireframe. Target boxes lock onto its parts; each opens in a local exploded view, a leader pulls out, and its number rolls from garbage glyphs into the real value. It may light up, once, into a solid hologram."
+    },
+    {
+      "id": "impasto",
+      "name_zh": "油画厚涂",
+      "name_en": "Impasto Oil Painting",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "油画厚涂",
+        "Impasto Oil Painting",
+        "impasto"
+      ],
+      "keywords": [
+        "厚涂",
+        "油画",
+        "情绪广告",
+        "艺术文化",
+        "impasto",
+        "oil painting"
+      ],
+      "use_cases": [
+        "Music videos",
+        "Art & culture",
+        "Emotional ads"
+      ],
+      "appearance": "调色刀厚油彩形成大块清晰色面，侧光突出颜料脊，焦点边缘硬、背景面安静。",
+      "motion": "主体动作带预备与跟随，颜料纹理附着于物体，静态背景不沸腾。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/impasto/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/impasto/STYLE.md",
+        "local_path": "references/lemo-source/styles/impasto/STYLE.md",
+        "sha256": "38a0dcb2808c2ff03ef721c1319b9145438b4074ed37ab7a09dcf20b7268e062"
+      },
+      "source_essence": "Thick oil paint laid with a palette knife: big, flat, sharp-edged planes of colour, raked by light so every ridge of paint shows. Clarity first: value structure before texture, hard edges at the focus, calm planes everywhere else."
+    },
+    {
+      "id": "ink-wash",
+      "name_zh": "中国水墨",
+      "name_en": "Chinese Ink Wash",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "中国水墨",
+        "Chinese Ink Wash",
+        "ink wash"
+      ],
+      "keywords": [
+        "水墨",
+        "写意",
+        "武侠",
+        "诗意",
+        "中国文化",
+        "ink wash",
+        "wuxia"
+      ],
+      "use_cases": [
+        "Wuxia",
+        "Cultural brands",
+        "Poetry"
+      ],
+      "appearance": "宣纸留白、冷暖浓淡墨层和极少朱砂点，笔触概括山水与姿态。",
+      "motion": "先蓄势静止，再完成一笔般明确的动作，余波随后展开，墨迹不乱爬。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/ink-wash/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/ink-wash/STYLE.md",
+        "local_path": "references/lemo-source/styles/ink-wash/STYLE.md",
+        "sha256": "5d71598f0b9cf4034c6461956b0d8bd63bd33750b4045376044f0d956b01d645"
+      },
+      "source_essence": "Xieyi ink painting on rice paper, animated: blank paper is space, one brushstroke is a mountain, a wave, a gesture or a cut."
+    },
+    {
+      "id": "iso-infographic",
+      "name_zh": "等距信息图",
+      "name_en": "Isometric Infographic",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "等距信息图",
+        "Isometric Infographic",
+        "iso infographic"
+      ],
+      "keywords": [
+        "流程解释",
+        "供应链",
+        "系统图",
+        "机制流程",
+        "等距信息图",
+        "isometric infographic"
+      ],
+      "use_cases": [
+        "Process explainers",
+        "Supply chains",
+        "Annual reports"
+      ],
+      "appearance": "浅中性底上的等距三色块系统，颜色固定编码角色，剖面与连接关系清晰。",
+      "motion": "先出现路径再移动物件，外壳揭开显示内部，信息一次只推进一层。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/iso-infographic/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/iso-infographic/STYLE.md",
+        "local_path": "references/lemo-source/styles/iso-infographic/STYLE.md",
+        "sha256": "a3bf89913255043ff2c8616bff9be9f9536efe1eb7a3b98c755cb4189bd7dff1"
+      },
+      "source_essence": "A system diagram comes alive: an isometric diorama of flat three-tone blocks, thin ink labels and Isotype numbers, where things open up to show their insides and the numbers are drawn, not stated."
+    },
+    {
+      "id": "isometric-picture-book",
+      "name_zh": "等距绘本",
+      "name_en": "Isometric Picture Book",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "等距绘本",
+        "Isometric Picture Book",
+        "isometric picture book"
+      ],
+      "keywords": [
+        "排队",
+        "生活规则",
+        "空间规则",
+        "座位",
+        "等距绘本",
+        "queues"
+      ],
+      "use_cases": [
+        "Everyday rules",
+        "Queues",
+        "Comparisons"
+      ],
+      "appearance": "温暖纸面上的真实等距日常场景，小人物按顺序行动，遮挡结构像纸片抬起。",
+      "motion": "一个人物完成规则动作后下一个开始；秩序本身解释规则，不用高速滑行。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/isometric-picture-book/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/isometric-picture-book/STYLE.md",
+        "local_path": "references/lemo-source/styles/isometric-picture-book/STYLE.md",
+        "sha256": "9e838ed305b5fec5002b9aa452cb28730d13ec84dd529a801fb3b174e81cec83"
+      },
+      "source_essence": "A calm explainer of an everyday rule, set in one real place drawn in true isometric with flat colour: small faceless people seen from behind do the thing in order, while serif type lands on the ground, character by character, as if painted there. Whatever hides the action (a roof, a wall) is cut away or lifts off like a paper flap. The order of movement is the explanation."
+    },
+    {
+      "id": "kino-montage",
+      "name_zh": "构成主义蒙太奇",
+      "name_en": "Constructivist Montage",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "构成主义蒙太奇",
+        "Constructivist Montage",
+        "kino montage"
+      ],
+      "keywords": [
+        "构成主义",
+        "工业历史",
+        "集体行动",
+        "里程碑",
+        "kino",
+        "montage"
+      ],
+      "use_cases": [
+        "Industry histories",
+        "Milestones",
+        "Collective effort"
+      ],
+      "appearance": "红黑纸色的构成主义海报，斜向几何、照片剪影与机械结构组合。",
+      "motion": "用单次几何碰撞或斜线揭示形成含义；不在短GIF里拼接多段真实档案。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/kino-montage/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/kino-montage/STYLE.md",
+        "local_path": "references/lemo-source/styles/kino-montage/STYLE.md",
+        "sha256": "8c63deefda22d4677d286ddfffb243ce6385dfa7ab56fbc493705fe13908f204"
+      },
+      "source_essence": "Real archive footage, photographs and documents, printed as one ink-and-paper poster with a single red, and cut on a machine beat. Diagonal bands carry the type; windows cut along the axis hold the film; people are scissored out of photographs and stacked into structures; numbers count, documents are marked in red, and two images collide to make a third idea."
+    },
+    {
+      "id": "lidar-survey",
+      "name_zh": "点云测绘",
+      "name_en": "LiDAR Survey",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "点云测绘",
+        "LiDAR Survey",
+        "lidar survey"
+      ],
+      "keywords": [
+        "点云",
+        "测绘",
+        "遗产调查",
+        "场地扫描",
+        "lidar",
+        "survey"
+      ],
+      "use_cases": [
+        "Heritage",
+        "Environment",
+        "Site surveys"
+      ],
+      "appearance": "暗场中真实来源的测绘点云、克制高度色阶和细线测量标记。",
+      "motion": "扫描平面扫过固定点位，局部表面显现；不改变点云几何或伪造测量。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/lidar-survey/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/lidar-survey/STYLE.md",
+        "local_path": "references/lemo-source/styles/lidar-survey/STYLE.md",
+        "sha256": "d1b60fda2793932286372e7cf68d62af5723bba14c37e9a437639ea57b1a310d"
+      },
+      "source_essence": "Real airborne laser points of a real place, floating in the dark as a measured cloud; a scan line or a cutting plane passes through them and the points condense into a solid, raking-lit surface, which is then measured with hairline instruments. One designed camera move carries the whole film: the cloud is something you fly through, not a picture you look at."
+    },
+    {
+      "id": "living-screencast",
+      "name_zh": "活体实机录屏",
+      "name_en": "Living Screencast",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "活体实机录屏",
+        "Living Screencast",
+        "living screencast"
+      ],
+      "keywords": [
+        "实机录屏",
+        "产品教程",
+        "界面操作",
+        "软件引导",
+        "screencast",
+        "onboarding"
+      ],
+      "use_cases": [
+        "Product tutorials",
+        "Feature launches",
+        "Onboarding"
+      ],
+      "appearance": "真实产品界面的视觉布局与一个小型像素吉祥物，品牌配色保持来源一致。",
+      "motion": "吉祥物明确指向一个操作结果；生成素材不能冒充真实可操作录屏。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/living-screencast/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/living-screencast/STYLE.md",
+        "local_path": "references/lemo-source/styles/living-screencast/STYLE.md",
+        "sha256": "02e8e5521fe1f553b0e58dacc2a556aea361dd5823e2ca0996963839d3c7d5c7"
+      },
+      "source_essence": "A product walkthrough that looks like a real screen recording, where a low-resolution mascot lives inside a high-resolution interface and acts out what the software is doing."
+    },
+    {
+      "id": "lowpoly-island",
+      "name_zh": "低多边形等距",
+      "name_en": "Low-poly Isometric Island",
+      "family_zh": "材质与 3D",
+      "family_en": "Materials & 3D",
+      "aliases": [
+        "低多边形等距",
+        "Low-poly Isometric Island",
+        "lowpoly island"
+      ],
+      "keywords": [
+        "低多边形",
+        "小岛",
+        "世界搭建",
+        "治愈场景",
+        "low poly",
+        "island"
+      ],
+      "use_cases": [
+        "Game trailers",
+        "World building",
+        "Calm content"
+      ],
+      "appearance": "正交等距的柔和低多边形小世界，有限粉彩和清晰几何切面。",
+      "motion": "建筑或植物依次生长并停稳，水和小物体轻轻循环，空间关系固定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/lowpoly-island/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/lowpoly-island/STYLE.md",
+        "local_path": "references/lemo-source/styles/lowpoly-island/STYLE.md",
+        "sha256": "1ae7bcd6aa3d521f563d8905f8109842fd7252ff8b70c1bd18265105a8a450f9"
+      },
+      "source_essence": "A tiny faceted world seen through an orthographic isometric lens: everything is a geometric block, and everything that appears arrives with a bounce and a note."
+    },
+    {
+      "id": "memphis-diorama",
+      "name_zh": "孟菲斯微缩景观",
+      "name_en": "Memphis Diorama",
+      "family_zh": "材质与 3D",
+      "family_en": "Materials & 3D",
+      "aliases": [
+        "孟菲斯微缩景观",
+        "Memphis Diorama",
+        "memphis diorama"
+      ],
+      "keywords": [
+        "孟菲斯",
+        "环境循环",
+        "四季",
+        "网站首屏",
+        "memphis",
+        "ambient"
+      ],
+      "use_cases": [
+        "Web heroes",
+        "Ambient loops",
+        "Seasons"
+      ],
+      "appearance": "暖白纸面框出的明快微缩场景，孟菲斯色块、墨线和硬紫影，小图案克制。",
+      "motion": "树叶、车辆或水面形成安静不同相位的循环；人物只作远景点缀。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/memphis-diorama/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/memphis-diorama/STYLE.md",
+        "local_path": "references/lemo-source/styles/memphis-diorama/STYLE.md",
+        "sha256": "7f1748f2741d069e074172800d501ec00527db8a018e1e5ab4ecfa630ed6763b"
+      },
+      "source_essence": "A place built as a tabletop model: on warm white paper an organic, grainy frame grows open, and inside it a small world in flat Memphis colours, ink outlines, hard purple shadows and tiny patterns, full of small motions under a slow camera. Calm, bright and warm; a place you watch, not a story you follow."
+    },
+    {
+      "id": "microgame",
+      "name_zh": "微游戏快闪",
+      "name_en": "Microgame Frenzy",
+      "family_zh": "游戏",
+      "family_en": "Games",
+      "aliases": [
+        "微游戏快闪",
+        "Microgame Frenzy",
+        "microgame"
+      ],
+      "keywords": [
+        "微游戏",
+        "快闪挑战",
+        "一招操作",
+        "microgame",
+        "challenge"
+      ],
+      "use_cases": [
+        "Game trailers",
+        "Onboarding",
+        "Social shorts"
+      ],
+      "appearance": "单场景只保留一个清楚的小游戏目标和少量高辨识物件。",
+      "motion": "一次预备、一次动作、一个成功结果；每段GIF固定一种媒介，不在段内换风格。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/microgame/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/microgame/STYLE.md",
+        "local_path": "references/lemo-source/styles/microgame/STYLE.md",
+        "sha256": "ad13d34bd06a65bef81b04f531c4f256bcc0bff4f229f976d52e07d5beef9dd5"
+      },
+      "source_essence": "A rapid-fire party-game film: one command word, a few seconds, one action. Every microgame is drawn in a completely different art style, and the film keeps getting faster."
+    },
+    {
+      "id": "microscope",
+      "name_zh": "显微叙事",
+      "name_en": "Microscope Story",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "显微叙事",
+        "Microscope Story",
+        "microscope"
+      ],
+      "keywords": [
+        "显微",
+        "细胞",
+        "生物医学",
+        "材料科学",
+        "microscope",
+        "cell"
+      ],
+      "use_cases": [
+        "Biomedicine",
+        "Materials science",
+        "Skincare science"
+      ],
+      "appearance": "真实参考显微图像的染色与结构，玻片和焦平面带来尺度变化。",
+      "motion": "沿已有图像轻微变焦或焦点变化；不得生成虚假病理证据或测量标尺。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/microscope/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/microscope/STYLE.md",
+        "local_path": "references/lemo-source/styles/microscope/STYLE.md",
+        "sha256": "63040631bdc28a3c7f8cf05e2e8523969becd0267741e00dd3e171c22be16e92"
+      },
+      "source_essence": "Real, licence-clean microscopy of a real specimen, seen as it is, and one continuous change of scale that carries the viewer from the glass slide in the hand to a single cell. Focus breathes when the magnification changes, a focal plane sweeps when the camera lands, and every scale bar, field of view and reading comes from the image's own metadata."
+    },
+    {
+      "id": "midcentury-toon",
+      "name_zh": "50s 扁平卡通",
+      "name_en": "Mid-century Cartoon",
+      "family_zh": "卡通与动画",
+      "family_en": "Cartoon & Anime",
+      "aliases": [
+        "50s 扁平卡通",
+        "Mid-century Cartoon",
+        "midcentury toon"
+      ],
+      "keywords": [
+        "操作指南",
+        "步骤教学",
+        "如何操作",
+        "课堂演示",
+        "职场讲解",
+        "mid century",
+        "how to"
+      ],
+      "use_cases": [
+        "Set-up guides",
+        "Help centres",
+        "How-to"
+      ],
+      "appearance": "50年代暖纸底、细而略断的墨线、几何人物和柔和互补色块，少量固定套印偏移。",
+      "motion": "身体稳定，手臂和眼神完成一个示范动作，清楚预备与收势；不靠闪烁表达手绘感。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/midcentury-toon/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/midcentury-toon/STYLE.md",
+        "local_path": "references/lemo-source/styles/midcentury-toon/STYLE.md",
+        "sha256": "e73614b6f9e2f2e8ee279f4909da8429235b96f6d13a12345b6e57d5823c30b8"
+      },
+      "source_essence": "1950s flat colour and limited animation for \"follow along\" films: colour printed a few pixels off its broken ink line, bodies that hold still while hands do the work, abstract colour-block rooms, a calm classroom narrator, and a cool-jazz combo."
+    },
+    {
+      "id": "news-package",
+      "name_zh": "电视新闻包装",
+      "name_en": "Broadcast News Package",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "电视新闻包装",
+        "Broadcast News Package",
+        "news package"
+      ],
+      "keywords": [
+        "新闻包装",
+        "市场简报",
+        "新闻栏目",
+        "bulletin",
+        "news package"
+      ],
+      "use_cases": [
+        "News round-ups",
+        "Bulletins",
+        "Market updates"
+      ],
+      "appearance": "深色新闻图形系统、斜线强调和整齐的信息窗口，留出下游标题与来源区。",
+      "motion": "一次窗口展开或重点关系显现后停稳；不生成台标、随机新闻文字或事实。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence.",
+        "Visual/layout grammar only; exact text and subtitles belong to downstream tools."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/news-package/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/news-package/STYLE.md",
+        "local_path": "references/lemo-source/styles/news-package/STYLE.md",
+        "sha256": "f6249a97d12ad6a71d11741f625a6b7d9cc6fb25006385b23f394ea56fb6610d"
+      },
+      "source_essence": "A television newsroom's on-air package, built entirely in code: a sting that becomes the channel bug, a rundown of today's stories that opens and closes the bulletin, a lower-third strap that never leaves the bottom of the frame, and full-frame graphics (split-flap price boards, a line breaking a threshold, explainer maps, documents flying out of a city, quote cards, spec cards with proportion bars, stamps) that carry the facts. The style is the **package system plus its cutting rules**, not a drawing style. 16:9, a clean frame: no burned-in subtitles, no news crawl."
+    },
+    {
+      "id": "newsreel",
+      "name_zh": "1920s 新闻影片",
+      "name_en": "1920s Newsreel",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "1920s 新闻影片",
+        "1920s Newsreel",
+        "newsreel"
+      ],
+      "keywords": [
+        "新闻影片",
+        "历史时代",
+        "周年纪念",
+        "newsreel",
+        "anniversary"
+      ],
+      "use_cases": [
+        "History stories",
+        "Fads & eras",
+        "Anniversaries"
+      ],
+      "appearance": "暖银黑白的旧新闻影片外观、轻微胶片颗粒和克制暗角。",
+      "motion": "一个来源画面中的动作或机械式揭示，保持素材事实，不用虚构档案冒充历史。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/newsreel/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/newsreel/STYLE.md",
+        "local_path": "references/lemo-source/styles/newsreel/STYLE.md",
+        "sha256": "ec7cf8cef4efdc557c70f7743c5eb431d20e219e43a0a3dc2cbea1cfeea41e8d"
+      },
+      "source_essence": "A sound newsreel of the late 1920s, cut from real archive material: a searchlight-and-globe ident with a brass fanfare, a newspaper that spins into the lens, a fast and cheerful announcer on an optical soundtrack, place-and-date cards, maps, magazine pages and documents, wipes, flips and irises, and a hot band that can stop dead for the punchline."
+    },
+    {
+      "id": "one-line",
+      "name_zh": "一笔画",
+      "name_en": "One-line Drawing",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "一笔画",
+        "One-line Drawing",
+        "one line"
+      ],
+      "keywords": [
+        "一笔画",
+        "人生历程",
+        "极简品牌",
+        "one line",
+        "minimal"
+      ],
+      "use_cases": [
+        "Brand stories",
+        "Life milestones",
+        "Minimal ads"
+      ],
+      "appearance": "暖白纸上一条不断开的深色墨线，极少强调色，轮廓关系简洁。",
+      "motion": "线条沿一个连贯路径延展形成图形，转角放慢，避免大量无法辨认的形变。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/one-line/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/one-line/STYLE.md",
+        "local_path": "references/lemo-source/styles/one-line/STYLE.md",
+        "sha256": "69d26cb06f48ab6b03c12a76c2390d0945cdaddc38bc109b7d5e292b9af1399b"
+      },
+      "source_essence": "A single ink line that never leaves the paper. Everything on screen is that one line being drawn; scenes don't cut, they morph."
+    },
+    {
+      "id": "paper-lantern",
+      "name_zh": "纸雕灯影",
+      "name_en": "Paper-cut Lightbox",
+      "family_zh": "东方传统",
+      "family_en": "East Asian Traditions",
+      "aliases": [
+        "纸雕灯影",
+        "Paper-cut Lightbox",
+        "paper lantern"
+      ],
+      "keywords": [
+        "纸雕灯",
+        "灯箱",
+        "离别",
+        "旅程",
+        "纪念",
+        "paper lantern",
+        "lightbox"
+      ],
+      "use_cases": [
+        "Journeys and travel",
+        "Farewells and anniversaries",
+        "Places and their stories"
+      ],
+      "appearance": "多层剪纸灯箱，后亮前暗的层次、透光窗口、暖背光与柔软层间阴影。",
+      "motion": "纸层滑动或绕支点转动、窗口依次亮起；纸片不融化、不弹性挤压。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/paper-lantern/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/paper-lantern/STYLE.md",
+        "local_path": "references/lemo-source/styles/paper-lantern/STYLE.md",
+        "sha256": "e8be26d64f33229859e284a33d77969f9a4468b7bf1b478ca8fa924c7dd9f27d"
+      },
+      "source_essence": "A layered paper-cut shadow box (纸雕灯) lit from behind: 6–9 sheets of cut card stacked in a shallow box, a warm light glowing through the paper, windows and moons burning through holes, soft shadows falling from each layer onto the next. The camera is a macro lens inside a lamp: it can show the box, or let the paper scenery fill the whole screen."
+    },
+    {
+      "id": "paper-popup",
+      "name_zh": "纸片立体书",
+      "name_en": "Paper Pop-up Book",
+      "family_zh": "材质与 3D",
+      "family_en": "Materials & 3D",
+      "aliases": [
+        "纸片立体书",
+        "Paper Pop-up Book",
+        "paper popup"
+      ],
+      "keywords": [
+        "立体书",
+        "纸片人物",
+        "纸艺故事",
+        "绘本动画",
+        "pop-up",
+        "paper popup"
+      ],
+      "use_cases": [
+        "Children's books",
+        "Game trailers",
+        "Story films"
+      ],
+      "appearance": "真实桌面与灯光下的立体书，白边平面纸卡人物、可见卡纸厚度和折页布景。",
+      "motion": "纸卡绕铰点起立，人物用关节动作和小幅重心变化表演，书页和脸部纹理稳定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/paper-popup/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/paper-popup/STYLE.md",
+        "local_path": "references/lemo-source/styles/paper-popup/STYLE.md",
+        "sha256": "8e5c0ca430fd96b75c4d9c2af92a87c84d4d1af8cda64280a189c51279e1ee9b"
+      },
+      "source_essence": "A pop-up book on a real desk becomes a stage: flat cut-paper actors with white borders perform in front of paper sets that spring up from the page, under real lamp light and a real macro lens."
+    },
+    {
+      "id": "papercut-red",
+      "name_zh": "红色窗花剪纸",
+      "name_en": "Red Paper-cut",
+      "family_zh": "东方传统",
+      "family_en": "East Asian Traditions",
+      "aliases": [
+        "红色窗花剪纸",
+        "Red Paper-cut",
+        "papercut red"
+      ],
+      "keywords": [
+        "剪纸",
+        "窗花",
+        "春节",
+        "年俗",
+        "民间传说",
+        "red paper cut"
+      ],
+      "use_cases": [
+        "Lunar New Year",
+        "Festive greetings",
+        "Folk tales"
+      ],
+      "appearance": "红色镂空窗花剪纸、浅纸底和有意义的孔洞，远近通过纸色层次区分。",
+      "motion": "剪纸肢体绕铆接点转动，动作轮廓清楚，避免手臂遮挡脸部。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/papercut-red/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/papercut-red/STYLE.md",
+        "local_path": "references/lemo-source/styles/papercut-red/STYLE.md",
+        "sha256": "65e317d83335e0cb34696b643e31ad9e46fb0bb93fd748c2e21d74358aea61ec"
+      },
+      "source_essence": "Chinese window-flower paper-cuts brought to life: jointed red cut-outs on paper grounds, where the cut *is* the drawing and the holes are where the light gets in."
+    },
+    {
+      "id": "pictogram-motion",
+      "name_zh": "象形运动图形",
+      "name_en": "Pictogram Motion",
+      "family_zh": "图形与排版",
+      "family_en": "Graphic & Type",
+      "aliases": [
+        "象形运动图形",
+        "Pictogram Motion",
+        "pictogram motion"
+      ],
+      "keywords": [
+        "公共服务",
+        "标识",
+        "象形图",
+        "符号动画",
+        "pictogram",
+        "signs"
+      ],
+      "use_cases": [
+        "Public services and city stories",
+        "Brand and event identity films",
+        "Explainers told through signs and objects"
+      ],
+      "appearance": "圆头、胶囊和圆角条组成的几何象形图，方格图形和固定五色体系。",
+      "motion": "部件顺序组装成一个可读符号，再完成单一动作；不承诺细致人物脸部身份。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/pictogram-motion/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/pictogram-motion/STYLE.md",
+        "local_path": "references/lemo-source/styles/pictogram-motion/STYLE.md",
+        "sha256": "52f0119e13e2d98ee9d2dbf5ea8b9dc84ffb309746fd93afc01eb07d1e2c2689"
+      },
+      "source_essence": "A beat-locked film built from three things only: a **square-grid \"core graphic\"** of circles, half-discs and tiny patterned cells whose rows slide past each other; **geometric pictograms** (objects, vehicles, weather, signs, and a disc-headed figure when one is needed) made of round-capped bars, discs and capsules; and **bold bilingual type** that slides up out of masks. Every cut lands on a drum hit."
+    },
+    {
+      "id": "pixel-rpg",
+      "name_zh": "16-bit 像素 RPG",
+      "name_en": "16-bit Pixel RPG",
+      "family_zh": "游戏",
+      "family_en": "Games",
+      "aliases": [
+        "16-bit 像素 RPG",
+        "16-bit Pixel RPG",
+        "pixel rpg"
+      ],
+      "keywords": [
+        "像素RPG",
+        "16位",
+        "游戏回顾",
+        "怀旧游戏",
+        "pixel rpg",
+        "16 bit"
+      ],
+      "use_cases": [
+        "Game trailers",
+        "Recaps",
+        "Nostalgia"
+      ],
+      "appearance": "有限索引色、清楚像素块和90年代角色扮演游戏场景，角色轮廓固定。",
+      "motion": "用少量明确像素姿势完成跳步、施法或表情动作，不用平滑插值模糊像素。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/pixel-rpg/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/pixel-rpg/STYLE.md",
+        "local_path": "references/lemo-source/styles/pixel-rpg/STYLE.md",
+        "sha256": "f79fac0d9aed03d2a69f17a50b37adca2da84156b3fa525537761c507bcaea8e"
+      },
+      "source_essence": "A short film that looks, sounds and *behaves* like a mid-90s console role-playing game: 320×180 pixels, a limited indexed palette, text boxes that type, menus, save files, chip music with echo."
+    },
+    {
+      "id": "printed-long-take",
+      "name_zh": "印刷长镜头",
+      "name_en": "Printed Long Take",
+      "family_zh": "印刷与版画",
+      "family_en": "Print & Printmaking",
+      "aliases": [
+        "印刷长镜头",
+        "Printed Long Take",
+        "printed long take"
+      ],
+      "keywords": [
+        "版画长镜头",
+        "动物旅程",
+        "版画风景",
+        "printed long take"
+      ],
+      "use_cases": [
+        "Journeys",
+        "Wildlife",
+        "Landscapes"
+      ],
+      "appearance": "深墨与暖纸的刮刻版画世界，排线表现深度和天气，仅主体保留一个红色小点。",
+      "motion": "一段缓慢连续跟随或单一动物动作，刻线随物体稳定移动，不复刻长篇连续镜头。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/printed-long-take/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/printed-long-take/STYLE.md",
+        "local_path": "references/lemo-source/styles/printed-long-take/STYLE.md",
+        "sha256": "fafef88a98f73d73b578ef8591222d2287ac1b921f594fc08e5588a97d077b2d"
+      },
+      "source_essence": "A three-dimensional world rendered as a scratchboard print, ink and paper with one red, crossed by one unbroken camera move. Depth, weather and light are all cut lines; the camera travels through the print instead of the print being turned page by page."
+    },
+    {
+      "id": "risograph",
+      "name_zh": "Risograph 孔版印刷",
+      "name_en": "Risograph Print",
+      "family_zh": "印刷与版画",
+      "family_en": "Print & Printmaking",
+      "aliases": [
+        "Risograph 孔版印刷",
+        "Risograph Print",
+        "risograph"
+      ],
+      "keywords": [
+        "孔版印刷",
+        "独立杂志",
+        "文艺品牌",
+        "riso",
+        "zine"
+      ],
+      "use_cases": [
+        "Indie brands",
+        "Zines",
+        "Lifestyle"
+      ],
+      "appearance": "暖纸上两三种半透明专色叠印、半调点与固定轻微套印偏移。",
+      "motion": "角色做简短清楚动作，印版偏移尽量固定，避免整帧随机抖动。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/risograph/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/risograph/STYLE.md",
+        "local_path": "references/lemo-source/styles/risograph/STYLE.md",
+        "sha256": "c3d85c91a81b0afde091d964482749482adc66c12730afe124708f7b18b331a6"
+      },
+      "source_essence": "Animation that looks printed, frame by frame, on a stencil duplicator: two or three translucent spot inks overprinted on warm paper, halftone dots, ink grain, and plates that never quite line up."
+    },
+    {
+      "id": "rubber-hose",
+      "name_zh": "1930s 橡皮管卡通",
+      "name_en": "1930s Rubber Hose Cartoon",
+      "family_zh": "卡通与动画",
+      "family_en": "Cartoon & Anime",
+      "aliases": [
+        "1930s 橡皮管卡通",
+        "1930s Rubber Hose Cartoon",
+        "rubber hose"
+      ],
+      "keywords": [
+        "橡皮管",
+        "黑白卡通",
+        "复古食品广告",
+        "rubber hose",
+        "1930s"
+      ],
+      "use_cases": [
+        "Food & drink",
+        "Retro ads",
+        "Kids"
+      ],
+      "appearance": "黑白手绘卡通、柔软管状肢体、深浅明确的灰阶背景，主体占据最明暗两端。",
+      "motion": "动作有弹性预备与跟随，脸和关键配件固定，不让整个世界无目的跳动。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/rubber-hose/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/rubber-hose/STYLE.md",
+        "local_path": "references/lemo-source/styles/rubber-hose/STYLE.md",
+        "sha256": "bf850f9cd22e68b2125fed00d1b9804e91479620b44420ba7ec50e570e472a94"
+      },
+      "source_essence": "Black-and-white hand-inked cartoons where every object is alive and swings to a hot jazz band."
+    },
+    {
+      "id": "satellite-briefing",
+      "name_zh": "卫星简报",
+      "name_en": "Satellite Briefing",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "卫星简报",
+        "Satellite Briefing",
+        "satellite briefing"
+      ],
+      "keywords": [
+        "卫星",
+        "遥感",
+        "地理变化",
+        "气候地理",
+        "satellite",
+        "geography"
+      ],
+      "use_cases": [
+        "Climate",
+        "News explainers",
+        "Geography"
+      ],
+      "appearance": "真实来源卫星影像的中性灰底、细白轮廓和一个暖色重点。",
+      "motion": "短距离连续缩放、目标框锁定或扫描揭示，地理结构与标注相对位置固定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/satellite-briefing/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/satellite-briefing/STYLE.md",
+        "local_path": "references/lemo-source/styles/satellite-briefing/STYLE.md",
+        "sha256": "d8d4856407fba8394c2cd9102a4aa23525db0171275a85b1aeeab2f0597e26a8"
+      },
+      "source_essence": "Real satellite imagery of a real place, graded down to an analyst's grey, with thin white measurement lines drawn on the ground: a lock-on reticle, outlines, a range line, one reading. One continuous zoom built from stacked imagery plates carries the viewer from orbit to the ground and back, and time can run inside one locked frame."
+    },
+    {
+      "id": "scifi-toon",
+      "name_zh": "科幻情景喜剧卡通",
+      "name_en": "Sci-Fi Sitcom Toon",
+      "family_zh": "卡通与动画",
+      "family_en": "Cartoon & Anime",
+      "aliases": [
+        "科幻情景喜剧卡通",
+        "Sci-Fi Sitcom Toon",
+        "scifi toon"
+      ],
+      "keywords": [
+        "科幻喜剧",
+        "科技幽默",
+        "情景喜剧",
+        "scifi toon",
+        "sitcom"
+      ],
+      "use_cases": [
+        "Comedy",
+        "Tech brands",
+        "Social shorts"
+      ],
+      "appearance": "粗墨轮廓、少量平涂色、简化眼神表演和一个发光科幻物件。",
+      "motion": "身体保持稳定，用眼神、眨眼与一个有预备的小动作表达反应。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/scifi-toon/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/scifi-toon/STYLE.md",
+        "local_path": "references/lemo-source/styles/scifi-toon/STYLE.md",
+        "sha256": "9a720a57ce50dc554e9237e698a979cdf7311527e6e6a0dad803278dfe8ad2ce"
+      },
+      "source_essence": "Adult-animation sci-fi sitcom: thick boiling outlines, flat colour, a duo whose reactions don't match, a glowing portal, and one palette per world."
+    },
+    {
+      "id": "shadow-puppet",
+      "name_zh": "皮影戏",
+      "name_en": "Shadow Puppetry",
+      "family_zh": "东方传统",
+      "family_en": "East Asian Traditions",
+      "aliases": [
+        "皮影戏",
+        "Shadow Puppetry",
+        "shadow puppet"
+      ],
+      "keywords": [
+        "皮影",
+        "非遗",
+        "神话",
+        "民俗",
+        "shadow puppet",
+        "folklore"
+      ],
+      "use_cases": [
+        "Myths & folklore",
+        "Heritage",
+        "Festivals"
+      ],
+      "appearance": "暖灯透过彩色皮影和棉布幕，镂空雕花、透明叠色与可见关节。",
+      "motion": "侧身关节动作与短暂定势，脸部图案不变，衣饰只轻微跟随。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/shadow-puppet/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/shadow-puppet/STYLE.md",
+        "local_path": "references/lemo-source/styles/shadow-puppet/STYLE.md",
+        "sha256": "8be075a8262d5a3deea9b05684d8a9abdc1e54c0d90649bf14609ecb4106c3af"
+      },
+      "source_essence": "Chinese shadow theatre: translucent dyed-hide puppets, carved like lace, pressed against a cotton screen and lit from behind by oil lamps."
+    },
+    {
+      "id": "silent-film",
+      "name_zh": "1920s 默片",
+      "name_en": "1920s Silent Film",
+      "family_zh": "电影与时代",
+      "family_en": "Cinema & Eras",
+      "aliases": [
+        "1920s 默片",
+        "1920s Silent Film",
+        "silent film"
+      ],
+      "keywords": [
+        "默片",
+        "无声叙事",
+        "复古喜剧",
+        "silent film"
+      ],
+      "use_cases": [
+        "Comedy",
+        "Retro brands",
+        "Silent storytelling"
+      ],
+      "appearance": "黑白银调插画与轻微放映质感，用身体轮廓和道具讲故事，不依赖字幕卡。",
+      "motion": "明确蓄势、动作、双重反应与停稳，胶片颗粒不掩盖运动自然度。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/silent-film/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/silent-film/STYLE.md",
+        "local_path": "references/lemo-source/styles/silent-film/STYLE.md",
+        "sha256": "44633a4edd4ec6b84be809bd48b38503a75a71531112b3d28a52f27135012b20"
+      },
+      "source_essence": "An engraved-illustration silent film projected in a picture house: ink line and silver wash, a 4:3 print that flickers and weaves between velvet curtains, intertitles instead of voices, and a cinema pianist who plays every beat."
+    },
+    {
+      "id": "silkscreen-poster",
+      "name_zh": "丝印旅行海报",
+      "name_en": "Silkscreen Travel Poster",
+      "family_zh": "印刷与版画",
+      "family_en": "Print & Printmaking",
+      "aliases": [
+        "丝印旅行海报",
+        "Silkscreen Travel Poster",
+        "silkscreen poster"
+      ],
+      "keywords": [
+        "丝印",
+        "旅行海报",
+        "目的地",
+        "旅游海报",
+        "silkscreen",
+        "travel poster"
+      ],
+      "use_cases": [
+        "Destination guides",
+        "Tourism",
+        "Event posters"
+      ],
+      "appearance": "四至六种不透明硬边色版、分级色带和纸白留缝，远景浅、近景深。",
+      "motion": "一个色层或景物从印刷边缘显现，再有少量景物运动，不在短段生成文字排版。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/silkscreen-poster/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/silkscreen-poster/STYLE.md",
+        "local_path": "references/lemo-source/styles/silkscreen-poster/STYLE.md",
+        "sha256": "f1c86a9f0cbe735de9fb1421d33ab44465122158e6c45a4786c98852ea9952b1"
+      },
+      "source_essence": "Opaque, hard-edged flat inks pulled one colour at a time through a screen: 4–6 inks per poster, stepped colour bands instead of gradients, thin paper-white gaps where the registration slips. Information is revealed the way the print is made: one layer, one beat."
+    },
+    {
+      "id": "spy-titles",
+      "name_zh": "60s 间谍片头",
+      "name_en": "60s Spy Title Sequence",
+      "family_zh": "图形与排版",
+      "family_en": "Graphic & Type",
+      "aliases": [
+        "60s 间谍片头",
+        "60s Spy Title Sequence",
+        "spy titles"
+      ],
+      "keywords": [
+        "间谍片头",
+        "剪影追逐",
+        "悬念开场",
+        "spy titles"
+      ],
+      "use_cases": [
+        "Title sequences",
+        "Event openers",
+        "Trailers"
+      ],
+      "appearance": "黑、奶油纸、一个热色和一个暖辅色构成的剪纸剪影与几何场景。",
+      "motion": "剪影沿几何路径躲闪或追逐，动作有明确停顿和收势，去除片名字样。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/spy-titles/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/spy-titles/STYLE.md",
+        "local_path": "references/lemo-source/styles/spy-titles/STYLE.md",
+        "sha256": "ea6e9e9073af43ef0bb860e368f60b16ec32a91668386115a142907d92cb1f75"
+      },
+      "source_essence": "A cut-paper, four-ink opening title sequence for a film that never existed: silhouettes move through sets built out of the credits themselves, every brass stab is a cut, and a title is assembled from the pieces."
+    },
+    {
+      "id": "stained-glass",
+      "name_zh": "彩色玻璃窗",
+      "name_en": "Stained Glass",
+      "family_zh": "图形与排版",
+      "family_en": "Graphic & Type",
+      "aliases": [
+        "彩色玻璃窗",
+        "Stained Glass",
+        "stained glass"
+      ],
+      "keywords": [
+        "彩色玻璃",
+        "传说",
+        "节日故事",
+        "stained glass"
+      ],
+      "use_cases": [
+        "Legends",
+        "Heritage",
+        "Holiday stories"
+      ],
+      "appearance": "深色石厅中有铅条分隔的钴蓝与宝石红彩色玻璃，局部金绿点缀。",
+      "motion": "光扫到哪个区域哪个区域才活动，玻璃片保持刚性和分隔线。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/stained-glass/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/stained-glass/STYLE.md",
+        "local_path": "references/lemo-source/styles/stained-glass/STYLE.md",
+        "sha256": "0f6551bd109a4127404068aa1e75f18f16b58c80b486c23480b3d193e597b060"
+      },
+      "source_essence": "A medieval stained-glass window seen from inside a dark stone hall, alive only where the sun touches it: light is the clock, the camera and the story."
+    },
+    {
+      "id": "swiss-motion",
+      "name_zh": "瑞士动态排版",
+      "name_en": "Swiss Motion Graphics",
+      "family_zh": "图形与排版",
+      "family_en": "Graphic & Type",
+      "aliases": [
+        "瑞士动态排版",
+        "Swiss Motion Graphics",
+        "swiss motion"
+      ],
+      "keywords": [
+        "瑞士排版",
+        "品牌识别",
+        "设计教育",
+        "模块网格",
+        "swiss",
+        "typography"
+      ],
+      "use_cases": [
+        "Brand identity",
+        "Events",
+        "Design education"
+      ],
+      "appearance": "纸色、墨色、灰阶和一种信号色组成严格模块网格；本版本取几何与留白语法，不生成精确字排。",
+      "motion": "几何块沿网格精准揭示与滑动，稳定停靠，无弹簧晃动。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Visual/layout grammar only; exact text and subtitles belong to downstream tools."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/swiss-motion/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/swiss-motion/STYLE.md",
+        "local_path": "references/lemo-source/styles/swiss-motion/STYLE.md",
+        "sha256": "14ddeb6dc495e691a220497069a2ee4827d820f9ee7a3173de5846489ef41f57"
+      },
+      "source_essence": "International Typographic Style in motion: a modular grid, one typeface, one signal colour, and movement as exact as a printing press."
+    },
+    {
+      "id": "teardown",
+      "name_zh": "产品拆解",
+      "name_en": "Exploded Teardown",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "产品拆解",
+        "Exploded Teardown",
+        "teardown"
+      ],
+      "keywords": [
+        "产品拆解",
+        "内部结构",
+        "装配层",
+        "硬件拆解",
+        "teardown",
+        "exploded view"
+      ],
+      "use_cases": [
+        "Hardware launches",
+        "Product pages",
+        "Spec explainers"
+      ],
+      "appearance": "真实产品参考的材质和装配层，在中性暗场摄影棚中呈现。",
+      "motion": "零件沿真实装配轴逐层分开、短暂停留再闭合，不能虚构部件或规格。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/teardown/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/teardown/STYLE.md",
+        "local_path": "references/lemo-source/styles/teardown/STYLE.md",
+        "sha256": "90df05a02a3d33add58e0dd99bef19ca20ea16b10390b3c2350d8483106922ee"
+      },
+      "source_essence": "A real product, built from its own engineering files (CAD, PCB layout, bill of materials), lit like a studio packshot and taken apart in front of the camera: the layers lift on one axis, the camera travels between them, every part is named with the numbers its files contain, and it closes again into one object."
+    },
+    {
+      "id": "telestrator",
+      "name_zh": "体育战术板",
+      "name_en": "Sports Telestrator",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "体育战术板",
+        "Sports Telestrator",
+        "telestrator"
+      ],
+      "keywords": [
+        "体育战术",
+        "足球分析",
+        "比赛复盘",
+        "telestrator",
+        "sports"
+      ],
+      "use_cases": [
+        "Sports analysis",
+        "Match recaps",
+        "Coaching"
+      ],
+      "appearance": "真实赛事参考上的场地、圆环、箭头和克制重点区域，留出下游标注。",
+      "motion": "在已知动作上逐步出现战术关系；生成示意不能冒充赛事录像。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/telestrator/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/telestrator/STYLE.md",
+        "local_path": "references/lemo-source/styles/telestrator/STYLE.md",
+        "sha256": "7289027728dc5e1b6d095b7c7bc7806790bb579934c81682265c0c1b4897a3d0"
+      },
+      "source_essence": "The TV football analysis segment: play the clip at full speed, rewind, freeze it, and draw on the broadcast picture — rings under players' feet, marker arrows for the ball, a red patch for the space nobody covered — then play on, switch angles, count the frames, and flatten the pitch into a board. Real match footage is the ground; every line is drawn on top of it and moves with it. A studio show's packaging (sting, corner bug, score bar, a yellow wipe) holds it together. 16:9."
+    },
+    {
+      "id": "tilt-shift",
+      "name_zh": "移轴微缩",
+      "name_en": "Tilt-Shift Miniature",
+      "family_zh": "材质与 3D",
+      "family_en": "Materials & 3D",
+      "aliases": [
+        "移轴微缩",
+        "Tilt-Shift Miniature",
+        "tilt shift"
+      ],
+      "keywords": [
+        "移轴",
+        "城市宣传",
+        "房地产",
+        "交通微缩",
+        "tilt shift"
+      ],
+      "use_cases": [
+        "City promos",
+        "Real estate",
+        "Transport"
+      ],
+      "appearance": "俯视的真实感微缩城市，窄焦平面、明快模型色和清楚蓝色阴影。",
+      "motion": "小车或行人完成短距离清楚运动，摄像机稳定，避免高速跳步降低可读性。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/tilt-shift/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/tilt-shift/STYLE.md",
+        "local_path": "references/lemo-source/styles/tilt-shift/STYLE.md",
+        "sha256": "131ae50c6bddd30922638cbd5f2fae5c047223360a3f6924b074b0db525a5c63"
+      },
+      "source_essence": "A real-looking place photographed from high above with a tilted lens and a time-lapse camera, so the whole world reads as a tabletop model."
+    },
+    {
+      "id": "transit-map",
+      "name_zh": "地铁线路图",
+      "name_en": "Transit Map",
+      "family_zh": "信息与发布",
+      "family_en": "Information & Keynote",
+      "aliases": [
+        "地铁线路图",
+        "Transit Map",
+        "transit map"
+      ],
+      "keywords": [
+        "地铁",
+        "线路网络",
+        "交通网络",
+        "连接关系",
+        "transit map",
+        "network"
+      ],
+      "use_cases": [
+        "Transport",
+        "Growth over time",
+        "Networks"
+      ],
+      "appearance": "暖白物理纸面上的八方向线路、白色站点和黑边换乘胶囊，线路颜色保持身份。",
+      "motion": "笔尖沿线路前进、站点依次出现、换乘关系清楚；真实路线需要来源核对。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/transit-map/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/transit-map/STYLE.md",
+        "local_path": "references/lemo-source/styles/transit-map/STYLE.md",
+        "sha256": "e6c62bc75071c86b67c30def595e919910d86245504c8c09882d151a3c719d1c"
+      },
+      "source_essence": "A metro schematic printed on a physical sheet: lines held to eight directions, white stops, black-outlined interchange capsules, water as a flat blue band. The network is drawn on by glowing pen tips while a real perspective camera moves over the paper: it rides a tip, drops low where a line dives under water, pulls back through levels of detail and sweeps across the densest knot at a low angle with a shallow focus."
+    },
+    {
+      "id": "ukiyoe",
+      "name_zh": "浮世绘",
+      "name_en": "Ukiyo-e",
+      "family_zh": "东方传统",
+      "family_en": "East Asian Traditions",
+      "aliases": [
+        "浮世绘",
+        "Ukiyo-e",
+        "ukiyoe"
+      ],
+      "keywords": [
+        "浮世绘",
+        "日本文化",
+        "江户",
+        "木版风景",
+        "ukiyoe",
+        "japanese travel"
+      ],
+      "use_cases": [
+        "Travel",
+        "Japanese culture",
+        "Poetry"
+      ],
+      "appearance": "平涂木版色块、雕刻墨线、渐层天空和可触纸质，纸白承担浪花与雪。",
+      "motion": "大部分画面静止，只让灯笼、叶片、烟或人物小动作活动，保持印版线条稳定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/ukiyoe/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/ukiyoe/STYLE.md",
+        "local_path": "references/lemo-source/styles/ukiyoe/STYLE.md",
+        "sha256": "218c48a204f9034d1c2fb7f11698b4834f1faee1ca68c9e336f3d6ab992ff2e4"
+      },
+      "source_essence": "Edo-period woodblock prints brought to life: flat colour blocks, carved ink lines, bokashi skies, paper you can feel, and a camera that moves over the print like an unrolling handscroll."
+    },
+    {
+      "id": "urban-sketch",
+      "name_zh": "钢笔淡彩",
+      "name_en": "Urban Sketch · Pen & Wash",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "钢笔淡彩",
+        "Urban Sketch · Pen & Wash",
+        "urban sketch"
+      ],
+      "keywords": [
+        "城市速写",
+        "钢笔淡彩",
+        "旅行手帐",
+        "建筑写生",
+        "urban sketch",
+        "architecture"
+      ],
+      "use_cases": [
+        "City & travel",
+        "Architecture",
+        "Lifestyle brands"
+      ],
+      "appearance": "奶油冷压纸上的细褐色钢笔线与松散透明淡彩，边缘略溢色，保留纸白。",
+      "motion": "人物有清楚预备和收势，风用少量曲线表达，色彩缓慢晕开而非跳变。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/urban-sketch/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/urban-sketch/STYLE.md",
+        "local_path": "references/lemo-source/styles/urban-sketch/STYLE.md",
+        "sha256": "2baf1a19f31b06e55d66d62e4c3449c7a2686c689190976f3e3d0cbdce2faa9a"
+      },
+      "source_essence": "A sketchbook page drawn on location: fine sepia fineliner lines that wobble, overshoot and never quite close, with loose transparent watercolour dropped on top. The colour sits slightly off the lines, spills over them, and dissolves into cream cold-press paper at the page edge."
+    },
+    {
+      "id": "visual-investigation",
+      "name_zh": "视觉调查",
+      "name_en": "Visual Investigation",
+      "family_zh": "剪辑与纪实",
+      "family_en": "Edit & Documentary",
+      "aliases": [
+        "视觉调查",
+        "Visual Investigation",
+        "visual investigation"
+      ],
+      "keywords": [
+        "事实核查",
+        "事件调查",
+        "事故复盘",
+        "证据比对",
+        "investigation",
+        "fact check"
+      ],
+      "use_cases": [
+        "Reconstructions",
+        "Fact-checks",
+        "Incident reports"
+      ],
+      "appearance": "冷色调查桌面、真实照片文档地图和稀少红色关系线，已知与未知清楚分开。",
+      "motion": "局部圈选、放大或关系线建立，保持来源内容不变；不生成新的证据事实。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/visual-investigation/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/visual-investigation/STYLE.md",
+        "local_path": "references/lemo-source/styles/visual-investigation/STYLE.md",
+        "sha256": "9b39ebaa00c3d77ae544d7453e99b79caf4dfaae1d37798b1f995a5578aac30b"
+      },
+      "source_essence": "A cold investigation desk: footage, photographs, documents, sound and maps from one real event, laid out on one shared clock so they check each other. The clock lives inside the picture — timestamps on the evidence, a playhead on a data chart, a stopwatch over the decisive seconds; frozen frames are circled and magnified; quotes are highlighted on the page they come from; a plan shows where cameras stood and where they looked; what is known and what is not are kept apart; at the end every piece of evidence is pulled into one map."
+    },
+    {
+      "id": "watercolor",
+      "name_zh": "水彩笔刷",
+      "name_en": "Watercolor Brush",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "水彩笔刷",
+        "Watercolor Brush",
+        "watercolor"
+      ],
+      "keywords": [
+        "水彩",
+        "自然",
+        "温柔",
+        "植物",
+        "旅行日记",
+        "watercolor",
+        "nature"
+      ],
+      "use_cases": [
+        "Nature documentary",
+        "Travel",
+        "Science explainers"
+      ],
+      "appearance": "温暖棉纸上的透明水彩、干笔飞白和三至五种颜料，亮部是留白。",
+      "motion": "色块从结构到细节渐显，完成后才轻微摆动，人物脸和服装边界不漂移。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/watercolor/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/watercolor/STYLE.md",
+        "local_path": "references/lemo-source/styles/watercolor/STYLE.md",
+        "sha256": "662d57568408a7c82ef8f64980ca85798b8bb239df3dc3a6715283d7f4555ef0"
+      },
+      "source_essence": "A hand-painted journal page that paints itself: translucent brush strokes with dry-brush flying white on warm cotton paper, hand-written notes beside what is painted, nothing drawn with a vector line."
+    },
+    {
+      "id": "white-model",
+      "name_zh": "白模投影",
+      "name_en": "Projection on White Model",
+      "family_zh": "实证影像",
+      "family_en": "Evidence Films",
+      "aliases": [
+        "白模投影",
+        "Projection on White Model",
+        "white model"
+      ],
+      "keywords": [
+        "白模",
+        "城市规划",
+        "展览投影",
+        "建筑数据",
+        "white model",
+        "urban planning"
+      ],
+      "use_cases": [
+        "Urban planning",
+        "Exhibitions",
+        "City data"
+      ],
+      "appearance": "暗室基座上的真实白色建筑体块，投影光按数据层改变表面，模型本身不变。",
+      "motion": "光层柔和铺开、局部建筑依次点亮，不移动或改造基座和建筑几何。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "none",
+      "palette_policy": "color",
+      "requires_source_material": true,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Requires user source material, or an explicit illustrative_only declaration; generated imagery is not documentary evidence."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/white-model/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/white-model/STYLE.md",
+        "local_path": "references/lemo-source/styles/white-model/STYLE.md",
+        "sha256": "02b6423a69ac5a30322997ec9523bd6b6f776b7c8cf14f249eeb996b9d21e2c2"
+      },
+      "source_essence": "A pure white massing model of a real place stands on a plinth in a dark room, and a projector paints data onto it as light: one layer at a time, falling on the surfaces that face it, spilling a little past the plate. The model never changes; only the light on it does."
+    },
+    {
+      "id": "whiteboard",
+      "name_zh": "白板讲解",
+      "name_en": "Whiteboard Explainer",
+      "family_zh": "手绘与绘画",
+      "family_en": "Hand-drawn & Painting",
+      "aliases": [
+        "白板讲解",
+        "Whiteboard Explainer",
+        "whiteboard"
+      ],
+      "keywords": [
+        "白板",
+        "原理讲解",
+        "在线课程",
+        "为什么",
+        "因果解释",
+        "whiteboard",
+        "explainer"
+      ],
+      "use_cases": [
+        "Explainers",
+        "Online courses",
+        "Science"
+      ],
+      "appearance": "有反光的白板、三种有固定含义的记号笔色和磁铁，结构清楚不依赖密集文字。",
+      "motion": "线条按绘画顺序呈现，磁铁轻移、错误关系擦除，固定机位或轻微跟随。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "visual_grammar_only",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate.",
+        "Visual/layout grammar only; exact text and subtitles belong to downstream tools."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/whiteboard/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/whiteboard/STYLE.md",
+        "local_path": "references/lemo-source/styles/whiteboard/STYLE.md",
+        "sha256": "19f66326257bcafb8aca18af3e209d1fee31d9e23902ce1708bbb606cbf4b718"
+      },
+      "source_essence": "An explainer drawn live on one glossy dry-erase board: single-line handwriting that is actually *written* stroke by stroke, floating markers with no hand, magnets that can move, an eraser that can rewind, and a camera that travels across the board instead of cutting."
+    },
+    {
+      "id": "woodcut",
+      "name_zh": "木刻版画",
+      "name_en": "Woodcut Print",
+      "family_zh": "印刷与版画",
+      "family_en": "Print & Printmaking",
+      "aliases": [
+        "木刻版画",
+        "Woodcut Print",
+        "woodcut"
+      ],
+      "keywords": [
+        "木刻",
+        "民间故事",
+        "手工品牌",
+        "木版故事",
+        "woodcut",
+        "craft"
+      ],
+      "use_cases": [
+        "Folk tales",
+        "Craft brands",
+        "Book trailers"
+      ],
+      "appearance": "近黑木刻块与暖纸白切痕，用排线塑体积，最多一种强调色仅落在刻白区域。",
+      "motion": "先粗轮廓再刻细节，人物动作有预备与余势，刻线随肢体固定。",
+      "camera": "单个短镜头，默认固定构图；只有讲解需要时才做幅度很小的镜头运动。",
+      "character_support": "reduced",
+      "palette_policy": "restricted",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "Only a short native GIF shot; original film editing, audio, fonts and code renderer are excluded.",
+        "Keep material texture stable; adapt timing to the requested 2–16 frames without claiming the source film frame rate."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": {
+        "repository": "lemomo-ai/lemo-opuscar",
+        "commit": "9eb7739a0fca4c6990fe966cb8b87b1930f7193a",
+        "path": "styles/woodcut/STYLE.md",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/9eb7739a0fca4c6990fe966cb8b87b1930f7193a/styles/woodcut/STYLE.md",
+        "local_path": "references/lemo-source/styles/woodcut/STYLE.md",
+        "sha256": "b96fda6eeac038137310cc0766d979c8d8a5f3ff6acd87bada5aa50d5136a6a0"
+      },
+      "source_essence": "A relief print that carves itself: every frame is a black wood block, and light only exists where a knife has cut it away. One colour at most, and only for the thing that burns."
+    },
+    {
+      "id": "flat",
+      "name_zh": "通用扁平插画",
+      "name_en": "Flat Illustration",
+      "family_zh": "原生基础",
+      "family_en": "Native Basics",
+      "aliases": [
+        "通用扁平插画",
+        "Flat Illustration"
+      ],
+      "keywords": [
+        "扁平插画",
+        "清爽插画",
+        "flat illustration"
+      ],
+      "use_cases": [
+        "General explainers"
+      ],
+      "appearance": "简洁实色、稳定墨线、克制配色和完整背景。",
+      "motion": "清楚剪影、自然重心转移、动作有预备和收势。",
+      "camera": "固定构图，确保主体完整。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "A visual preset, not a guarantee of identity or motion quality."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": null
+    },
+    {
+      "id": "papercut",
+      "name_zh": "通用纸艺",
+      "name_en": "Paper-cut Illustration",
+      "family_zh": "原生基础",
+      "family_en": "Native Basics",
+      "aliases": [
+        "通用纸艺",
+        "Paper-cut Illustration"
+      ],
+      "keywords": [
+        "纸艺",
+        "纸片",
+        "paper cut"
+      ],
+      "use_cases": [
+        "General explainers"
+      ],
+      "appearance": "哑光纸层、固定厚度和柔和层间阴影，颜色稳定。",
+      "motion": "关节姿态连贯，纸形稳定，不融化或随机抖动。",
+      "camera": "固定构图，确保主体完整。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "A visual preset, not a guarantee of identity or motion quality."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": null
+    },
+    {
+      "id": "clay",
+      "name_zh": "黏土微缩",
+      "name_en": "Clay Miniature",
+      "family_zh": "原生基础",
+      "family_en": "Native Basics",
+      "aliases": [
+        "黏土微缩",
+        "Clay Miniature"
+      ],
+      "keywords": [
+        "黏土",
+        "粘土",
+        "clay"
+      ],
+      "use_cases": [
+        "General explainers"
+      ],
+      "appearance": "柔光下的黏土微缩人物，雕塑特征和体积稳定。",
+      "motion": "有重量的关节动作与收势，不以变形代替动作。",
+      "camera": "固定构图，确保主体完整。",
+      "character_support": "full",
+      "palette_policy": "color",
+      "requires_source_material": false,
+      "adaptation": "native_gif_visual",
+      "limitations": [
+        "A visual preset, not a guarantee of identity or motion quality."
+      ],
+      "validation": {
+        "state": "adapted_not_render_tested",
+        "evidence": []
+      },
+      "source": null
+    }
+  ]
+}

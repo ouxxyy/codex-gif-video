@@ -1,0 +1,9 @@
+{
+  "id": "office-hero",
+  "version": "1",
+  "description": "纸艺办公室人物，短黑发、圆脸、橙色上衣、藏青长裤、米色鞋",
+  "invariants": ["脸型、发型、服装颜色和身体比例稳定"],
+  "allowed_changes": ["表情", "关节姿态", "本次指定道具"],
+  "forbidden_changes": ["换装", "增加肢体", "道具融化"],
+  "references": [{"path": "../runs/character-v1.png", "role": "character", "source": "替换成实际参考图来源及生成收据路径"}]
+}

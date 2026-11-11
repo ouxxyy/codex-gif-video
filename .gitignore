@@ -1,0 +1,18 @@
+.env*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+runs/
+dist/
+evidence/
+previews/
+exports/
+*.config.json
+*.render.json
+.*.render-work-*/
+# Local historical work notes are preserved, not published.
+docs/
+GLOSSARY.md
+native-gif/

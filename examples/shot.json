@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "mode": "shot",
+  "shots": [{
+    "id": "burden-up",
+    "intent": "越来越多的任务让人应接不暇",
+    "initial_state": "一个简洁纸艺人物站在桌旁，双手托着一本薄册",
+    "action": "三本册子依次落在手中，人物随重量增长弯曲膝盖并调整手臂，最终努力稳住册子",
+    "end_state": "人物托稳四本册子，明显吃力但身体结构不变",
+    "aspect_ratio": "16:9",
+    "target_duration_s": 2.4,
+    "loop": "once"
+  }]
+}

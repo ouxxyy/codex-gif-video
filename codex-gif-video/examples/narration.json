@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "mode": "narration",
+  "narration": "任务越堆越多，人开始手忙脚乱。先放下不重要的任务，才能腾出手做关键的事。",
+  "shots": [
+    {"id":"burden-up","source_text":"任务越堆越多，人开始手忙脚乱。","intent":"任务增加造成负担","initial_state":"桌面只有一个纸盒","action":"三个纸盒依次堆上去，底层逐渐受压","end_state":"四个纸盒形成倾斜但未倒下的堆叠"},
+    {"id":"burden-down","source_text":"先放下不重要的任务，才能腾出手做关键的事。","intent":"减少负担，留下重要任务","initial_state":"桌面堆着四个纸盒","action":"三个灰色纸盒依次移开，留下一个橙色纸盒，空间逐渐清空","end_state":"桌面只剩橙色纸盒，位置稳定"}
+  ]
+}

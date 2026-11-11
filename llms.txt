@@ -1,0 +1,19 @@
+# Codex GIF Video
+
+> Agent Skill for silent native GIF and MP4 visual assets. Skill name: codex-gif-video.
+
+- Main task: turn action briefs or narration text into short native GIF shots; optionally join them into one long GIF or silent MP4.
+- 中文用途: 动作素材、长 GIF、静音 MP4、人物一致性、风格参考；不添加字幕、配乐、配音或音效。
+- Entry: copy codex-gif-video/ to the Agent skill directory; invoke $codex-gif-video.
+- Generation: enabled Codex native GIF tool or explicitly authorized official OpenAI API. Account/model availability is required; API usage may be billed.
+- Export: one original cycle per shot, no speed changes, no interpolation, no looping to fill duration. Retain original GIF bytes and provenance.
+- Style references: 66 guides from Lemomo / Lemo-Opuscar plus 3 presets; not all styles render-tested.
+- Limits: perceptual checks may remain unknown; cross-style costume color preservation has a known failed example. Original model response identity may be unreported.
+
+## Links
+- [README and installation](https://github.com/ouxxyy/codex-gif-video#install)
+- [Skill instructions](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/SKILL.md)
+- [Long GIF and MP4 export](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/references/movie.md)
+- [Upstream style project](https://github.com/lemomo-ai/lemo-opuscar)
+- [Upstream author Lemomo](https://github.com/lemomo-ai)
+- [Author project collection](https://github.com/ouxxyy/ouba-classmate)
