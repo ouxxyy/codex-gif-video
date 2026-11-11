@@ -7,19 +7,46 @@
 > [!TIP]
 > 🎁 扫码关注公众号「欧八同学」，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ [去扫码](#author)
 
-[看效果](#demo) · [安装与使用](#install) · [选择格式](#formats) · [风格与致谢](#credits)
+[9 种动图示例](#demo) · [安装与使用](#install) · [选择格式](#formats) · [风格与致谢](#credits)
 
 <a id="demo"></a>
 
-## 先看素材
+## 先看 9 种风格
 
-同一位虚构角色，同一套纸艺风格，两个不同动作。下方是本项目通过官方 API 请求得到的原始 GIF；人物由 AI 生成，不是真人照片。
+从 69 种风格中选了 9 种，先看画面、材质和动作差别。下方都是这个 Skill 通过官方 API 生成的虚构小样，图内不加字幕或水印；点动图可查看原始 GIF。
+
+<table>
+<tr>
+<td align="center" width="33%"><strong>纸片立体书</strong><br><a href="codex-gif-video/assets/samples/paper-wave.gif"><img src="assets/style-gallery/paper-popup.gif" alt="纸片立体书：角色抬手招呼，无字幕 GIF 动作小样" width="256"></a><br><sub>人物讲解 · 童话场景</sub></td>
+<td align="center" width="33%"><strong>水彩笔刷</strong><br><a href="assets/style-gallery/originals/watercolor.gif"><img src="assets/style-gallery/watercolor.gif" alt="水彩笔刷：银杏叶由浅到深绘出，无字幕 GIF 动作小样" width="256"></a><br><sub>自然科普 · 观察笔记</sub></td>
+<td align="center" width="33%"><strong>中国水墨</strong><br><a href="assets/style-gallery/originals/ink-wash.gif"><img src="assets/style-gallery/ink-wash.gif" alt="中国水墨：小鱼游过荷叶下方，无字幕 GIF 动作小样" width="256"></a><br><sub>东方意境 · 情绪表达</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><strong>厚涂油画</strong><br><a href="assets/style-gallery/originals/impasto.gif"><img src="assets/style-gallery/impasto.gif" alt="厚涂油画：厚油彩中的帆船轻摆，无字幕 GIF 动作小样" width="256"></a><br><sub>情绪短片 · 生活场景</sub></td>
+<td align="center" width="33%"><strong>黏土微缩</strong><br><a href="assets/style-gallery/originals/clay.gif"><img src="assets/style-gallery/clay.gif" alt="黏土微缩：黏土小鸟展开双翼，无字幕 GIF 动作小样" width="256"></a><br><sub>角色表演 · 轻松内容</sub></td>
+<td align="center" width="33%"><strong>16-bit 像素 RPG</strong><br><a href="assets/style-gallery/originals/pixel-rpg.gif"><img src="assets/style-gallery/pixel-rpg.gif" alt="16-bit 像素 RPG：冒险者打开水晶宝箱，无字幕 GIF 动作小样" width="256"></a><br><sub>游戏感表达 · 冒险叙事</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><strong>低多边形等距</strong><br><a href="assets/style-gallery/originals/lowpoly-island.gif"><img src="assets/style-gallery/lowpoly-island.gif" alt="低多边形等距：小岛上的风车转动，无字幕 GIF 动作小样" width="256"></a><br><sub>产品概念 · 小世界展示</sub></td>
+<td align="center" width="33%"><strong>蓝图 / 工程制图</strong><br><a href="assets/style-gallery/originals/blueprint.gif"><img src="assets/style-gallery/blueprint.gif" alt="蓝图 / 工程制图：钢笔沿装配轴拆开再合拢，无字幕 GIF 动作小样" width="256"></a><br><sub>结构拆解 · 原理示意</sub></td>
+<td align="center" width="33%"><strong>50s 复古卡通</strong><br><a href="assets/style-gallery/originals/midcentury-toon.gif"><img src="assets/style-gallery/midcentury-toon.gif" alt="50s 复古卡通：讲解员打开台灯，无字幕 GIF 动作小样" width="256"></a><br><sub>操作说明 · 轻量讲解</sub></td>
+</tr>
+</table>
+
+每段 2.4 秒。这里使用 256px 轻量动图预览，点击后查看未经改动的原始 GIF。小样只覆盖选中的 9 种；连续动作、人物一致性仍需按具体任务复核。[查看全部 69 种风格](codex-gif-video/references/style-index.md) · [小样来源与参数](assets/style-gallery/gallery.json)。
+
+<details>
+<summary>再看同一人物、同一画风的两个动作</summary>
+
+同一位虚构角色，同一套纸艺风格，两个不同动作。人物由 AI 生成，不是真人照片。
 
 | 招手 | 指向旁边 |
 | --- | --- |
 | ![同一虚构纸艺角色的招手 GIF 动作素材](codex-gif-video/assets/samples/paper-wave.gif) | ![同一虚构纸艺角色的指向 GIF 动作素材](codex-gif-video/assets/samples/paper-point.gif) |
 
-每段 2.4 秒、12 帧。已有静态全帧身份检查，但正常速度完整播放和响应自报模型仍有未核验项；这些是效果小样，不是所有风格质量的保证。[查看小样检查范围](codex-gif-video/assets/samples/identity-results.json)。
+每段 2.4 秒、12 帧。已有静态全帧身份检查，但正常速度完整播放和响应自报模型仍有未核验项。[查看人物小样检查范围](codex-gif-video/assets/samples/identity-results.json)。
+
+</details>
 
 ## 它怎么工作
 

@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "scope": "Nine selected style demonstrations, not a 69-style quality benchmark. Public fictional scenes; no real-person references. Original GIF bytes unchanged; lightweight previews are derived copies with unchanged frame count and timing.",
+  "items": [
+    {
+      "preview": "assets/style-gallery/paper-popup.gif",
+      "preview_bytes": 341113,
+      "preview_sha256": "f62675401191bbf3e72c5a332dde6e244623301e6f56919fe3249024c03744c4",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "paper-popup",
+      "title": "纸片立体书",
+      "use_case": "人物讲解 · 童话场景",
+      "scene": "角色抬手招呼",
+      "file": "codex-gif-video/assets/samples/paper-wave.gif",
+      "bytes": 1223734,
+      "sha256": "a665c3020526584bdf0b21834076a884c475d0931284cc0fc5abd0eb5b78d877",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 12,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "reused_public_fictional_character_demo",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "historical_not_reassessed"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/watercolor.gif",
+      "preview_bytes": 547567,
+      "preview_sha256": "5d952a43a26054d67d26d96a4adfeec292d5c906bb0df59980285ec988628073",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "watercolor",
+      "title": "水彩笔刷",
+      "use_case": "自然科普 · 观察笔记",
+      "scene": "银杏叶由浅到深绘出",
+      "file": "assets/style-gallery/originals/watercolor.gif",
+      "bytes": 2282016,
+      "sha256": "738fca205c18d9e346317b44c1c52c103f3e9828eea515f33531a57dd0533040",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "2a042c7f54683b3d351a5752cb8bed77cef37f9faf5591c08bbf4cae1f1010d1"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/ink-wash.gif",
+      "preview_bytes": 625435,
+      "preview_sha256": "b29564f863f4258517a4490bbec6aca35fea55a8cfef22cdd8a02a6529f613bb",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "ink-wash",
+      "title": "中国水墨",
+      "use_case": "东方意境 · 情绪表达",
+      "scene": "小鱼游过荷叶下方",
+      "file": "assets/style-gallery/originals/ink-wash.gif",
+      "bytes": 2455750,
+      "sha256": "bf8cc040017ade3a4d4a0087f563d55241c6a8936ea647581bff04b94fcec2e1",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "06cd5224d0ceed5a3a937ecc115f1bb97befaa605e29809b698dbac833982e09"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/impasto.gif",
+      "preview_bytes": 465445,
+      "preview_sha256": "102333ee615e7b7d3dc1077c9b2d9f1785d3756b67c1567064d75656f0c888df",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "impasto",
+      "title": "厚涂油画",
+      "use_case": "情绪短片 · 生活场景",
+      "scene": "厚油彩中的帆船轻摆",
+      "file": "assets/style-gallery/originals/impasto.gif",
+      "bytes": 1991099,
+      "sha256": "f81487171b10ac345fd2944aa304b2011807bf43a668d5a9963552683059664c",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "4be72d6fb3dd72e832768a01110b63386080fe50847471479b44ce268ec9e606"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/clay.gif",
+      "preview_bytes": 357160,
+      "preview_sha256": "8fa2bc6dfa86b6bbdc738f37919c042252e2c3cc7d506276898dc0edc10d00fb",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "clay",
+      "title": "黏土微缩",
+      "use_case": "角色表演 · 轻松内容",
+      "scene": "黏土小鸟展开双翼",
+      "file": "assets/style-gallery/originals/clay.gif",
+      "bytes": 1420423,
+      "sha256": "8a392cb9a694ed84a73329e3ed336736431cc9facee056dac56be07ef7c9c906",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "5ecde6b7099e5fb11caf3d9331a91914a41fffaa18bd32794492dd41595dc302"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/pixel-rpg.gif",
+      "preview_bytes": 409237,
+      "preview_sha256": "e47b4e4e028ab6c377b677b47eea20f0a7b6a6d00fcaee465092df9fc935fb2b",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "pixel-rpg",
+      "title": "16-bit 像素 RPG",
+      "use_case": "游戏感表达 · 冒险叙事",
+      "scene": "冒险者打开水晶宝箱",
+      "file": "assets/style-gallery/originals/pixel-rpg.gif",
+      "bytes": 1575556,
+      "sha256": "55472dc8a608359a62e2d0daef5330a34abcb57e8e220056ce253497c771b1b8",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "976670a7bb636611730bdd4449d5896711b969a229085d2f17d81fc6b6bdf075"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/lowpoly-island.gif",
+      "preview_bytes": 209380,
+      "preview_sha256": "5a4b208ea1e9de741a0ee28945dd561e83b94e1f9f393071e5795d89b832d114",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "lowpoly-island",
+      "title": "低多边形等距",
+      "use_case": "产品概念 · 小世界展示",
+      "scene": "小岛上的风车转动",
+      "file": "assets/style-gallery/originals/lowpoly-island.gif",
+      "bytes": 734986,
+      "sha256": "2fc21413ac37930011a4ae742dc7c141b07c7ccc3f7590bf3b5ff785fc50218f",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "924b345f2e5f2556807f9f980f29d0897e873a65459cafbc4d1ff76637cce1ce"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/blueprint.gif",
+      "preview_bytes": 731122,
+      "preview_sha256": "a24bbc37473c870a0c7e3008c29060a024742fb65f9730a5abf3be999351d63c",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "blueprint",
+      "title": "蓝图 / 工程制图",
+      "use_case": "结构拆解 · 原理示意",
+      "scene": "钢笔沿装配轴拆开再合拢",
+      "file": "assets/style-gallery/originals/blueprint.gif",
+      "bytes": 2557228,
+      "sha256": "cedba3d784d4320504ce7527daa87ec36f0603e3f539aced494fed97d5e8c268",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "68450005519de61cb8d6a84ebb644f1fa5dd85e4742babe06d2e773dc92fbe40"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    },
+    {
+      "preview": "assets/style-gallery/midcentury-toon.gif",
+      "preview_bytes": 508241,
+      "preview_sha256": "7eea61bb105833c46bc537bf98d5c8909ca478d23da6bfa77ec9059f3f1d38de",
+      "preview_transform": "256x256, 64-color GIF; source frame order and delays retained; not new motion",
+      "style": "midcentury-toon",
+      "title": "50s 复古卡通",
+      "use_case": "操作说明 · 轻量讲解",
+      "scene": "讲解员打开台灯",
+      "file": "assets/style-gallery/originals/midcentury-toon.gif",
+      "bytes": 2056139,
+      "sha256": "714a51f40a1fe3cdc941f0acfaf93aabac08059eb310fa45f69322a3d3b4e581",
+      "size": [
+        512,
+        512
+      ],
+      "frames": 16,
+      "duration_ms": 2400,
+      "source": {
+        "kind": "official_api_native_gif",
+        "requested_model": "gpt-image-2.6-sunburst",
+        "reported_model": null,
+        "official_request_provenance": "verified",
+        "request_payload_sha256": "91701b9917936d995087dfd0dde183adec860d68df1485e338e6eb989df5e2a5"
+      },
+      "full_playback_observed": false,
+      "status": "public_style_demo_not_production_ready"
+    }
+  ]
+}
