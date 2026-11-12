@@ -1,67 +1,86 @@
-# Codex GIF Video · 无声 GIF / 视频素材 Skill
+# Codex GIF Video · 调用 GPT Image 2.6 原生生成长 GIF 与 GIF 短视频的 Agent Skill
 
-把一段动作描述、分镜或口播文字，做成方便放进剪辑软件的动态素材。你可以保留每个镜头的原始 GIF，也可以选择保存成**一个长 GIF**或**静音 MP4**。全程不加字幕、配乐、配音或音效。
+给一段**口播稿、分镜或动作描述**，这个 Skill 可以通过 **OpenAI GPT API 调用 `GPT Image 2.6` 的原生 GIF 生成能力**（或使用 Codex 原生 GIF 工具），直接生成多帧动态画面，并按你的需要导出为**单镜头短 GIF**、**多镜头拼接的长 GIF**，或**无声 MP4（GIF 短视频）**。
 
-我做这个 Skill，是想把人物、画风和动作先做稳，再把干净的素材交给后续剪辑。它内置 **66 种 Lemo 风格资料与 3 种基础预设**，支持按内容推荐风格、复用同一人物主参考。
+很多人做视频或写推文时卡在配图素材上：用传统 AI 视频模型抽卡又慢又贵，人物跨镜头容易变脸，画面还经常莫名其妙崩出乱码字幕；拿静态图硬拼又像 PPT。
+
+这个 Skill 专门解决这件事：
+- **真·原生 GIF 生成**：直接调用 OpenAI 官方 Image API 的 `GPT Image 2.6`（`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare`，指定 `output_format=gif`）直接输出原生多帧动图，不是拿静态图硬凑或写代码画动画。
+- **长 GIF / GIF 视频自由选**：单镜头生成 2–16 帧原生动图；需要更长内容时，自动拆成多个连续镜头，按原速无缝串接成**一个完整长 GIF** 或导出为**静音 MP4（GIF 视频）**。
+- **内置 69 种画风 + 跨镜头锁人物**：自带 **69 种内置视觉风格**（含 66 种 Lemo-Opuscar 专业画风指南 + 3 种原生基础预设），支持先生成一张人物主参考图并跨镜头复用，锁住同一个角色、脸型和衣服配色。
+- **干净无字幕、无水印**：全程**不加字幕、不加水印、不加配乐或配音**，交付纯画面素材——无论直接发 X（Twitter），还是拖进剪映 / Premiere 配音加字幕，都不会被画面里的 AI 乱码字干扰。
 
 > [!TIP]
 > 🎁 扫码关注公众号「欧八同学」，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ [去扫码](#author)
 
-[9 种动图示例](#demo) · [安装与使用](#install) · [选择格式](#formats) · [风格与致谢](#credits)
+[9 种动图示例](#demo) · [4 大适用场景](#use-cases) · [安装与 API 配置](#install) · [长 GIF 与视频导出](#formats) · [常见问题 FAQ](#faq) · [69 种风格与致谢](#credits)
 
 <a id="demo"></a>
 
-## 先看 9 种风格
+## 先看 9 种风格实测动图
 
-从 69 种风格中选了 9 种，先看画面、材质和动作差别。下方都是这个 Skill 通过官方 API 生成的虚构小样，图内不加字幕或水印；点动图可查看原始 GIF。
+从 **69 种内置风格**中挑了 9 种代表画风，先看画面材质和动作效果。下方动图均由本 Skill 通过官方 OpenAI GPT Image 2.6 API 原生生成（虚构演示素材，画面无字幕、无水印；点击动图可查看未经改动的原始 GIF）：
 
 <table>
 <tr>
-<td align="center" width="33%"><strong>纸片立体书</strong><br><a href="codex-gif-video/assets/samples/paper-wave.gif"><img src="assets/style-gallery/paper-popup.gif" alt="纸片立体书：角色抬手招呼，无字幕 GIF 动作小样" width="256"></a><br><sub>人物讲解 · 童话场景</sub></td>
-<td align="center" width="33%"><strong>水彩笔刷</strong><br><a href="assets/style-gallery/originals/watercolor.gif"><img src="assets/style-gallery/watercolor.gif" alt="水彩笔刷：银杏叶由浅到深绘出，无字幕 GIF 动作小样" width="256"></a><br><sub>自然科普 · 观察笔记</sub></td>
-<td align="center" width="33%"><strong>中国水墨</strong><br><a href="assets/style-gallery/originals/ink-wash.gif"><img src="assets/style-gallery/ink-wash.gif" alt="中国水墨：小鱼游过荷叶下方，无字幕 GIF 动作小样" width="256"></a><br><sub>东方意境 · 情绪表达</sub></td>
+<td align="center" width="33%"><strong>纸片立体书</strong><br><a href="codex-gif-video/assets/samples/paper-wave.gif"><img src="assets/style-gallery/paper-popup.gif" alt="纸片立体书：角色抬手招呼，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>儿童绘本 · 人物讲解</sub></td>
+<td align="center" width="33%"><strong>水彩笔刷</strong><br><a href="assets/style-gallery/originals/watercolor.gif"><img src="assets/style-gallery/watercolor.gif" alt="水彩笔刷：银杏叶由浅到深绘出，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>自然科普 · 观察笔记</sub></td>
+<td align="center" width="33%"><strong>中国水墨</strong><br><a href="assets/style-gallery/originals/ink-wash.gif"><img src="assets/style-gallery/ink-wash.gif" alt="中国水墨：小鱼游过荷叶下方，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>东方意境 · 国风故事</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><strong>厚涂油画</strong><br><a href="assets/style-gallery/originals/impasto.gif"><img src="assets/style-gallery/impasto.gif" alt="厚涂油画：厚油彩中的帆船轻摆，无字幕 GIF 动作小样" width="256"></a><br><sub>情绪短片 · 生活场景</sub></td>
-<td align="center" width="33%"><strong>黏土微缩</strong><br><a href="assets/style-gallery/originals/clay.gif"><img src="assets/style-gallery/clay.gif" alt="黏土微缩：黏土小鸟展开双翼，无字幕 GIF 动作小样" width="256"></a><br><sub>角色表演 · 轻松内容</sub></td>
-<td align="center" width="33%"><strong>16-bit 像素 RPG</strong><br><a href="assets/style-gallery/originals/pixel-rpg.gif"><img src="assets/style-gallery/pixel-rpg.gif" alt="16-bit 像素 RPG：冒险者打开水晶宝箱，无字幕 GIF 动作小样" width="256"></a><br><sub>游戏感表达 · 冒险叙事</sub></td>
+<td align="center" width="33%"><strong>厚涂油画</strong><br><a href="assets/style-gallery/originals/impasto.gif"><img src="assets/style-gallery/impasto.gif" alt="厚涂油画：厚油彩中的帆船轻摆，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>情绪短片 · 治愈插画</sub></td>
+<td align="center" width="33%"><strong>黏土微缩</strong><br><a href="assets/style-gallery/originals/clay.gif"><img src="assets/style-gallery/clay.gif" alt="黏土微缩：黏土小鸟展开双翼，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>定格动画感 · 萌系绘本</sub></td>
+<td align="center" width="33%"><strong>16-bit 像素 RPG</strong><br><a href="assets/style-gallery/originals/pixel-rpg.gif"><img src="assets/style-gallery/pixel-rpg.gif" alt="16-bit 像素 RPG：冒险者打开水晶宝箱，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>游戏感表达 · X 爆款动图</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><strong>低多边形等距</strong><br><a href="assets/style-gallery/originals/lowpoly-island.gif"><img src="assets/style-gallery/lowpoly-island.gif" alt="低多边形等距：小岛上的风车转动，无字幕 GIF 动作小样" width="256"></a><br><sub>产品概念 · 小世界展示</sub></td>
-<td align="center" width="33%"><strong>蓝图 / 工程制图</strong><br><a href="assets/style-gallery/originals/blueprint.gif"><img src="assets/style-gallery/blueprint.gif" alt="蓝图 / 工程制图：钢笔沿装配轴拆开再合拢，无字幕 GIF 动作小样" width="256"></a><br><sub>结构拆解 · 原理示意</sub></td>
-<td align="center" width="33%"><strong>50s 复古卡通</strong><br><a href="assets/style-gallery/originals/midcentury-toon.gif"><img src="assets/style-gallery/midcentury-toon.gif" alt="50s 复古卡通：讲解员打开台灯，无字幕 GIF 动作小样" width="256"></a><br><sub>操作说明 · 轻量讲解</sub></td>
+<td align="center" width="33%"><strong>低多边形等距</strong><br><a href="assets/style-gallery/originals/lowpoly-island.gif"><img src="assets/style-gallery/lowpoly-island.gif" alt="低多边形等距：小岛上的风车转动，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>产品概念 · 微缩世界</sub></td>
+<td align="center" width="33%"><strong>蓝图 / 工程制图</strong><br><a href="assets/style-gallery/originals/blueprint.gif"><img src="assets/style-gallery/blueprint.gif" alt="蓝图 / 工程制图：钢笔沿装配轴拆开再合拢，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>硬核科普 · 结构拆解</sub></td>
+<td align="center" width="33%"><strong>50s 复古卡通</strong><br><a href="assets/style-gallery/originals/midcentury-toon.gif"><img src="assets/style-gallery/midcentury-toon.gif" alt="50s 复古卡通：讲解员打开台灯，GPT Image 2.6 原生无字幕 GIF 动作小样" width="256"></a><br><sub>口播配图 · 操作说明</sub></td>
 </tr>
 </table>
 
-每段 2.4 秒。这里使用 256px 轻量动图预览，点击后查看未经改动的原始 GIF。小样只覆盖选中的 9 种；连续动作、人物一致性仍需按具体任务复核。[查看全部 69 种风格](codex-gif-video/references/style-index.md) · [小样来源与参数](assets/style-gallery/gallery.json)。
+每段 2.4 秒。表格内为 256px 轻量预览，点击可查看原始 GIF。小样目前仅针对选中的 9 种风格做了生成实测；跨镜头连续动作与人物一致性仍需按具体任务复核。[查看全部 69 种内置风格目录](codex-gif-video/references/style-index.md) · [小样来源与参数](assets/style-gallery/gallery.json)。
 
 <details>
-<summary>再看同一人物、同一画风的两个动作</summary>
+<summary>👉 点开看：同一个人物、同一种画风，跨镜头做两个连续动作</summary>
 
-同一位虚构角色，同一套纸艺风格，两个不同动作。人物由 AI 生成，不是真人照片。
+同一位 AI 生成的虚构角色，锁定同一套「纸片立体书」画风与服装配色，分别生成两个不同动作镜头：
 
-| 招手 | 指向旁边 |
+| 镜头 1：招手打招呼 | 镜头 2：指向旁边讲解 |
 | --- | --- |
 | ![同一虚构纸艺角色的招手 GIF 动作素材](codex-gif-video/assets/samples/paper-wave.gif) | ![同一虚构纸艺角色的指向 GIF 动作素材](codex-gif-video/assets/samples/paper-point.gif) |
 
-每段 2.4 秒、12 帧。已有静态全帧身份检查，但正常速度完整播放和响应自报模型仍有未核验项。[查看人物小样检查范围](codex-gif-video/assets/samples/identity-results.json)。
+每段 2.4 秒、12 帧。已完成 24 帧静态身份一致性核对（正常速度连续播放与服务端自报模型字段仍保留待核验记录，详见 [人物小样检查结果](codex-gif-video/assets/samples/identity-results.json)）。
 
 </details>
 
-## 它怎么工作
+<a id="use-cases"></a>
 
-1. 你给动作描述或口播文字，并指定画幅、时长和输出格式。
-2. Agent 拆镜头、选择风格；需要同一人物时，先锁定主参考和服装配色。
-3. 调用当前可用的原生 GIF 入口，保存原文件、请求记录与质量检查结果。
-4. 按你的选择交付短 GIF、串接后的长 GIF，或静音 MP4，同时保留清单和导出回执。
+## 适合拿来做什么？（4 个高频场景）
 
-口播只用于理解画面，不会自动变成字幕或配音。技术检查、画面检查和完整播放检查分别记录；未完成的项目不会被写成“通过”。
+只要你需要**画风统一、人物稳定、画面干净无乱码字**的动态素材，都可以直接用它产出：
+
+| 适用场景 | 为什么适合用它做 | 推荐内置风格（69 选 N） | 推荐导出格式 |
+| --- | --- | --- | --- |
+| **1. X（Twitter）爆款 GIF 短视频** | 最近在 X 上发「GIF 视频 / 长动图」非常火：信息流里**免点开自动循环播放**，而且手机端在 X 上**长按就能直接复制链接或保存转发**，传播裂变极快。用它可以把观点、教程或小剧场拆成多镜头，一键拼成完整动图。 | `midcentury-toon`（50s 复古卡通）<br>`pixel-rpg`（16-bit 像素）<br>`iso-infographic`（等距信息图）<br>`rubber-hose`（30s 橡皮管卡通） | **长 GIF**（`.gif`）或 **静音 MP4**（`.mp4`） |
+| **2. 口播视频动画素材（B-roll）** | 做抖音、小红书、B 站、视频号或 YouTube 口播时，直接把口播逐字稿喂给它，自动按语义拆成一段段**无字幕、无配音的纯画面动作素材**，拖进剪映 / PR 就能直接对齐人声加字幕，再也不用忍受 AI 视频里的鬼画符乱码字。 | `whiteboard`（白板讲解）<br>`urban-sketch`（钢笔淡彩）<br>`flat`（通用扁平插画）<br>`cel-anime-80s`（80s 赛璐璐动画） | **静音 MP4**（9:16 竖屏或 16:9 横屏） |
+| **3. 儿童绘本读物 / 睡前故事** | 做儿童启蒙绘本、小红书绘本号或有声读物，最怕“每一页小主角长得不一样”。它可以先生成一张主角定妆照（主参考图），后续每一页都带着同一张参考图生成动作，保证小主人公长相和衣服跨页不跑偏。 | `crayon-book`（蜡笔儿童绘本）<br>`paper-popup`（纸片立体书）<br>`clay`（黏土微缩）<br>`isometric-picture-book`（等距绘本） | **单镜短 GIF**（按页插图）或 **长 GIF / MP4** |
+| **4. 知识科普 / 产品原理拆解** | 写公众号长文、技术博客、飞书文档或做演示课件时，一句话生成部件拆解、流程运转或数据变化的动态示意图，比静态截图直观十倍，体积又比完整视频轻得多。 | `blueprint`（蓝图工程制图）<br>`lowpoly-island`（低多边形等距）<br>`watercolor`（水彩笔刷）<br>`ink-wash`（中国水墨） | **单镜短 GIF** 或 **长 GIF** |
+
+## 它是怎么跑起来的？（4 步工作流）
+
+1. **输入需求或口播稿**：你给出动作描述、分镜脚本或一段口播文字，指定画幅比例（16:9 / 9:16 / 1:1）、目标时长和想要的格式（GIF 或 MP4）。
+2. **自动选风格 & 锁死人物**：Agent 从 **69 种内置风格**中匹配最适合的画风（也可直接点名风格）；如果涉及连续镜头里的同一个角色，先生成或绑定一张静态人物主参考图（`reference`），锁住五官、发型和穿搭颜色。
+3. **调用 GPT Image 2.6 原生生成 GIF**：通过你配置的 **OpenAI 官方 Image API**（调用 `gpt-image-2.6-sunburst` 或 `gpt-image-2.6-flare`，开启原生 `output_format=gif`）或 Codex 会话原生 GIF 工具，逐镜头生成多帧动态 GIF，并自动校验帧数、尺寸、画面变化与无文字干扰。
+4. **一键合成长 GIF 或静音 MP4**：你可以直接拿走每个镜头的原始短 GIF，也可以让它把多个镜头按原速无缝串接成**一个长 GIF**，或编码成**静音 H.264 MP4 视频**。
 
 <a id="install"></a>
 
-## 安装与第一次使用
+## 安装与快速上手
 
-先把 Skill 放进 Codex 的技能目录：
+### 1. 安装 Skill 到你的 Agent
+
+把仓库里的 `codex-gif-video` 目录复制或软链接到 Codex / Claude Code 的技能目录即可：
 
 ```bash
 git clone https://github.com/ouxxyy/codex-gif-video.git
@@ -70,58 +89,102 @@ mkdir -p ~/.codex/skills
 cp -R codex-gif-video ~/.codex/skills/codex-gif-video
 ```
 
-如果已经安装，更新现有副本即可，不要把同名目录套在旧目录里面。重新打开 Codex 会话后使用 `$codex-gif-video`。其他 Agent 可以复制同一个 Skill 目录，但必须具备可用的生成入口。
+如果你平时用 Claude Code，也可以同样放进 `~/.claude/skills/codex-gif-video`。重新打开会话后，直接用 `$codex-gif-video`（或点名技能）调用。
 
-本地检查与格式导出需要 Python 3.10+、Pillow；MP4 额外需要 FFmpeg。macOS（含 Apple Silicon）可使用：
+### 2. 安装本地合成与检查依赖
+
+本地镜头规划、质量检查与长 GIF / MP4 导出需要 Python 3.10+ 和 Pillow；如果要导出 MP4 视频，还需要装一下 FFmpeg。macOS（含 Apple Silicon）执行：
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
-brew install ffmpeg  # 只在需要 MP4 且尚未安装时执行
+brew install ffmpeg  # 需要导出 MP4 视频格式时安装
 ```
 
-第一次可以直接说：
+### 3. 配置生成入口（支持 GPT API 调用 Image 2.6 或 Codex 原生工具）
 
+本 Skill 支持两种原生 GIF 生成方式（二选一）：
+
+- **方式 A：通过 OpenAI 官方 GPT API 调用 `GPT Image 2.6`（推荐，稳定可控）**
+  在项目根目录创建权限为 `0600` 的 `.env.local` 文件，填入你的 OpenAI API Key（需账户已开通 `gpt-image-2.6-sunburst` 或 `gpt-image-2.6-flare` 的原生 GIF 权限）：
+  ```bash
+  cp .env.example .env.local
+  chmod 600 .env.local
+  # 编辑 .env.local 填入 OPENAI_API_KEY=sk-...
+  python3 codex-gif-video/scripts/official_api.py status --env-file .env.local
+  ```
+- **方式 B：直接使用 Codex 会话内置的原生 GIF 工具**
+  如果当前 Codex 环境本身已暴露带 `gif` 参数的原生图像工具，可免配额外 API Key 直接调用。
+
+> 详细配置说明见：[官方 GPT Image 2.6 API 模式说明](codex-gif-video/references/official-api.md) · [Codex 原生入口诊断](codex-gif-video/references/native-entry.md)。本仓库不附带 API 密钥，API 调用费用由 OpenAI 官方按量收取。
+
+### 4. 复制就能用的 3 个示例指令
+
+**示例 1：做一条发在 X（Twitter）上的长 GIF 短视频**
 ```text
-使用 $codex-gif-video，做一段“人物把越来越多的书抱在怀里”的动作素材。
-用纸艺风格，16:9，2.4 秒，保存成 GIF，不加字幕和声音。
+使用 $codex-gif-video，帮我做一段适合发 X 的 9 秒长 GIF：
+主题是“打工人周一早上靠三杯咖啡续命”，拆成 3 个连续镜头（趴在桌上 -> 端起大杯美式猛喝 -> 眼神发光疯狂敲键盘）。
+用 50s 复古卡通风格（midcentury-toon），保持同一个人物形象，16:9，最后合成一个长 GIF。
 ```
 
-**生成入口有前提**：Codex 当前工具必须真实提供 GIF 能力；只有文字提示、没有 `gif` 参数时不能生成原生动画。也可由使用者明确选择官方 OpenAI API，准备自己的密钥和可用模型权限，费用由服务商收取。[入口检查](codex-gif-video/references/native-entry.md) · [API 配置](codex-gif-video/references/official-api.md)。本仓库不附带密钥，也不保证每个账户已经开放 GIF。
+**示例 2：把口播稿做成剪映可用的无字幕动画素材（MP4）**
+```text
+使用 $codex-gif-video，把下面这段口播做成 9:16 竖屏静音 MP4 视频素材，总长 12 秒，拆成 4 个镜头：
+“很多人以为存不下钱是因为拿得少，其实是因为账单像漏水的水管，悄无声息把水池排空了。”
+用钢笔淡彩风格（urban-sketch），全程不要出现任何字幕或文字。
+```
+
+**示例 3：做一套人物一致的儿童绘本动图**
+```text
+使用 $codex-gif-video，做一个穿黄色雨衣的小女孩在森林里散步的儿童绘本动图：
+镜头 1 是小女孩蹲下看发光的蘑菇，镜头 2 是小女孩抬头向小鸟招手。
+用蜡笔儿童绘本风格（crayon-book），1:1 方形，每段 2.4 秒，先生成主参考图锁住小女孩形象，分别保留短 GIF 并额外拼一个长 GIF。
+```
 
 <a id="formats"></a>
 
-## 自己选：长 GIF 或视频
+## 输出格式怎么选：短 GIF、长 GIF 还是 MP4 视频？
 
-| 你要什么 | 怎么说 | 得到什么 |
-| --- | --- | --- |
-| 一组短动作素材 | “每个镜头分别保存 GIF” | 原始短 GIF 与清单 |
-| 一个长 GIF 文件 | “把这几个镜头按顺序保存成一个 15 秒长 GIF” | 单个 `.gif`，按原速串接 |
-| 视频格式 | “保存成 15 秒 MP4 视频素材” | 单个静音 `.mp4`，无字幕、无音轨 |
-| 两种都保留 | “长 GIF 和 MP4 都要” | 同一组镜头分别导出，不重复生成 |
+你可以根据发布平台或剪辑习惯随时指定导出格式：
 
-例如：
+| 你想要什么结果 | 直接怎么跟 Agent 说 | 最终交付的文件 | 适合发哪里 / 怎么用 |
+| --- | --- | --- | --- |
+| **分镜头独立动图** | “每个镜头分别保存成 GIF” | 每个镜头的原始 `.gif` + 镜头清单 | 嵌入公众号文章、飞书文档、Notion、儿童绘本单页 |
+| **一个完整长 GIF** | “把这几个镜头按顺序拼成一个 12 秒长 GIF” | 单个合并后的长 `.gif`（原速播放） | 发 **X（Twitter）动图推文**（长按即可复制链接）、GitHub README 演示 |
+| **无声 GIF 视频（MP4）** | “导出成 15 秒 MP4 视频素材” | 单个静音 `.mp4`（H.264，无字幕无音轨） | 导入 **剪映 / Premiere** 当口播 B-roll 素材，或发小红书 / 抖音 / X 视频 |
+| **长 GIF 和 MP4 都要** | “长 GIF 和 MP4 视频各导出一份” | 同一组镜头同时导出 `.gif` 与 `.mp4` | 一次生成、不重复花钱，同时发推文和进剪辑软件 |
 
-```text
-使用 $codex-gif-video，把“拿起书—走到窗边—放下书”拆成三个镜头。
-沿用同一人物和纸艺风格，9:16，总长 9 秒，最后保存成一个长 GIF。
-```
+> **关于长 GIF 与视频合成的真实说明**：单次 API 调用生成的是 2–16 帧的原生短 GIF；长 GIF 和 MP4 是把多个已经生成的原生短镜头按原速顺序拼接出来，不会靠慢放、循环重复、停帧或插帧来假装“单镜超长生成”。如果总时长较长、GIF 体积偏大，优先推荐同时导出 MP4。[查看导出细节与命令](codex-gif-video/references/movie.md)。
 
-长文件来自多个短镜头串接，不代表模型一次生成了长动画。导出保留原速和真实时长，不靠循环、慢放、停帧或插帧凑长度。GIF 体积可能较大，重新编码也可能改变调色板；长内容或剪辑素材通常更适合 MP4。[导出命令与限制](codex-gif-video/references/movie.md)。
+<a id="faq"></a>
 
-## 风格、人物与已知限制
+## 常见问题（FAQ）
 
-- [69 种风格目录](codex-gif-video/references/style-index.md)：66 种上游资料加 3 种基础预设；目录覆盖不等于逐一完成生成测试。
-- [人物一致性流程](codex-gif-video/references/character-testing.md)：固定脸型、服装、配色与参考图；换风格仍可能漂移。现有跨风格小样存在服装保色失败，已保留记录。
-- 单镜头规划为 2–16 帧，适合短而清楚的动作；默认尺寸为 16:9 的 512×288、9:16 的 288×512、方形 512×512。放大导出不会增加原生细节或运动帧。
-- 生成需要联网；口播、提示词和所选参考图会发送给你选择的生成服务。本地规划、检查和导出可以离线运行。
-- 代码路径和导出在 macOS Apple Silicon 上验证；Python 使用 `fcntl`，不直接支持原生 Windows。其他 Agent 的完整交互未逐一验证。
-- 缺完整播放或视觉检查时，只能明确交付待审文件。文件能解码不代表动作自然、人物完全稳定或没有画面文字。
+### 1. 它是怎么生成 GIF 的？跟可灵、即梦、Sora 这类 AI 视频模型有什么区别？
+它不是调用文生视频大模型生成几百帧的写实长视频，而是通过 **OpenAI 官方 Image API 调用 `GPT Image 2.6`（`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare`）的原生 GIF 输出能力（`output_format=gif`）**。
+它的优势是：**画风控制极其扎实（绘本、像素、水彩、复古卡通、工程蓝图等质感远比通用视频模型稳定）、天生适合做几秒一个动作的节奏感动图、不会乱加崩坏的字幕水印**，而且支持把多个短镜头拼成一条长 GIF 或轻量 MP4。
 
-## 开发与本地验证
+### 2. 到底内置了多少种风格？为什么有的地方写 69 种，有的地方提到 66 种？
+一共内置了 **69 种可直接调用的风格**。
+之所以会看到两个数字，是因为它的风格库由两部分组成：**66 种源自开源项目 Lemo-Opuscar 的专业视觉指南** + **3 种本项目内置的原生基础预设**（通用扁平插画 `flat`、通用纸艺 `papercut`、黏土微缩 `clay`），合起来正好是 **69 种**。你可以通过 `style_router.py list` 或查看 [69 种风格完整目录](codex-gif-video/references/style-index.md) 浏览全部画风。
 
-以下命令在仓库根目录、已安装 Python 依赖的环境中运行，不触发生成或计费：
+### 3. 为什么说它很适合发 X（Twitter）短视频？
+最近在 X 上，用 GIF 或无声循环短片发教程、产品亮点和视觉故事非常火：一方面用户在时间线里刷到就能直接看，不需要开声音；另一方面，在 X 手机端**长按 GIF 就能直接复制链接或保存转发**，互动和二次传播率比普通外链视频高很多。用这个 Skill 可以直接把 3–5 个分镜拼成一个长 GIF 或同源 MP4，专门适配这种玩法。
+
+### 4. 多个镜头怎么保证是同一个人物？会变脸或换衣服吗？
+当你需要多镜头出现同一个角色时，Skill 会先用同一模型生成一张**静态人物主参考图（Master Reference）**，并在固定同一画风（`style_lock`）的前提下，把这张主参考图传给后续每一个镜头的 `images/edits` 接口。[人物一致性测试记录](codex-gif-video/references/character-testing.md) 显示：在同一风格下（例如纸片立体书），跨动作能较好保持人物形象；但如果中途强行跨风格切换（比如从纸艺切到复古卡通），服装颜色仍可能发生漂移，因此默认建议同一条片子锁定同一种风格。
+
+## 使用前需要了解的真实边界
+
+- **风格覆盖与实测范围**：[69 种风格目录](codex-gif-video/references/style-index.md) 已全部完成原生 GIF 提示词与禁忌规则适配，但目前公开小样只对其中 9 种风格与 2 组人物动作做过实际渲染与逐帧核验，目录收录不等于 69 种全部做过渲染测试。
+- **帧数与画幅默认参数**：单镜头规划为 2–16 帧，适合表达清晰、干脆的动作变化；默认尺寸为 16:9（512×288）、9:16（288×512）、1:1（512×512），也可按服务支持的 16 倍数像素显式指定。
+- **防刷爆预算保护**：为防止 Agent 循环重试烧光 API 额度，默认同一批次最多允许 8 次 GIF 生成请求和 3 次参考图请求（失败与超时也计入，需显式指令才重试）。
+- **系统与环境**：本地规划、检查与导出脚本已在 macOS（Apple Silicon）验证；因使用 `fcntl` 文件锁，暂不直接支持原生 Windows（Windows 用户建议使用 WSL）。
+
+## 开发与本地自检（不消耗 API 额度）
+
+以下命令在仓库根目录、激活 Python 虚拟环境后即可离线运行，用于验证规则路由、时长计算、长 GIF 串接与 MP4 导出逻辑，不触发联网计费：
 
 ```bash
 python3 -m unittest discover -s tests -v
@@ -130,25 +193,34 @@ python3 codex-gif-video/scripts/native_gif.py prepare \
 python3 codex-gif-video/scripts/package_skill.py --out dist/codex-gif-video.skill
 ```
 
-测试使用明确标注的合成夹具验证来源检查、时长、长 GIF 串接、静音 MP4 和格式拒绝规则；合成夹具不作为 AI 生成效果展示。内部脚本名 `native_gif.py` 和时间线标识保留兼容；仓库名、安装目录、Skill 标识及调用名称均为 `codex-gif-video`。
+## English Overview
 
-## English
+**Codex GIF Video** (`codex-gif-video`) is an Agent Skill for Codex and Claude Code that generates **native animated GIFs, concatenated long GIFs, and silent MP4 videos (GIF videos)** from action briefs, storyboards, or talking-head scripts.
 
-**Codex GIF Video** is an Agent Skill for creating silent animated GIF and MP4 assets from action briefs or narration text. It plans short native GIF shots, keeps character/style references, and exports individual GIFs, one concatenated long GIF, or a silent MP4. No subtitles, music, voiceover, or sound effects are added. Install the `codex-gif-video/` directory and invoke `$codex-gif-video`; native GIF generation requires an enabled Codex tool or a separately authorized official API. Style coverage is not a quality guarantee.
+- **Powered by OpenAI GPT Image 2.6 Native GIF API**: Calls the official OpenAI Images API (`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare` with `output_format=gif`) or an enabled Codex native GIF tool to render genuine multi-frame animations—not static slide decks or code-drawn SVG loops.
+- **69 Built-in Visual Styles**: Includes **69 curated styles** (66 visual style guides adapted from Lemo-Opuscar + 3 native presets: `flat`, `papercut`, `clay`), covering crayon picture books, 3D paper pop-ups, watercolor, Chinese ink wash, impasto oil painting, 16-bit pixel RPG, isometric low-poly, engineering blueprints, and 1950s midcentury cartoons.
+- **Character Consistency Across Shots**: Generates and locks a master character reference image (`images/edits`) so the same protagonist keeps their face and outfit across multi-shot sequences.
+- **Built for 4 High-Frequency Scenarios**:
+  1. **Viral X (Twitter) GIF Videos**: Multi-shot long GIFs and silent MP4s that auto-play in feeds and let mobile users long-press to copy links and repost.
+  2. **Talking-Head B-Roll Assets**: Clean, subtitle-free, watermark-free silent animations from voiceover scripts, ready for CapCut / Premiere.
+  3. **Children's Picture Books & Storybooks**: Consistent characters and warm hand-drawn textures (`crayon-book`, `paper-popup`, `clay`) across story pages.
+  4. **Product & Science Explainers**: Dynamic diagrams and teardowns (`blueprint`, `iso-infographic`, `whiteboard`) for blogs, docs, and slides.
 
 <a id="credits"></a>
 
-## 致谢与来源
+## 69 种风格来源与致谢
 
-**特别感谢 [Lemomo（@lemomo-ai）](https://github.com/lemomo-ai) 创作并开源 [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)。我大量参考了这个仓库的风格资料，尤其是材质、配色、人物表现、动作和镜头语言；这部分积累是本项目的重要基础。**
+**特别感谢 [Lemomo（@lemomo-ai）](https://github.com/lemomo-ai) 创作并开源 [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)。本项目内置的 69 种风格中，有 66 种风格指南直接参考并改编自该仓库在材质、配色、人物表现、动作与镜头语言上的深厚积累（另加 3 种本项目原生基础预设 `flat`、`papercut`、`clay`，合计 69 种）。**
 
-这里固定引用上游提交 `9eb7739a0fca4c6990fe966cb8b87b1930f7193a` 的 66 份风格指南与对应元数据，再适配为原生 GIF 生成约束。上游原作使用代码制作影片，本项目使用模型生成短 GIF；生成方式与质量边界不同。没有打包上游演示影片、音乐、字体或角色资产。
+这里固定引用上游提交 `9eb7739a0fca4c6990fe966cb8b87b1930f7193a` 的 66 份风格指南与对应元数据，并将其从“代码生成长片”适配为“GPT Image 2.6 原生 GIF 画面约束”（剔除了上游针对字幕、配音与代码渲染引擎的指令）。未打包上游演示影片、音乐、字体或角色资产。
 
-原始资料及 LemoLab 版权声明随包保留，见 [来源说明](codex-gif-video/CREDITS.md)、[上游 MIT 许可证](codex-gif-video/references/lemo-source/LICENSE) 和 [固定版本记录](codex-gif-video/references/lemo-source/provenance.json)。也欢迎直接去原仓库看完整作品并支持作者。
+原始资料及 LemoLab 版权声明随包完整保留，详见 [来源说明](codex-gif-video/CREDITS.md)、[上游 MIT 许可证](codex-gif-video/references/lemo-source/LICENSE) 和 [固定版本记录](codex-gif-video/references/lemo-source/provenance.json)。非常推荐大家去原仓库欣赏完整作品并给原作者点 Star！
 
 ## 相关项目
 
-- [欧八同学项目合集](https://github.com/ouxxyy/ouba-classmate)：按用途寻找 AI Skills 与工具。
+- [Storyboard Scavenger（AI 视频分镜与提示词 Skill）](https://github.com/ouxxyy/storyboard-scavenger)：需要可灵 Kling / 即梦 Seedance / Veo / Sora 写实长视频分镜时用这个。
+- [重拍画册 · 旅行照片艺术画册 Skill](https://github.com/ouxxyy/travel-art-album-skill)：把静态照片做成带艺术风格的离线翻页相册。
+- [欧八同学 AI Skills 与工具合集](https://github.com/ouxxyy/ouba-classmate)：一行命令安装全部原创 AI Skills。
 - 全部项目与作者主页：[github.com/ouxxyy](https://github.com/ouxxyy)
 
 <a id="author"></a>
@@ -167,8 +239,8 @@ python3 codex-gif-video/scripts/package_skill.py --out dist/codex-gif-video.skil
 <p align="center"><img src="assets/wechat-qr.jpg" alt="欧八同学微信公众号二维码" width="260"></p>
 <p align="center"><sub>扫码关注「欧八同学」，免费领取《大厂产品AI经验编程 200 套》</sub></p>
 
-如果它帮你省下了整理素材的时间，欢迎点个 Star。遇到问题可提交 [Issue](https://github.com/ouxxyy/codex-gif-video/issues)，附上脱敏命令、报错与最小复现；不要上传密钥或私人参考照片。
+如果这个 Skill 帮你省下了找配图、抽卡做动图的时间，欢迎在右上角点个 **★ Star** 收藏。遇到问题可提交 [Issue](https://github.com/ouxxyy/codex-gif-video/issues)，附上脱敏命令、报错与最小复现步骤；请勿上传 API 密钥或私人照片。
 
 ## 许可证
 
-项目代码与原创文档使用 [MIT](LICENSE)。上游风格文档保留各自的 MIT 声明；README 的虚构人物 GIF 是 AI 生成示例，不代表上游作者的作品。二维码仅用于作者标识与关注入口。
+项目代码与原创文档采用 [MIT 许可证](LICENSE)。上游 66 种风格文档保留各自的 MIT 声明；README 中的虚构角色与风景 GIF 均为 AI 生成演示素材，不代表上游作者作品。二维码仅用于作者标识与关注入口。
