@@ -1,6 +1,6 @@
 ---
 name: codex-gif-video
-description: 通过 OpenAI GPT API 调用 GPT Image 2.6 原生 GIF 能力（或 Codex 原生 GIF），把动作描述、分镜或口播文字做成无字幕、无配乐的短 GIF、拼接长 GIF 或静音 MP4（GIF 视频）。内置 69 种视觉风格（66 种 Lemo 风格指南 + 3 种基础预设）并支持跨镜头人物一致性，适合制作 X（Twitter）短视频动图、口播动画素材（B-roll）、儿童绘本读物与科普拆解动图。
+description: 通过 OpenAI GPT API 调用 GPT Image 2.6 原生 GIF 能力（或 Codex 原生 GIF），把动作描述、分镜或口播文字做成无字幕、无配乐的短 GIF、拼接长 GIF 或静音 MP4（GIF 视频）。内置 69 种视觉风格并支持跨镜头人物一致性，适合制作 X（Twitter）短视频动图、口播动画素材（B-roll）、儿童绘本读物，或作为 Hypit、Remotion、Lemo-Opuscar、Huashu-Art-Motion 等热门 AI 视频剪辑 Skill 的上游动画素材源混合使用。
 ---
 
 # Codex GIF Video

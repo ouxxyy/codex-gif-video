@@ -3,22 +3,26 @@
 > Agent Skill for generating native animated GIFs, concatenated long GIFs, and silent MP4 videos (GIF videos) via OpenAI GPT Image 2.6 API (`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare`, `output_format=gif`) or Codex native GIF tools. Skill name: `codex-gif-video`.
 
 - **Core Capability (核心能力)**: Calls OpenAI GPT API (`GPT Image 2.6` native GIF generation) or Codex native GIF tools to turn action descriptions, storyboards, or voiceover scripts into multi-frame native GIFs, and concatenates multi-shot sequences into a single **long GIF** or **silent MP4 video (GIF video)**.
-- **Built-in Styles (内置 69 种视觉风格)**: 69 visual styles in total (66 professional style guides adapted from Lemomo's Lemo-Opuscar + 3 native base presets: `flat`, `papercut`, `clay`), with automatic style routing and master reference character consistency across shots.
-- **Top Use Cases (四大适用场景)**:
+- **Built-in Styles (内置 69 种视觉风格)**: 69 built-in visual styles with automatic style routing and master reference character consistency across shots (adapted from Lemomo's Lemo-Opuscar style guides plus native base presets).
+- **Ecosystem Integration (与 Hypit 等热门 AI 剪辑 Skill 混合使用)**: Acts as an upstream native animation and B-roll asset generator for popular AI video editing and directing skills such as **[Hypit (`hypit-ai/hypit`)](https://github.com/hypit-ai/hypit)** (providing clean, subtitle-free `.mp4` / `.gif` `Visual Clips` for `SVML` timelines), **[Lemo-Opuscar (`lemomo-ai/lemo-opuscar`)](https://github.com/lemomo-ai/lemo-opuscar)**, **[Huashu-Art-Motion (`alchaincyf/huashu-art-motion`)](https://github.com/alchaincyf/huashu-art-motion)**, and **[Remotion (`remotion-dev/remotion`)](https://github.com/remotion-dev/remotion)**.
+- **Top Use Cases (五大适用场景)**:
   1. **X (Twitter) Viral GIF Videos (X 短视频 / 动图推文)**: Auto-playing long GIFs or silent MP4s optimized for X feeds (where mobile users can long-press GIFs to copy links and share easily).
   2. **Talking-Head Video B-Roll (口播动画素材)**: Clean, subtitle-free, watermark-free, silent animated visual assets generated from narration scripts, ready for CapCut / Premiere editing.
   3. **Children's Picture Books & Storybooks (儿童绘本读物)**: Warm hand-drawn styles (`crayon-book`, `paper-popup`, `clay`, `watercolor`) with locked character identity across pages/shots.
   4. **Knowledge & Product Explainers (科普与原理拆解动图)**: Dynamic diagrams and structural teardowns (`blueprint`, `iso-infographic`, `lowpoly-island`, `whiteboard`) for articles and docs.
-- **中文搜索关键词**: GPT Image 2.6 原生 GIF、OpenAI Image API 动图生成、长 GIF 制作、GIF 视频生成、口播动画素材、B-roll 动态插图、儿童绘本 AI 动图、X 短视频 GIF、人物一致性动图、69 种视觉风格、Codex Skill、Claude Code Skill。
+  5. **Upstream Visual Assets for AI Video Editors (给 Hypit / Remotion 等 AI 剪辑 Skill 供片)**: Supplies hand-crafted and character-driven animated footage that code-only video engines cannot draw natively.
+- **中文搜索关键词**: GPT Image 2.6 原生 GIF、OpenAI Image API 动图生成、长 GIF 制作、GIF 视频生成、口播动画素材、B-roll 动态插图、儿童绘本 AI 动图、X 短视频 GIF、人物一致性动图、69 种视觉风格、Hypit 视频素材、AI 剪辑素材 Skill、Codex Skill、Claude Code Skill。
 - **Entry & Usage**: Copy `codex-gif-video/` to `~/.codex/skills/codex-gif-video` (or `~/.claude/skills/codex-gif-video`) and invoke `$codex-gif-video`. Requires an OpenAI API key with `gpt-image-2.6` GIF access (`.env.local`) or an enabled Codex native GIF tool.
 - **Export Rules & Limits**: One original cycle per shot (2–16 frames per shot), no speed changes, no frame interpolation, no looping to pad duration. Retains original GIF bytes and provenance receipts. Not all 69 styles have been render-tested; cross-style costume color preservation has known drift limits (lock one style per sequence).
 
 ## Links
 - [README and Quick Start](https://github.com/ouxxyy/codex-gif-video#install)
-- [4 High-Frequency Use Cases](https://github.com/ouxxyy/codex-gif-video#use-cases)
+- [5 High-Frequency Use Cases](https://github.com/ouxxyy/codex-gif-video#use-cases)
+- [Mix with Hypit & AI Video Editing Skills](https://github.com/ouxxyy/codex-gif-video#ecosystem)
 - [Skill Instructions (`SKILL.md`)](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/SKILL.md)
 - [Official GPT Image 2.6 API Mode](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/references/official-api.md)
 - [69 Built-in Styles Index](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/references/style-index.md)
 - [Long GIF and MP4 Export Workflow](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/references/movie.md)
 - [Upstream Style Project (Lemo-Opuscar)](https://github.com/lemomo-ai/lemo-opuscar)
+- [Downstream AI Video Director (Hypit)](https://github.com/hypit-ai/hypit)
 - [Author Project Collection (`ouba-classmate`)](https://github.com/ouxxyy/ouba-classmate)

@@ -1,6 +1,6 @@
 # 完整风格库与自动选择
 
-当前收录 **66 个 Lemo 参考风格 + 3 个原生基础预设，共 69 个**。完整列表见 [style-index.md](style-index.md)，机器可读卡片在 assets/style-catalog.json；来源、固定提交与许可见 ../CREDITS.md。卡片包含外观、运动、镜头、适用场景、关键词、人物适配程度、素材要求和验证范围。
+当前共收录 **69 种内置视觉风格**（涵盖 Lemo-Opuscar 参考风格指南与原生基础预设）。完整列表见 [style-index.md](style-index.md)，机器可读卡片在 assets/style-catalog.json；来源、固定提交与许可见 ../CREDITS.md。卡片包含外观、运动、镜头、适用场景、关键词、人物适配程度、素材要求和验证范围。
 
 ## 自动选择
 

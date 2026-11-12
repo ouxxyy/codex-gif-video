@@ -2,18 +2,18 @@
 
 给一段**口播稿、分镜或动作描述**，这个 Skill 可以通过 **OpenAI GPT API 调用 `GPT Image 2.6` 的原生 GIF 生成能力**（或使用 Codex 原生 GIF 工具），直接生成多帧动态画面，并按你的需要导出为**单镜头短 GIF**、**多镜头拼接的长 GIF**，或**无声 MP4（GIF 短视频）**。
 
-很多人做视频或写推文时卡在配图素材上：用传统 AI 视频模型抽卡又慢又贵，人物跨镜头容易变脸，画面还经常莫名其妙崩出乱码字幕；拿静态图硬拼又像 PPT。
+很多人做视频、写推文或用 AI 剪辑工具时卡在动画素材上：用传统视频大模型抽卡又慢又贵，人物跨镜头容易变脸，画面还经常莫名其妙崩出乱码字幕；纯靠代码写动画又画不出手绘绘本、黏土、水墨或复古卡通的具象角色表演。
 
 这个 Skill 专门解决这件事：
-- **真·原生 GIF 生成**：直接调用 OpenAI 官方 Image API 的 `GPT Image 2.6`（`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare`，指定 `output_format=gif`）直接输出原生多帧动图，不是拿静态图硬凑或写代码画动画。
+- **真·原生 GIF 生成**：直接调用 OpenAI 官方 Image API 的 `GPT Image 2.6`（`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare`，指定 `output_format=gif`）直接输出原生多帧动图，不是拿静态图硬凑 PPT。
 - **长 GIF / GIF 视频自由选**：单镜头生成 2–16 帧原生动图；需要更长内容时，自动拆成多个连续镜头，按原速无缝串接成**一个完整长 GIF** 或导出为**静音 MP4（GIF 视频）**。
-- **内置 69 种画风 + 跨镜头锁人物**：自带 **69 种内置视觉风格**（含 66 种 Lemo-Opuscar 专业画风指南 + 3 种原生基础预设），支持先生成一张人物主参考图并跨镜头复用，锁住同一个角色、脸型和衣服配色。
-- **干净无字幕、无水印**：全程**不加字幕、不加水印、不加配乐或配音**，交付纯画面素材——无论直接发 X（Twitter），还是拖进剪映 / Premiere 配音加字幕，都不会被画面里的 AI 乱码字干扰。
+- **内置 69 种画风 + 跨镜头锁人物**：自带 **69 种内置视觉风格**，支持先生成一张人物主参考图并跨镜头复用，锁住同一个角色、脸型和衣服配色。
+- **可与 Hypit 等热门 AI 剪辑 Skill 混搭成片**：全程**不加字幕、不加水印、不加配乐或配音**，交付最干净的纯画面素材——既能直接发 X（Twitter）或拖进剪映，也能直接作为 **[Hypit](https://github.com/hypit-ai/hypit)**、**[Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)**、**[Huashu-Art-Motion](https://github.com/alchaincyf/huashu-art-motion)**、**[Remotion](https://github.com/remotion-dev/remotion)** 等热门 AI 视频/剪辑仓库的**上游动画素材源（Visual Clips / B-roll）**混合使用。
 
 > [!TIP]
 > 🎁 扫码关注公众号「欧八同学」，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ [去扫码](#author)
 
-[9 种动图示例](#demo) · [4 大适用场景](#use-cases) · [安装与 API 配置](#install) · [长 GIF 与视频导出](#formats) · [常见问题 FAQ](#faq) · [69 种风格与致谢](#credits)
+[9 种动图示例](#demo) · [4 大适用场景](#use-cases) · [搭配 Hypit 等剪辑 Skill](#ecosystem) · [安装与 API 配置](#install) · [长 GIF 与视频导出](#formats) · [常见问题 FAQ](#faq) · [69 种风格与致谢](#credits)
 
 <a id="demo"></a>
 
@@ -56,16 +56,43 @@
 
 <a id="use-cases"></a>
 
-## 适合拿来做什么？（4 个高频场景）
+## 适合拿来做什么？（5 个高频场景）
 
 只要你需要**画风统一、人物稳定、画面干净无乱码字**的动态素材，都可以直接用它产出：
 
-| 适用场景 | 为什么适合用它做 | 推荐内置风格（69 选 N） | 推荐导出格式 |
+| 适用场景 | 为什么适合用它做 | 推荐内置风格（69 种可选） | 推荐导出格式 |
 | --- | --- | --- | --- |
 | **1. X（Twitter）爆款 GIF 短视频** | 最近在 X 上发「GIF 视频 / 长动图」非常火：信息流里**免点开自动循环播放**，而且手机端在 X 上**长按就能直接复制链接或保存转发**，传播裂变极快。用它可以把观点、教程或小剧场拆成多镜头，一键拼成完整动图。 | `midcentury-toon`（50s 复古卡通）<br>`pixel-rpg`（16-bit 像素）<br>`iso-infographic`（等距信息图）<br>`rubber-hose`（30s 橡皮管卡通） | **长 GIF**（`.gif`）或 **静音 MP4**（`.mp4`） |
 | **2. 口播视频动画素材（B-roll）** | 做抖音、小红书、B 站、视频号或 YouTube 口播时，直接把口播逐字稿喂给它，自动按语义拆成一段段**无字幕、无配音的纯画面动作素材**，拖进剪映 / PR 就能直接对齐人声加字幕，再也不用忍受 AI 视频里的鬼画符乱码字。 | `whiteboard`（白板讲解）<br>`urban-sketch`（钢笔淡彩）<br>`flat`（通用扁平插画）<br>`cel-anime-80s`（80s 赛璐璐动画） | **静音 MP4**（9:16 竖屏或 16:9 横屏） |
 | **3. 儿童绘本读物 / 睡前故事** | 做儿童启蒙绘本、小红书绘本号或有声读物，最怕“每一页小主角长得不一样”。它可以先生成一张主角定妆照（主参考图），后续每一页都带着同一张参考图生成动作，保证小主人公长相和衣服跨页不跑偏。 | `crayon-book`（蜡笔儿童绘本）<br>`paper-popup`（纸片立体书）<br>`clay`（黏土微缩）<br>`isometric-picture-book`（等距绘本） | **单镜短 GIF**（按页插图）或 **长 GIF / MP4** |
 | **4. 知识科普 / 产品原理拆解** | 写公众号长文、技术博客、飞书文档或做演示课件时，一句话生成部件拆解、流程运转或数据变化的动态示意图，比静态截图直观十倍，体积又比完整视频轻得多。 | `blueprint`（蓝图工程制图）<br>`lowpoly-island`（低多边形等距）<br>`watercolor`（水彩笔刷）<br>`ink-wash`（中国水墨） | **单镜短 GIF** 或 **长 GIF** |
+| **5. 给 Hypit 等 AI 剪辑 Skill 供片** | 热门 AI 视频编导/剪辑 Skill 擅长做时间线对齐、配音字幕和代码组件动画，但缺少手绘/绘本/黏土等具象角色动画镜头。用本 Skill 生成干净无字的 `.mp4` / `.gif`，直接喂给下游剪辑 Skill 合成完整成片。 | 全部 **69 种内置风格**按需调用 | **静音 MP4** + **原始短 GIF 清单** |
+
+<a id="ecosystem"></a>
+
+## 🔗 与 Hypit 等热门 AI 剪辑 Skill 混合使用（外挂动画素材源）
+
+如果你正在使用 GitHub 上热门的 AI 视频编导、代码动画或自动剪辑 Skill，**`codex-gif-video` 可以直接作为它们的「外挂原生动画素材库」协同工作**。
+
+为什么需要混合使用？
+代码渲染类工具（Canvas / SVG / React / SVML）非常擅长做**精准排版、数据图表、字幕卡点与转场编排**，但很难用代码直接画出“水彩银杏叶晕染”、“黏土小鸟展翅”、“纸片立体书角色招手”这类有肌理、有具象角色表演的画面；而本 Skill 恰好只生成**不带字幕、不带音轨、按口播语义拆好镜头的纯净 `.mp4` / `.gif` 视觉资产**，放进下游时间线里完全不会和下游的字幕、配音打架：
+
+| 下游热门 AI 视频 / 剪辑项目 | 混合使用方式（上游供片 → 下游成片） | 解决什么痛点 |
+| --- | --- | --- |
+| **[Hypit (`hypit-ai/hypit`)](https://github.com/hypit-ai/hypit)**<br><sub>AI 视频导演与 SVML/SVS 成片引擎</sub> | 先用 `$codex-gif-video` 将口播稿中需要具象表演或手绘插画的段落生成无字幕静音 `.mp4`（或 `.gif`），再交给 `$hypit` 作为 `Visual Clip` 编入 `SVML` 时间线，与口播主轨（A-roll / Audio Clip）、独立字幕包（Caption）和动态组件按语义锚点精准合成。 | 给 Hypit 的结构化视频生产补充 **69 种手绘/绘本/复古卡通/像素风的原生动态镜头**，且画面干净无字，不破坏 Hypit 的独立字幕层。 |
+| **[Lemo-Opuscar (`lemomo-ai/lemo-opuscar`)](https://github.com/lemomo-ai/lemo-opuscar)**<br><sub>AI 动画导演与多风格长片项目</sub> | 两套工具共享同一套视觉美学体系。当你需要用模型直接产出具象人物或手绘肌理的原生动图镜头时，用 `$codex-gif-video` 调用 GPT Image 2.6 生成素材，与代码渲染段落混剪。 | 在保留画风与配色规范的同时，提供了一条**免写绘制代码、直接由 GPT Image 2.6 原生出动图**的互补路径。 |
+| **[Huashu-Art-Motion (`alchaincyf/huashu-art-motion`)](https://github.com/alchaincyf/huashu-art-motion)**<br><sub>花叔艺术与解说视频动画 Skill</sub> | 在制作口播解说片或产品发布片时，用 `$codex-gif-video` 生成锁定人物形象的连续动作片段或特殊材质空镜（水墨、厚涂油画、蓝图拆解），作为解说动画中的插图镜头。 | 丰富解说视频中的具象角色表演与艺术材质画面，省去逐帧修图。 |
+| **[Remotion (`remotion-dev/remotion`)](https://github.com/remotion-dev/remotion) / 剪映工作流**<br><sub>编程式视频框架与主流剪辑软件</sub> | 将本 Skill 导出的静音 `.mp4` 或长 `.gif` 直接作为 `<OffthreadVideo>` / `<Gif>` 组件素材引入 Remotion，或拖入剪映时间线一键识别人声加字幕。 | 拿到手就是调好画幅（16:9 / 9:16 / 1:1）、固定时长且无乱码水印的干净 B-roll。 |
+
+**💡 组合调用示例（`codex-gif-video` × `hypit` 联动成片）：**
+
+```text
+第一步（生成纯净动画素材）：
+使用 $codex-gif-video，按这段口播拆成 3 个镜头，用 50s 复古卡通风格（midcentury-toon）生成 16:9 的无字幕静音 MP4 素材，并保留每个镜头的分镜清单。
+
+第二步（交给 Hypit 编排配音、字幕与成片）：
+使用 $hypit，把刚才生成的 3 段无字幕 MP4 素材作为 Visual Clips 引入项目，对齐口播音频的时间锚点，叠加可编辑的独立字幕层（Caption）和片头转场，合成为最终带配音字幕的完整视频。
+```
 
 ## 它是怎么跑起来的？（4 步工作流）
 
@@ -119,7 +146,7 @@ brew install ffmpeg  # 需要导出 MP4 视频格式时安装
 
 > 详细配置说明见：[官方 GPT Image 2.6 API 模式说明](codex-gif-video/references/official-api.md) · [Codex 原生入口诊断](codex-gif-video/references/native-entry.md)。本仓库不附带 API 密钥，API 调用费用由 OpenAI 官方按量收取。
 
-### 4. 复制就能用的 3 个示例指令
+### 4. 复制就能用的 3 个独立示例指令
 
 **示例 1：做一条发在 X（Twitter）上的长 GIF 短视频**
 ```text
@@ -128,7 +155,7 @@ brew install ffmpeg  # 需要导出 MP4 视频格式时安装
 用 50s 复古卡通风格（midcentury-toon），保持同一个人物形象，16:9，最后合成一个长 GIF。
 ```
 
-**示例 2：把口播稿做成剪映可用的无字幕动画素材（MP4）**
+**示例 2：把口播稿做成剪映 / Hypit 可用的无字幕动画素材（MP4）**
 ```text
 使用 $codex-gif-video，把下面这段口播做成 9:16 竖屏静音 MP4 视频素材，总长 12 秒，拆成 4 个镜头：
 “很多人以为存不下钱是因为拿得少，其实是因为账单像漏水的水管，悄无声息把水池排空了。”
@@ -146,14 +173,14 @@ brew install ffmpeg  # 需要导出 MP4 视频格式时安装
 
 ## 输出格式怎么选：短 GIF、长 GIF 还是 MP4 视频？
 
-你可以根据发布平台或剪辑习惯随时指定导出格式：
+你可以根据发布平台或下游剪辑工具随时指定导出格式：
 
 | 你想要什么结果 | 直接怎么跟 Agent 说 | 最终交付的文件 | 适合发哪里 / 怎么用 |
 | --- | --- | --- | --- |
 | **分镜头独立动图** | “每个镜头分别保存成 GIF” | 每个镜头的原始 `.gif` + 镜头清单 | 嵌入公众号文章、飞书文档、Notion、儿童绘本单页 |
 | **一个完整长 GIF** | “把这几个镜头按顺序拼成一个 12 秒长 GIF” | 单个合并后的长 `.gif`（原速播放） | 发 **X（Twitter）动图推文**（长按即可复制链接）、GitHub README 演示 |
-| **无声 GIF 视频（MP4）** | “导出成 15 秒 MP4 视频素材” | 单个静音 `.mp4`（H.264，无字幕无音轨） | 导入 **剪映 / Premiere** 当口播 B-roll 素材，或发小红书 / 抖音 / X 视频 |
-| **长 GIF 和 MP4 都要** | “长 GIF 和 MP4 视频各导出一份” | 同一组镜头同时导出 `.gif` 与 `.mp4` | 一次生成、不重复花钱，同时发推文和进剪辑软件 |
+| **无声 GIF 视频（MP4）** | “导出成 15 秒 MP4 视频素材” | 单个静音 `.mp4`（H.264，无字幕无音轨） | 喂给 **Hypit / Remotion**、导入 **剪映 / Premiere** 当口播 B-roll，或发小红书 / 抖音 / X |
+| **长 GIF 和 MP4 都要** | “长 GIF 和 MP4 视频各导出一份” | 同一组镜头同时导出 `.gif` 与 `.mp4` | 一次生成、不重复花钱，同时发推文和进剪辑工作流 |
 
 > **关于长 GIF 与视频合成的真实说明**：单次 API 调用生成的是 2–16 帧的原生短 GIF；长 GIF 和 MP4 是把多个已经生成的原生短镜头按原速顺序拼接出来，不会靠慢放、循环重复、停帧或插帧来假装“单镜超长生成”。如果总时长较长、GIF 体积偏大，优先推荐同时导出 MP4。[查看导出细节与命令](codex-gif-video/references/movie.md)。
 
@@ -163,16 +190,19 @@ brew install ffmpeg  # 需要导出 MP4 视频格式时安装
 
 ### 1. 它是怎么生成 GIF 的？跟可灵、即梦、Sora 这类 AI 视频模型有什么区别？
 它不是调用文生视频大模型生成几百帧的写实长视频，而是通过 **OpenAI 官方 Image API 调用 `GPT Image 2.6`（`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare`）的原生 GIF 输出能力（`output_format=gif`）**。
-它的优势是：**画风控制极其扎实（绘本、像素、水彩、复古卡通、工程蓝图等质感远比通用视频模型稳定）、天生适合做几秒一个动作的节奏感动图、不会乱加崩坏的字幕水印**，而且支持把多个短镜头拼成一条长 GIF 或轻量 MP4。
+它的优势是：**69 种画风控制极其扎实（绘本、像素、水彩、复古卡通、工程蓝图等质感远比通用视频模型稳定）、天生适合做几秒一个动作的节奏感动图、不会乱加崩坏的字幕水印**，而且支持把多个短镜头拼成一条长 GIF 或轻量 MP4。
 
-### 2. 到底内置了多少种风格？为什么有的地方写 69 种，有的地方提到 66 种？
-一共内置了 **69 种可直接调用的风格**。
-之所以会看到两个数字，是因为它的风格库由两部分组成：**66 种源自开源项目 Lemo-Opuscar 的专业视觉指南** + **3 种本项目内置的原生基础预设**（通用扁平插画 `flat`、通用纸艺 `papercut`、黏土微缩 `clay`），合起来正好是 **69 种**。你可以通过 `style_router.py list` 或查看 [69 种风格完整目录](codex-gif-video/references/style-index.md) 浏览全部画风。
+### 2. 内置的 69 种风格都包含哪些类型？怎么挑選？
+一共内置了 **69 种可直接调用的风格**，涵盖手绘与绘画（蜡笔儿童绘本、水彩笔刷、中国水墨、厚涂油画、钢笔淡彩、白板讲解等）、材质与 3D（纸片立体书、黏土微缩、积木玩具、低多边形等距、玻璃产品等）、卡通与动画（50s 扁平卡通、30s 橡皮管卡通、80s 赛璐璐动画等）、游戏（16-bit 像素 RPG、HD-2D 等）以及图形与信息拆解（工程蓝图、等距信息图、Risograph 孔版印刷等）。
+你可以不指定风格让 Agent 根据口播内容自动推荐，也可以通过 `style_router.py list` 或查看 [69 种风格完整目录](codex-gif-video/references/style-index.md) 直接点名。
 
 ### 3. 为什么说它很适合发 X（Twitter）短视频？
 最近在 X 上，用 GIF 或无声循环短片发教程、产品亮点和视觉故事非常火：一方面用户在时间线里刷到就能直接看，不需要开声音；另一方面，在 X 手机端**长按 GIF 就能直接复制链接或保存转发**，互动和二次传播率比普通外链视频高很多。用这个 Skill 可以直接把 3–5 个分镜拼成一个长 GIF 或同源 MP4，专门适配这种玩法。
 
-### 4. 多个镜头怎么保证是同一个人物？会变脸或换衣服吗？
+### 4. 它可以和 Hypit、Remotion 等其他热门 AI 视频剪辑 Skill 一起用吗？
+非常适合。很多热门 AI 视频成片 Skill（如 [Hypit](https://github.com/hypit-ai/hypit)、[Huashu-Art-Motion](https://github.com/alchaincyf/huashu-art-motion)、[Remotion](https://github.com/remotion-dev/remotion)）擅长做多轨时间线编排、配音对口型、动态字幕与代码几何动画；而 `codex-gif-video` 专门负责产出**画面干净、无字幕、无音轨的 69 种风格原生动画镜头（`.mp4` / `.gif`）**。你只需要先用本 Skill 把分镜动画生成好，再把导出的 `.mp4` 交给下游剪辑 Skill 叠加配音和字幕，就能做出既有手绘/绘本角色表演、又有专业成片包装的视频。
+
+### 5. 多个镜头怎么保证是同一个人物？会变脸或换衣服吗？
 当你需要多镜头出现同一个角色时，Skill 会先用同一模型生成一张**静态人物主参考图（Master Reference）**，并在固定同一画风（`style_lock`）的前提下，把这张主参考图传给后续每一个镜头的 `images/edits` 接口。[人物一致性测试记录](codex-gif-video/references/character-testing.md) 显示：在同一风格下（例如纸片立体书），跨动作能较好保持人物形象；但如果中途强行跨风格切换（比如从纸艺切到复古卡通），服装颜色仍可能发生漂移，因此默认建议同一条片子锁定同一种风格。
 
 ## 使用前需要了解的真实边界
@@ -198,30 +228,37 @@ python3 codex-gif-video/scripts/package_skill.py --out dist/codex-gif-video.skil
 **Codex GIF Video** (`codex-gif-video`) is an Agent Skill for Codex and Claude Code that generates **native animated GIFs, concatenated long GIFs, and silent MP4 videos (GIF videos)** from action briefs, storyboards, or talking-head scripts.
 
 - **Powered by OpenAI GPT Image 2.6 Native GIF API**: Calls the official OpenAI Images API (`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare` with `output_format=gif`) or an enabled Codex native GIF tool to render genuine multi-frame animations—not static slide decks or code-drawn SVG loops.
-- **69 Built-in Visual Styles**: Includes **69 curated styles** (66 visual style guides adapted from Lemo-Opuscar + 3 native presets: `flat`, `papercut`, `clay`), covering crayon picture books, 3D paper pop-ups, watercolor, Chinese ink wash, impasto oil painting, 16-bit pixel RPG, isometric low-poly, engineering blueprints, and 1950s midcentury cartoons.
+- **69 Built-in Visual Styles**: Includes **69 curated visual styles**, covering crayon picture books, 3D paper pop-ups, watercolor, Chinese ink wash, impasto oil painting, 16-bit pixel RPG, isometric low-poly, engineering blueprints, and 1950s midcentury cartoons.
 - **Character Consistency Across Shots**: Generates and locks a master character reference image (`images/edits`) so the same protagonist keeps their face and outfit across multi-shot sequences.
-- **Built for 4 High-Frequency Scenarios**:
+- **Seamless Visual Asset Provider for Popular AI Video Editing Skills**: Outputs clean, subtitle-free, watermark-free silent `.mp4` and `.gif` clips that plug directly into downstream AI video production and editing skills like **[Hypit (`hypit-ai/hypit`)](https://github.com/hypit-ai/hypit)** (as `Visual Clips` in `SVML` timelines), **[Lemo-Opuscar (`lemomo-ai/lemo-opuscar`)](https://github.com/lemomo-ai/lemo-opuscar)**, **[Huashu-Art-Motion (`alchaincyf/huashu-art-motion`)](https://github.com/alchaincyf/huashu-art-motion)**, and **[Remotion (`remotion-dev/remotion`)](https://github.com/remotion-dev/remotion)**.
+- **Built for 5 High-Frequency Scenarios**:
   1. **Viral X (Twitter) GIF Videos**: Multi-shot long GIFs and silent MP4s that auto-play in feeds and let mobile users long-press to copy links and repost.
-  2. **Talking-Head B-Roll Assets**: Clean, subtitle-free, watermark-free silent animations from voiceover scripts, ready for CapCut / Premiere.
+  2. **Talking-Head B-Roll Assets**: Clean, subtitle-free silent animations from voiceover scripts, ready for CapCut / Premiere.
   3. **Children's Picture Books & Storybooks**: Consistent characters and warm hand-drawn textures (`crayon-book`, `paper-popup`, `clay`) across story pages.
   4. **Product & Science Explainers**: Dynamic diagrams and teardowns (`blueprint`, `iso-infographic`, `whiteboard`) for blogs, docs, and slides.
+  5. **Upstream Animation Footage for AI Video Editors**: Supplies character-driven and hand-crafted visual clips to Hypit, Remotion, and other AI editing workflows.
 
 <a id="credits"></a>
 
 ## 69 种风格来源与致谢
 
-**特别感谢 [Lemomo（@lemomo-ai）](https://github.com/lemomo-ai) 创作并开源 [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)。本项目内置的 69 种风格中，有 66 种风格指南直接参考并改编自该仓库在材质、配色、人物表现、动作与镜头语言上的深厚积累（另加 3 种本项目原生基础预设 `flat`、`papercut`、`clay`，合计 69 种）。**
+**特别感谢 [Lemomo（@lemomo-ai）](https://github.com/lemomo-ai) 创作并开源 [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar)。本项目内置的 69 种视觉风格，核心材质、配色、人物表现、动作与镜头语言指南深度参考并改编自该仓库的开源积累，并在此基础上补充了通用扁平、纸艺与黏土基础预设。**
 
-这里固定引用上游提交 `9eb7739a0fca4c6990fe966cb8b87b1930f7193a` 的 66 份风格指南与对应元数据，并将其从“代码生成长片”适配为“GPT Image 2.6 原生 GIF 画面约束”（剔除了上游针对字幕、配音与代码渲染引擎的指令）。未打包上游演示影片、音乐、字体或角色资产。
+这里固定引用上游提交 `9eb7739a0fca4c6990fe966cb8b87b1930f7193a` 的风格指南与对应元数据，并将其从“代码生成长片”适配为“GPT Image 2.6 原生 GIF 画面约束”（剔除了上游针对字幕、配音与代码渲染引擎的指令）。未打包上游演示影片、音乐、字体或角色资产。
 
 原始资料及 LemoLab 版权声明随包完整保留，详见 [来源说明](codex-gif-video/CREDITS.md)、[上游 MIT 许可证](codex-gif-video/references/lemo-source/LICENSE) 和 [固定版本记录](codex-gif-video/references/lemo-source/provenance.json)。非常推荐大家去原仓库欣赏完整作品并给原作者点 Star！
 
-## 相关项目
+## 相关项目与生态联动
 
-- [Storyboard Scavenger（AI 视频分镜与提示词 Skill）](https://github.com/ouxxyy/storyboard-scavenger)：需要可灵 Kling / 即梦 Seedance / Veo / Sora 写实长视频分镜时用这个。
-- [重拍画册 · 旅行照片艺术画册 Skill](https://github.com/ouxxyy/travel-art-album-skill)：把静态照片做成带艺术风格的离线翻页相册。
-- [欧八同学 AI Skills 与工具合集](https://github.com/ouxxyy/ouba-classmate)：一行命令安装全部原创 AI Skills。
-- 全部项目与作者主页：[github.com/ouxxyy](https://github.com/ouxxyy)
+- **互补 AI 视频剪辑与分镜生态**：
+  - [Hypit (`hypit-ai/hypit`)](https://github.com/hypit-ai/hypit)：基于 SVML 的 AI 视频编导与成片 Skill，可将本仓库生成的无字幕 MP4 / GIF 作为 `Visual Clips` 与配音字幕合成完整视频。
+  - [Lemo-Opuscar (`lemomo-ai/lemo-opuscar`)](https://github.com/lemomo-ai/lemo-opuscar)：本仓库风格体系的重要灵感与指南来源，使用代码引擎导演多风格动画长片。
+  - [Huashu-Art-Motion (`alchaincyf/huashu-art-motion`)](https://github.com/alchaincyf/huashu-art-motion)：花叔开源的艺术与口播解说视频动画 Skill，可与本仓库生成的原生角色动图素材混剪。
+  - [Storyboard Scavenger（AI 视频分镜与提示词 Skill）](https://github.com/ouxxyy/storyboard-scavenger)：需要可灵 Kling / 即梦 Seedance / Veo / Sora 写实长视频分镜时用这个。
+- **作者更多作品**：
+  - [重拍画册 · 旅行照片艺术画册 Skill](https://github.com/ouxxyy/travel-art-album-skill)：把静态照片做成带艺术风格的离线翻页相册。
+  - [欧八同学 AI Skills 与工具合集](https://github.com/ouxxyy/ouba-classmate)：一行命令安装全部原创 AI Skills。
+  - 全部项目与作者主页：[github.com/ouxxyy](https://github.com/ouxxyy)
 
 <a id="author"></a>
 
@@ -243,4 +280,4 @@ python3 codex-gif-video/scripts/package_skill.py --out dist/codex-gif-video.skil
 
 ## 许可证
 
-项目代码与原创文档采用 [MIT 许可证](LICENSE)。上游 66 种风格文档保留各自的 MIT 声明；README 中的虚构角色与风景 GIF 均为 AI 生成演示素材，不代表上游作者作品。二维码仅用于作者标识与关注入口。
+项目代码与原创文档采用 [MIT 许可证](LICENSE)。上游风格文档保留各自的 MIT 声明；README 中的虚构角色与风景 GIF 均为 AI 生成演示素材，不代表上游作者作品。二维码仅用于作者标识与关注入口。
