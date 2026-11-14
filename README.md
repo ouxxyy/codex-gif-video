@@ -1,5 +1,27 @@
 # Codex GIF Video · 调用 GPT Image 2.6 原生生成长 GIF 与 GIF 短视频的 Agent Skill
 
+<!-- hero:start -->
+
+<p>
+  <a href="https://github.com/ouxxyy/ouba-classmate"><img src="assets/hero-card.svg" width="100%" alt="codex-gif-video — 69 种风格原生 GIF 与短视频生成引擎"></a>
+</p>
+
+**调用 OpenAI GPT Image 2.6 原生 GIF 能力，无需无头浏览器渲染，按 69 种内置视觉风格跨镜头锁人物，交付无字幕、无水印长 GIF 与静音 MP4 素材。**  
+<sub>Browser-free native animated GIF & silent MP4 generator powered by OpenAI GPT Image 2.6 across 69 visual styles with character consistency.</sub>
+
+<p>
+  <a href="https://github.com/ouxxyy/ouba-classmate"><img src="https://img.shields.io/badge/SUITE-ouba--classmate-1f6feb?style=for-the-badge" alt="ouba-classmate Suite"></a>
+  <a href="#demo"><img src="https://img.shields.io/badge/Demo_Gallery-238636?style=for-the-badge" alt="Demo Gallery"></a>
+  <a href="#install"><img src="https://img.shields.io/badge/Install_&_API-0969da?style=for-the-badge" alt="Install & API"></a>
+  <a href="#ecosystem"><img src="https://img.shields.io/badge/Work_with_Hypit-8957e5?style=for-the-badge" alt="Work with Hypit"></a>
+  <a href="#english-overview"><img src="https://img.shields.io/badge/English-30363d?style=for-the-badge" alt="English"></a>
+  <a href="https://github.com/ouxxyy"><img src="https://img.shields.io/badge/PROFILE-ouxxyy-30363d?style=for-the-badge" alt="Author Profile"></a>
+</p>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+<!-- hero:end -->
+
 给一段**口播稿、分镜或动作描述**，这个 Skill 可以通过 **OpenAI GPT API 调用 `GPT Image 2.6` 的原生 GIF 生成能力**（或使用 Codex 原生 GIF 工具），直接生成多帧动态画面，并按你的需要导出为**单镜头短 GIF**、**多镜头拼接的长 GIF**，或**无声 MP4（GIF 短视频）**。
 
 很多人做视频、写推文或用 AI 剪辑工具时卡在动画素材上：用传统视频大模型抽卡又慢又贵，人物跨镜头容易变脸，画面还经常莫名其妙崩出乱码字幕；纯靠代码写动画又画不出手绘绘本、黏土、水墨或复古卡通的具象角色表演。
@@ -255,10 +277,30 @@ python3 codex-gif-video/scripts/package_skill.py --out dist/codex-gif-video.skil
   - [Lemo-Opuscar (`lemomo-ai/lemo-opuscar`)](https://github.com/lemomo-ai/lemo-opuscar)：本仓库风格体系的重要灵感与指南来源，使用代码引擎导演多风格动画长片。
   - [Huashu-Art-Motion (`alchaincyf/huashu-art-motion`)](https://github.com/alchaincyf/huashu-art-motion)：花叔开源的艺术与口播解说视频动画 Skill，可与本仓库生成的原生角色动图素材混剪。
   - [Storyboard Scavenger（AI 视频分镜与提示词 Skill）](https://github.com/ouxxyy/storyboard-scavenger)：需要可灵 Kling / 即梦 Seedance / Veo / Sora 写实长视频分镜时用这个。
-- **作者更多作品**：
-  - [重拍画册 · 旅行照片艺术画册 Skill](https://github.com/ouxxyy/travel-art-album-skill)：把静态照片做成带艺术风格的离线翻页相册。
-  - [欧八同学 AI Skills 与工具合集](https://github.com/ouxxyy/ouba-classmate)：一行命令安装全部原创 AI Skills。
-  - 全部项目与作者主页：[github.com/ouxxyy](https://github.com/ouxxyy)
+
+<!-- suite-matrix:start -->
+
+## 更多开源项目 · More from ouba-classmate Suite
+
+> 如果这个项目帮到了你，欢迎去旗舰合集仓 [**`ouxxyy/ouba-classmate`**](https://github.com/ouxxyy/ouba-classmate) 点一颗 Star 或一行安装全部 Skills：
+> `npx skills add ouxxyy/ouba-classmate` · `gh api -X PUT /user/starred/ouxxyy/ouba-classmate`
+
+| 仓库 · Repo | 分类 · Category | 它做什么 · What it does |
+| --- | --- | --- |
+| [`ouba-classmate`](https://github.com/ouxxyy/ouba-classmate) | SUITE · 旗舰合集 | **11 个原创项目总仓 + 一键安装全部 Skills + 在线战力测算与防身情报库**<br><sub>All-in-one Skills suite & benchmark</sub> |
+| [`jd-resume-match`](https://github.com/ouxxyy/jd-resume-match) | CAREER · 求职涨薪 | **AI 简历优化与 JD 匹配体检（确定性公式 + 行号证据）**<br><sub>Deterministic JD matching & line-cited resume audit</sub> |
+| [`ai-interviewer`](https://github.com/ouxxyy/ai-interviewer) | CAREER · 求职涨薪 | **中文语音/文字原话追问 AI 模拟面试官（含在线版）**<br><sub>Chinese voice AI mock interviewer anchored to your answers</sub> |
+| [`job-search`](https://github.com/ouxxyy/job-search) | CAREER · 求职涨薪 | **跨 5 平台实时去重筛岗，输出带来源短名单**<br><sub>5-platform source-backed job search & shortlist builder</sub> |
+| [`sherlock-company`](https://github.com/ouxxyy/sherlock-company) | CAREER · 求职涨薪 | **入职前四态证据公司背调与 Offer 核实清单**<br><sub>Pre-offer employer research with 4-state evidence boundaries</sub> |
+| [`mbai`](https://github.com/ouxxyy/mbai) | CAREER · 求职涨薪 | **工作任务 AI 不可替代指数与 4 核决策复盘**<br><sub>Task-level AI irreplaceability index & decision reflection</sub> |
+| [`codex-gif-video`](https://github.com/ouxxyy/codex-gif-video) · **Current** | CREATIVE · AI 创作 | **69 种风格原生 GIF 与静音 MP4 素材生成 Skill**<br><sub>Native GPT Image 2.6 animated GIF & MP4 generator (69 styles)</sub> |
+| [`storyboard-scavenger`](https://github.com/ouxxyy/storyboard-scavenger) | CREATIVE · AI 创作 | **可灵/即梦/Veo/Sora 七要素 AI 视频分镜工作流**<br><sub>7-element AI video storyboard skill for Kling & Seedance</sub> |
+| [`travel-art-album-skill`](https://github.com/ouxxyy/travel-art-album-skill) | CREATIVE · AI 创作 | **旅行照片艺术画册与单文件离线翻页相册 Skill**<br><sub>Art-styled travel photo proofs & standalone offline HTML flipbook</sub> |
+| [`mystery-skill`](https://github.com/ouxxyy/mystery-skill) | COGNITION · 认知框架 | **Mystery 认知框架与职场心理博弈分析 Skill**<br><sub>Cognitive framework for interview frame & decision study</sub> |
+| [`Attention`](https://github.com/ouxxyy/Attention) | LOCAL APP · 本地工具 | **ActivityWatch 本地专注力、心流时段与切换分析**<br><sub>Local ActivityWatch focus & context-switching dashboard</sub> |
+| [`postapp`](https://github.com/ouxxyy/postapp) | LOCAL APP · 本地工具 | **Chrome 本地摄像头姿态检测与坐姿提醒插件**<br><sub>On-device MoveNet Chrome posture reminder extension</sub> |
+
+<!-- suite-matrix:end -->
 
 <a id="author"></a>
 
@@ -281,3 +323,11 @@ python3 codex-gif-video/scripts/package_skill.py --out dist/codex-gif-video.skil
 ## 许可证
 
 项目代码与原创文档采用 [MIT 许可证](LICENSE)。上游风格文档保留各自的 MIT 声明；README 中的虚构角色与风景 GIF 均为 AI 生成演示素材，不代表上游作者作品。二维码仅用于作者标识与关注入口。
+
+<!-- footer:start -->
+
+<p align="center">
+  <a href="https://github.com/ouxxyy"><img src="assets/footer.svg" width="100%" alt="欧八同学 · ouxxyy — Positioning × AI Leverage × Salary Growth"></a>
+</p>
+
+<!-- footer:end -->
