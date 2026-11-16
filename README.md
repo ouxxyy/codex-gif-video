@@ -1,5 +1,20 @@
 # Codex GIF Video · 调用 GPT Image 2.6 原生生成长 GIF 与 GIF 短视频的 Agent Skill
 
+<!-- discovery:start -->
+## AI 动图生成与静音 MP4 视频素材
+
+**如何为口播、绘本或 X 内容生成长 GIF 和无声动画素材？** 从分镜或动作描述生成原生 GIF，再按需要拼接长 GIF 或导出静音 MP4；仓库提供 69 种风格和示例画廊。
+
+Animated GIF generator and silent MP4 video assets for agents.
+
+**开始使用：** [安装与 API 要求](#install) · [风格与动图示例](#demo) · [剪辑工具衔接](#ecosystem)。
+
+**使用边界：** 需具备对应模型权限，API 可能收费；MP4 是静音素材，人物一致性和全部风格的效果不作保证。
+
+[按任务浏览欧八同学的全部工具](https://github.com/ouxxyy/ouba-classmate#按需求找)；如果本项目有帮助，欢迎收藏当前仓库。
+
+<!-- discovery:end -->
+
 <!-- hero:start -->
 
 <p>

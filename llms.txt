@@ -1,5 +1,15 @@
 # Codex GIF Video
 
+<!-- discovery:start -->
+AI 动图生成与静音 MP4 视频素材
+Animated GIF generator and silent MP4 video assets for agents
+问：如何为口播、绘本或 X 内容生成长 GIF 和无声动画素材？
+答：从分镜或动作描述生成原生 GIF，再按需要拼接长 GIF 或导出静音 MP4；仓库提供 69 种风格和示例画廊。
+边界：需具备对应模型权限，API 可能收费；MP4 是静音素材，人物一致性和全部风格的效果不作保证。
+入口：https://github.com/ouxxyy/codex-gif-video
+<!-- discovery:end -->
+
+
 > Agent Skill for generating native animated GIFs, concatenated long GIFs, and silent MP4 videos (GIF videos) via OpenAI GPT Image 2.6 API (`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare`, `output_format=gif`) or Codex native GIF tools. Skill name: `codex-gif-video`.
 
 - **Core Capability (核心能力)**: Calls OpenAI GPT API (`GPT Image 2.6` native GIF generation) or Codex native GIF tools to turn action descriptions, storyboards, or voiceover scripts into multi-frame native GIFs, and concatenates multi-shot sequences into a single **long GIF** or **silent MP4 video (GIF video)**.
