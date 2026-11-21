@@ -1,0 +1,5 @@
+{
+  "name": "codex-gif-video",
+  "version": "1.0.0",
+  "description": "Native animated GIF & silent MP4 asset generator via OpenAI GPT Image 2.6 across 69 visual styles."
+}

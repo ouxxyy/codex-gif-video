@@ -1,0 +1,20 @@
+{
+  "name": "codex-gif-video",
+  "version": "1.0.0",
+  "description": "Codex GIF Video：调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4 素材。",
+  "author": {
+    "name": "欧八同学 (ouxxyy)",
+    "url": "https://github.com/ouxxyy/ouba-classmate"
+  },
+  "repository": "https://github.com/ouxxyy/codex-gif-video",
+  "homepage": "https://github.com/ouxxyy/ouba-classmate",
+  "license": "MIT",
+  "keywords": [
+    "animated-gif",
+    "gpt-image",
+    "video-assets",
+    "b-roll",
+    "codex-skill"
+  ],
+  "skills": "./codex-gif-video/"
+}

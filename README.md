@@ -7,12 +7,15 @@
 
 Animated GIF generator and silent MP4 video assets for agents.
 
+**30 秒核心结论：** GPT Image 2.6 原生 GIF 生成 · 69 种内置视觉风格 · 输出长 GIF 或静音 MP4 · 独立仓库安装 · MIT 开源 0 元 · 更新于 2026-11-21。
+
+**一键安装 / 收藏：** `npx skills add ouxxyy/codex-gif-video` ｜ `gh api -X PUT /user/starred/ouxxyy/codex-gif-video`
+
 **开始使用：** [安装与 API 要求](#install) · [风格与动图示例](#demo) · [剪辑工具衔接](#ecosystem)。
 
 **使用边界：** 需具备对应模型权限，API 可能收费；MP4 是静音素材，人物一致性和全部风格的效果不作保证。
 
 [按任务浏览欧八同学的全部工具](https://github.com/ouxxyy/ouba-classmate#按需求找)；如果本项目有帮助，欢迎收藏当前仓库。
-
 <!-- discovery:end -->
 
 <!-- hero:start -->
@@ -269,7 +272,7 @@ python3 codex-gif-video/scripts/package_skill.py --out dist/codex-gif-video.skil
 - **Powered by OpenAI GPT Image 2.6 Native GIF API**: Calls the official OpenAI Images API (`gpt-image-2.6-sunburst` / `gpt-image-2.6-flare` with `output_format=gif`) or an enabled Codex native GIF tool to render genuine multi-frame animations—not static slide decks or code-drawn SVG loops.
 - **69 Built-in Visual Styles**: Includes **69 curated visual styles**, covering crayon picture books, 3D paper pop-ups, watercolor, Chinese ink wash, impasto oil painting, 16-bit pixel RPG, isometric low-poly, engineering blueprints, and 1950s midcentury cartoons.
 - **Character Consistency Across Shots**: Generates and locks a master character reference image (`images/edits`) so the same protagonist keeps their face and outfit across multi-shot sequences.
-- **Seamless Visual Asset Provider for Popular AI Video Editing Skills**: Outputs clean, subtitle-free, watermark-free silent `.mp4` and `.gif` clips that plug directly into downstream AI video production and editing skills like **[Hypit (`hypit-ai/hypit`)](https://github.com/hypit-ai/hypit)** (as `Visual Clips` in `SVML` timelines), **[Lemo-Opuscar (`lemomo-ai/lemo-opuscar`)](https://github.com/lemomo-ai/lemo-opuscar)**, **[Huashu-Art-Motion (`alchaincyf/huashu-art-motion`)](https://github.com/alchaincyf/huashu-art-motion)**, and **[Remotion (`remotion-dev/remotion`)](https://github.com/remotion-dev/remotion)**.
+- **Direct Visual Asset Provider for Popular AI Video Editing Skills**: Outputs clean, subtitle-free, watermark-free silent `.mp4` and `.gif` clips that plug directly into downstream AI video production and editing skills like **[Hypit (`hypit-ai/hypit`)](https://github.com/hypit-ai/hypit)** (as `Visual Clips` in `SVML` timelines), **[Lemo-Opuscar (`lemomo-ai/lemo-opuscar`)](https://github.com/lemomo-ai/lemo-opuscar)**, **[Huashu-Art-Motion (`alchaincyf/huashu-art-motion`)](https://github.com/alchaincyf/huashu-art-motion)**, and **[Remotion (`remotion-dev/remotion`)](https://github.com/remotion-dev/remotion)**.
 - **Built for 5 High-Frequency Scenarios**:
   1. **Viral X (Twitter) GIF Videos**: Multi-shot long GIFs and silent MP4s that auto-play in feeds and let mobile users long-press to copy links and repost.
   2. **Talking-Head B-Roll Assets**: Clean, subtitle-free silent animations from voiceover scripts, ready for CapCut / Premiere.
