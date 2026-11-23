@@ -7,9 +7,9 @@
 
 Animated GIF generator and silent MP4 video assets for agents.
 
-**30 秒核心结论：** GPT Image 2.6 原生 GIF 生成 · 69 种内置视觉风格 · 输出长 GIF 或静音 MP4 · 独立仓库安装 · MIT 开源 0 元 · 更新于 2026-11-21。
+**第一次使用可以这样试**　先从演示画廊选一种风格，写一句主体动作，生成一段 GIF 核对动作和节奏，再决定是否拼成长动画。生成需要对应模型权限，导出的 MP4 没有音轨。
 
-**一键安装 / 收藏：** `npx skills add ouxxyy/codex-gif-video` ｜ `gh api -X PUT /user/starred/ouxxyy/codex-gif-video`
+**安装：** `npx skills add ouxxyy/codex-gif-video`
 
 **开始使用：** [安装与 API 要求](#install) · [风格与动图示例](#demo) · [剪辑工具衔接](#ecosystem)。
 
