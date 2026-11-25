@@ -26,6 +26,8 @@ Animated GIF generator and silent MP4 video assets for agents
 - **Export Rules & Limits**: One original cycle per shot (2–16 frames per shot), no speed changes, no frame interpolation, no looping to pad duration. Retains original GIF bytes and provenance receipts. Not all 69 styles have been render-tested; cross-style costume color preservation has known drift limits (lock one style per sequence).
 
 ## Links
+- [Offline shot planning, framing and material motion](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/references/directing.md)
+- [Map a review timecode to the original GIF shot and frame](https://github.com/ouxxyy/codex-gif-video/blob/main/codex-gif-video/references/movie.md#按时间定位返修)
 - [README and Quick Start](https://github.com/ouxxyy/codex-gif-video#install)
 - [5 High-Frequency Use Cases](https://github.com/ouxxyy/codex-gif-video#use-cases)
 - [Mix with Hypit & AI Video Editing Skills](https://github.com/ouxxyy/codex-gif-video#ecosystem)

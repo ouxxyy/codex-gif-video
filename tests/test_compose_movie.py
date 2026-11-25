@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'codex-gif-video/scripts'))
 import compose_movie as movie
 import native_gif as core
+import review_timecode
 
 
 class ComposeMovieTests(unittest.TestCase):
@@ -66,6 +67,29 @@ class ComposeMovieTests(unittest.TestCase):
         self.assertEqual(len(plan['sources']), 5)
         self.assertTrue(all(s['source_quality_ready'] for s in plan['sources']))
 
+    def test_feedback_maps_boundaries_and_version_on_gif_export(self):
+        out = self.root / 'joined.gif'
+        timeline = self.make_replacement_timeline()
+        movie.compose(None, out, 144, 256, 15, timeline=timeline)
+        receipt = Path(str(out) + '.render.json')
+        original = receipt.read_bytes()
+        for ms, shot, frame in ((0, 0, 0), (199, 0, 0), (200, 0, 1), (2999, 0, 14),
+                                (3000, 1, 0), (12000, 4, 0), (14999, 4, 14)):
+            with self.subTest(ms=ms):
+                hit = review_timecode.locate(out, ms, 'unit-test note')
+                self.assertEqual((hit['shot_id'], hit['source_frame_index']), (f'shot-{shot}', frame))
+                self.assertEqual(hit['shot_time_ms'], ms % 3000)
+                self.assertEqual(hit['source_sha256'], self.manifest['assets'][shot]['sha256'])
+                self.assertEqual(hit['note'], 'unit-test note')
+        self.assertEqual(Path(hit['source_manifest']).parent.name, 'new')
+        for ms in (-1, 15000, 15001):
+            with self.subTest(ms=ms), self.assertRaises(core.Failure):
+                review_timecode.locate(out, ms)
+        self.assertEqual(receipt.read_bytes(), original)
+        out.write_bytes(b'other export')
+        with self.assertRaisesRegex(core.Failure, 'hash_mismatch'):
+            review_timecode.locate(out, 0)
+
     def test_ratio_duration_and_hash_are_rejected(self):
         with self.assertRaisesRegex(core.Failure, 'aspect_ratio_mismatch'):
             movie.validate_manifest(self.manifest_path, 256, 256, 15)
@@ -74,6 +98,20 @@ class ComposeMovieTests(unittest.TestCase):
         (self.root / self.manifest['assets'][0]['path']).write_bytes(b'changed')
         with self.assertRaisesRegex(core.Failure, 'hash_mismatch'):
             self.validate()
+
+    def test_legacy_single_manifest_receipt_maps_variable_frame_delays(self):
+        out = self.root / 'historical.gif'
+        out.write_bytes(b'fixture for receipt lookup')
+        receipt = {'status': 'rendered_pending_review', 'output': {'sha256': core.digest(out.read_bytes())},
+                   'plan': {'duration_s': 0.50, 'manifest': 'original/manifest.json', 'sources': [{
+                       'id': 'historical', 'path': 'original/first.gif', 'sha256': 'recorded-hash',
+                       'technical': {'frame_count': 3, 'frame_durations_ms': [100, 350, 50]}}]}}
+        core.write_json(str(out) + '.render.json', receipt)
+        for ms, frame in [(99, 0), (100, 1), (449, 1), (450, 2)]:
+            with self.subTest(ms=ms):
+                hit = review_timecode.locate(out, ms)
+                self.assertEqual(hit['source_frame_index'], frame)
+                self.assertEqual(hit['source_manifest'], 'original/manifest.json')
 
     def test_source_provenance_must_remain_verifiable(self):
         self.manifest['assets'][0]['receipt']['request_id'] = ''
@@ -117,6 +155,8 @@ class ComposeMovieTests(unittest.TestCase):
         self.assertEqual(result['additional_inputs'], {})
         self.assertFalse(any('subtitles=' in str(c['argv']) for c in result['commands']))
         self.assertEqual(int(video['nb_frames']), 375)
+        hit = review_timecode.locate(out, 7400)
+        self.assertEqual((hit['shot_id'], hit['source_frame_index']), ('shot-2', 7))
         for a in self.manifest['assets']:
             self.assertEqual(core.digest((self.root / a['path']).read_bytes()), a['sha256'])
         self.assertTrue(Path(str(out) + '.render.json').exists())

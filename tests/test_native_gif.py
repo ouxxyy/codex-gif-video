@@ -108,6 +108,59 @@ class NativeGifTests(unittest.TestCase):
         with self.assertRaisesRegex(g.Failure,'semantic_planning_required'):
             g.compile_request({'schema_version':1,'mode':'narration','narration':'原文'},self.root)
 
+    def test_plan_and_prepare_agree_without_creating_a_bundle_or_budget(self):
+        self.request = g.read_json(ROOT / 'examples/narration.json')
+        g.write_json(self.request_file, self.request)
+        cli = subprocess.run([sys.executable, str(SCRIPT), 'plan', '--request', str(self.request_file)],
+                             cwd=self.root, capture_output=True, text=True, check=True)
+        plan = json.loads(cli.stdout)
+        self.assertEqual(list(self.root.iterdir()), [self.request_file])
+        manifest = self.prepare()
+        self.assertEqual(plan['request_fingerprint'], manifest['request_fingerprint'])
+        self.assertEqual((plan['planned_duration_ms'], plan['planned_gif_requests']), (4800, 2))
+        self.assertEqual([(s['start_ms'], s['end_ms']) for s in plan['shots']], [(0, 2400), (2400, 4800)])
+        direction = plan['shots'][1]['direction']
+        asset = manifest['assets'][1]
+        self.assertEqual(direction, asset['direction'])
+        for key in g.DIRECTION_FIELDS:
+            self.assertIn(direction[key], asset['prompt'])
+        self.assertNotIn(direction['cut_reason'], asset['prompt'])
+        self.assertNotIn('direction', asset['parameters'])
+
+    def test_total_uses_encoded_duration_before_any_generation(self):
+        self.request['shots'][0].update(target_duration_s=5, frame_count=16, duration_policy='quantize')
+        self.request['total_duration_s'] = 5
+        with self.assertRaisesRegex(g.Failure, 'shot_total_duration_mismatch:planned_ms=4960'):
+            self.prepare()
+        self.assertFalse(self.bundle.exists())
+        self.request['total_duration_s'] = 4.96
+        self.assertEqual(self.prepare()['total_duration_s'], 4.96)
+
+    def test_invalid_direction_or_total_does_not_create_bundle(self):
+        for value in (None, [], {'camerra': 'fixed'}, {'camera': ' '}, {'camera': False}):
+            with self.subTest(direction=value), self.assertRaisesRegex(g.Failure, 'shot_direction'):
+                self.request['shots'][0]['direction'] = value
+                self.prepare()
+        del self.request['shots'][0]['direction']
+        for value in (True, None, -1, float('nan')):
+            with self.subTest(total=value), self.assertRaisesRegex(g.Failure, 'invalid_total_duration'):
+                self.request['total_duration_s'] = value
+                self.prepare()
+        self.assertFalse(self.bundle.exists())
+
+    def test_absent_direction_preserves_legacy_spec_and_fingerprint(self):
+        legacy, _ = g.compile_request(self.request, self.root)
+        self.assertNotIn('direction', legacy['assets'][0])
+        self.assertNotIn('total_duration_s', legacy)
+        self.request['shots'][0]['direction'] = {}
+        identical, _ = g.compile_request(self.request, self.root)
+        self.assertEqual(identical, legacy)
+        self.request['shots'][0]['direction'] = {'camera': 'fixed'}
+        self.prepare()
+        self.request['shots'][0]['direction']['camera'] = 'pan right'
+        with self.assertRaisesRegex(g.Failure, 'request_changed'):
+            self.prepare()
+
     def test_ambiguous_narration_requires_exact_span(self):
         r=g.read_json(ROOT/'examples/narration.json'); r['narration']*=2
         with self.assertRaisesRegex(g.Failure,'ambiguous'): g.compile_request(r,self.root)

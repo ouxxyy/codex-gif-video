@@ -8,6 +8,10 @@ Python 3.10+、Pillow 10.4+，兼容 macOS arm64。native_gif.py 是离线协议
 
 schema_version=1；mode 为 shot 或 narration；shots 为非空数组。model 是目标模型，只允许 gpt-image-2.6-sunburst/flare，默认 sunburst。它不控制宿主路由，不等于实际执行模型。
 
+请求顶层可填 `total_duration_s` 约定成片总秒数。`plan` 和 `prepare` 都会核对各镜头编码后实际计划延时之和，包括明确选用 `quantize` 的镜头。总长不符会在生成前返回 `shot_total_duration_mismatch`。省略此字段沿用旧请求行为。
+
+`native_gif.py plan --request FILE` 只输出 JSON，包含选中风格、逐镜时间段、帧数、帧延时、画面动作、分镜要求、已有参考图数量和预计 GIF 请求数（每镜首次生成一次）。时间从成片起点计算；口播来源仍由 `source_text` 等字段记录。此命令不联网、不建 bundle、不预留额度。
+
 | 镜头字段 | 规则 |
 |---|---|
 | id | 唯一英数/横线/下划线，不含目录 |
@@ -22,6 +26,7 @@ schema_version=1；mode 为 shot 或 narration；shots 为非空数组。model �
 | aspect_ratio | 默认 16:9，可选 9:16/1:1 |
 | size | auto/省略会按比例解析为明确保守尺寸：9:16→288x512、16:9→512x288、1:1→512x512；显式两边须为16倍数，模型像素限制不伪造 |
 | loop | once（默认）或 seamless，动作意图与文件循环字段分开记录 |
+| direction | 可选对象。支持 framing、camera、material_motion、continuity、cut_reason，值为非空字符串。前四项写入提示，cut_reason 只进入分镜记录。示例见[分镜写法](directing.md)。 |
 
 比例偏差超过 2%、帧数/延时/指定尺寸与请求不符时不能技术通过；不裁切或重编码原文件掩盖差异。这些规格只有在工具实际暴露相应字段时才作为参数，否则作为输出要求；不能发明 tool 参数。
 

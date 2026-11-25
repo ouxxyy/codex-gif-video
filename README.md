@@ -140,14 +140,28 @@ Animated GIF generator and silent MP4 video assets for agents.
 
 1. **输入需求或口播稿**：你给出动作描述、分镜脚本或一段口播文字，指定画幅比例（16:9 / 9:16 / 1:1）、目标时长和想要的格式（GIF 或 MP4）。
 2. **自动选风格 & 锁死人物**：Agent 从 **69 种内置风格**中匹配最适合的画风（也可直接点名风格）；如果涉及连续镜头里的同一个角色，先生成或绑定一张静态人物主参考图（`reference`），锁住五官、发型和穿搭颜色。
-3. **调用 GPT Image 2.6 原生生成 GIF**：通过你配置的 **OpenAI 官方 Image API**（调用 `gpt-image-2.6-sunburst` 或 `gpt-image-2.6-flare`，开启原生 `output_format=gif`）或 Codex 会话原生 GIF 工具，逐镜头生成多帧动态 GIF，并自动校验帧数、尺寸、画面变化与无文字干扰。
+3. **逐镜生成与检查**。通过已配置的 OpenAI 官方 Image API 或 Codex 会话原生 GIF 工具生成多帧 GIF。脚本核对帧数、尺寸和延时，审片时逐帧检查文字干扰、动作和人物一致性。
 4. **一键合成长 GIF 或静音 MP4**：你可以直接拿走每个镜头的原始短 GIF，也可以让它把多个镜头按原速无缝串接成**一个长 GIF**，或编码成**静音 H.264 MP4 视频**。
+
+### 先看分镜，再决定是否生成
+
+装好 Python 和 Pillow 后，在仓库根目录运行下面的命令即可看到纸盒案例的分镜表，无需密钥。
+
+```bash
+python3 codex-gif-video/scripts/native_gif.py plan --request examples/narration.json
+```
+
+前 2.4 秒用中景交代三个灰盒压住橙盒，后 2.4 秒切近看卸重后的盒盖回弹。输出列出每镜起止时间、尺寸、帧数和拟发请求数。你也可以直接对 Agent 说“先给我看分镜和时长”。[分镜写法与八种材质的动作示例](codex-gif-video/references/directing.md)
+
+拿到成片后，可以直接说“第 2.60 秒盒盖弹错方向了”。Agent 用成片旁的渲染回执找到对应的镜头和原 GIF 帧，单独修改受影响的镜头，再按原顺序合成。[按时间定位返修](codex-gif-video/references/movie.md#按时间定位返修)
 
 <a id="install"></a>
 
 ## 安装与快速上手
 
 ### 1. 安装 Skill 到你的 Agent
+
+也可以从发布页下载 `codex-gif-video.skill`，按 ZIP 解压，将其中的 `codex-gif-video` 文件夹放入 Agent 的技能目录。[GitHub Releases](https://github.com/ouxxyy/codex-gif-video/releases/latest)
 
 把仓库里的 `codex-gif-video` 目录复制或软链接到 Codex / Claude Code 的技能目录即可：
 

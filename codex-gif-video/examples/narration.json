@@ -1,9 +1,38 @@
 {
   "schema_version": 1,
   "mode": "narration",
+  "style": "papercut",
+  "total_duration_s": 4.8,
   "narration": "任务越堆越多，人开始手忙脚乱。先放下不重要的任务，才能腾出手做关键的事。",
   "shots": [
-    {"id":"burden-up","source_text":"任务越堆越多，人开始手忙脚乱。","intent":"任务增加造成负担","initial_state":"桌面只有一个纸盒","action":"三个纸盒依次堆上去，底层逐渐受压","end_state":"四个纸盒形成倾斜但未倒下的堆叠"},
-    {"id":"burden-down","source_text":"先放下不重要的任务，才能腾出手做关键的事。","intent":"减少负担，留下重要任务","initial_state":"桌面堆着四个纸盒","action":"三个灰色纸盒依次移开，留下一个橙色纸盒，空间逐渐清空","end_state":"桌面只剩橙色纸盒，位置稳定"}
+    {
+      "id": "burden-up",
+      "source_text": "任务越堆越多，人开始手忙脚乱。",
+      "intent": "让观众看见任务的重量",
+      "initial_state": "橙色纸盒在桌面左侧，纸盒右边的折角朝向观众",
+      "action": "三只灰盒依次叠上橙盒，下方盒盖随重量压弯",
+      "end_state": "橙盒在底，三只灰盒向右倾斜，折角仍露在前面",
+      "direction": {
+        "framing": "平视中景，整个盒堆和两侧桌面入画",
+        "camera": "固定机位",
+        "material_motion": "盒盖沿折痕下弯，侧壁保持平直",
+        "continuity": "记住橙盒的位置、朝前的折角和从左侧投下的影子"
+      }
+    },
+    {
+      "id": "burden-down",
+      "source_text": "先放下不重要的任务，才能腾出手做关键的事。",
+      "intent": "让减负的效果落在同一个盒盖上",
+      "initial_state": "橙盒在桌面左侧，盒盖压弯，上方三只灰盒向右倾斜",
+      "action": "三只灰盒一同向右滑出，橙盒盖弹起，轻晃后停稳",
+      "end_state": "桌面只剩橙盒，盒盖恢复平整",
+      "direction": {
+        "cut_reason": "切近后能看清卸重前后盒盖的变化",
+        "framing": "同侧近景，橙盒折角和灰盒底部都在画内",
+        "camera": "固定机位",
+        "material_motion": "折痕先展开，盒盖边缘随后回弹",
+        "continuity": "折角仍朝前，灰盒沿前镜头倾斜方向滑出"
+      }
+    }
   ]
 }

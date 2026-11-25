@@ -7,3 +7,7 @@
 原生 GIF 风格卡由本项目改写，保留视觉、材料、配色和动作语法，明确去除代码引擎、音频、字幕及长片剪辑要求。纪实/实证类只适配视觉语法，需要来源素材或明确示意标记，生成画面不等同于真实证据。
 
 结合本项目内置的基础预设（`flat`、`papercut`、`clay`），总计提供 **69 种内置风格**。目录覆盖不等于生成质量已验证，具体小样范围见 `style-validation.json` 和人物测试报告。
+
+## 分镜与返修工作流
+
+分镜中的切镜理由、材质受力提示和按时间记录问题的做法借鉴了 Lemomo 的 lemo-animi，参考版本为 `13f11846500b184ff53aaaa2023b723b01ea6f3e`。本项目针对原生 GIF 编写了分镜字段、示例、时长核对和时间定位工具。[导演指南](https://github.com/lemomo-ai/lemo-animi/blob/13f11846500b184ff53aaaa2023b723b01ea6f3e/plugin/skills/lemo-animi/references/directing.md) · [材质示例](https://github.com/lemomo-ai/lemo-animi/blob/13f11846500b184ff53aaaa2023b723b01ea6f3e/plugin/skills/lemo-animi/styles/felt/STYLE.md) · [审片工具](https://github.com/lemomo-ai/lemo-animi/blob/13f11846500b184ff53aaaa2023b723b01ea6f3e/plugin/skills/lemo-animi/scripts/review.py)

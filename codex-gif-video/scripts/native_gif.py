@@ -32,6 +32,12 @@ STYLES = {
     "clay": "Tactile clay miniature; stable sculpted features, soft studio light and simple full background. Motion: coherent joint movement and believable weight, readable anticipation and follow-through; no clay morphing or flickering texture.",
 }
 QUALITY_KEYS = ("identity", "style", "structure", "motion", "semantics", "loop", "clean_visual")
+DIRECTION_FIELDS = {
+    "framing": "Framing and subject placement",
+    "camera": "Camera movement within this shot",
+    "material_motion": "Visible material response",
+    "continuity": "Details to match across the cut",
+}
 # Conservative per-frame defaults, not a claim about the service's pixel limits.
 DEFAULT_SIZES = {"16:9": "512x288", "9:16": "288x512", "1:1": "512x512"}
 
@@ -290,9 +296,15 @@ def compile_request(request, request_dir):
         timing = shot.get("time_range_s")
         if timing is not None:
             require(isinstance(timing, list) and len(timing) == 2 and all(number(x) for x in timing) and 0 <= timing[0] < timing[1], "invalid_time_range")
+        direction = shot.get("direction", {})
+        require(isinstance(direction, dict) and direction.keys() <= (DIRECTION_FIELDS.keys() | {"cut_reason"}),
+                "invalid_shot_direction:" + sid)
+        for key, value in direction.items():
+            nonempty(value, "empty_shot_direction:" + sid + ":" + key)
         prompt = "\n".join([
             "Generate a native animated GIF, not a sprite sheet, storyboard or static image.",
             f"Meaning to communicate: {intent}", f"Initial state: {start}", f"Motion: {action}", f"End state: {end}",
+            *(f"{label}: {direction[key]}" for key, label in DIRECTION_FIELDS.items() if key in direction),
             f"Style: {STYLES.get(preset, '')} {style['description']}",
             "Style invariants: " + json.dumps(style.get("invariants", []), ensure_ascii=False),
             "Style allowed changes: " + json.dumps(style.get("allowed_changes", []), ensure_ascii=False),
@@ -316,12 +328,46 @@ def compile_request(request, request_dir):
                        "parameters": {"model": model, "output_format": "gif", "n": 1, "size": size,
                                       "frame_count": count, "frame_duration_ms": delay},
                        "prompt": prompt, "status": "planned", "attempts": [], "selected_attempt": None})
+        if direction:
+            assets[-1]["direction"] = dict(direction)
         assets[-1]["spec_sha256"] = spec_hash(assets[-1])
     manifest = {"schema_version": 1, "mode": request["mode"], "narration": narration,
                 "style": style, "style_selection": style_selection, "character": character, "assets": assets,
                 "references": [{k:v for k,v in r.items() if k != "_bytes"} for r in refs]}
+    if "total_duration_s" in request:
+        target = request["total_duration_s"]
+        require(number(target) and target > 0, "invalid_total_duration")
+        planned_ms = sum(a["parameters"]["frame_count"] * a["parameters"]["frame_duration_ms"] for a in assets)
+        require(abs(target * 1000 - planned_ms) < 0.000001,
+                f"shot_total_duration_mismatch:planned_ms={planned_ms}")
+        manifest["total_duration_s"] = target
     manifest["request_fingerprint"] = digest(encode(manifest))
     return manifest, refs
+
+
+def shot_plan(request_file):
+    path = Path(request_file).resolve()
+    manifest, _ = compile_request(read_json(path), path.parent)
+    shots = []
+    start_ms = 0
+    for asset in manifest["assets"]:
+        params = asset["parameters"]
+        end_ms = start_ms + params["frame_count"] * params["frame_duration_ms"]
+        shots.append({
+            "id": asset["id"], "start_ms": start_ms, "end_ms": end_ms,
+            "intent": asset["intent"], "initial_state": asset["initial_state"],
+            "action": asset["action"], "end_state": asset["end_state"],
+            "source_text": asset["source_text"], "direction": asset.get("direction", {}),
+            "size": params["size"], "frame_count": params["frame_count"],
+            "frame_duration_ms": params["frame_duration_ms"], "timing_plan": asset["timing_plan"],
+        })
+        start_ms = end_ms
+    return {
+        "kind": "shot_plan", "style": manifest["style_selection"]["selected"],
+        "planned_duration_ms": start_ms, "planned_gif_requests": len(shots),
+        "supplied_reference_images": len(manifest["references"]),
+        "request_fingerprint": manifest["request_fingerprint"], "shots": shots,
+    }
 
 
 def spec_hash(asset):
@@ -531,6 +577,8 @@ def export_ready(bundle, out):
                 "model_evidence": attempt["model_evidence"], "receipt": attempt["receipt"],
                 "official_request_evidence": attempt.get("official_request_evidence"),
                 "review": r, "status": "ready", "prompt": a["prompt"], "parameters": a["parameters"]})
+            if "direction" in a:
+                exported[-1]["direction"] = a["direction"]
         for ref in m["references"]:
             path = inside(root, ref["path"])
             require(digest(path.read_bytes()) == ref["sha256"], "reference_changed")
@@ -653,6 +701,8 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest="command", required=True)
     d = sub.add_parser("doctor"); d.add_argument("--binary")
+    d = sub.add_parser("plan", help="preview shot timing and direction offline")
+    d.add_argument("--request", required=True)
     d = sub.add_parser("prepare"); d.add_argument("--request", required=True); d.add_argument("--out", required=True)
     d = sub.add_parser("inspect"); d.add_argument("file")
     d = sub.add_parser("review"); d.add_argument("--bundle", required=True); d.add_argument("--shot", required=True); d.add_argument("--in", dest="input", required=True)
@@ -672,6 +722,7 @@ def main():
     try:
         c = args.command
         if c == "doctor": result = doctor(args.binary)
+        elif c == "plan": result = shot_plan(args.request)
         elif c == "prepare":
             m = prepare(args.request, args.out)
             result = {"manifest": str(Path(args.out).resolve() / "manifest.json"), "assets": len(m["assets"]), "request_fingerprint": m["request_fingerprint"]}
